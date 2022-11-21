@@ -13,7 +13,15 @@
 ### Data Sequence
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
 --|:--|:--:|--:|--:|--:
-name|---|---g|---|******|[Rosbag]()
+hku_agg_translation|---|---g|---|aggressive|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EfM2ytBNx7dIiIX4QkMQVGIBzVtMHEf4pl4EWA81iQZKEw?e=T6RA57)
+hku_agg_rotation|---|---g|---|aggressive|[Rosbag]()
+hku_agg_flip|---|---g|---|aggressive|[Rosbag]()
+hku_agg_walk|---|---g|---|aggressive|[Rosbag]()
+hku_hdr_circle|---|---g|---|hdr|[Rosbag]()
+hku_hdr_slow|---|---g|---|hdr|[Rosbag]()
+hku_hdr_tran_rota|---|---g|---|aggressive & hdr|[Rosbag]()
+hku_hdr_agg|---|---g|---|aggressive & hdr|[Rosbag]()
+hku_dark_normal|---|---g|---|dark & hdr|[Rosbag]()
 
 
 
