@@ -1,0 +1,46 @@
+%YAML:1.0
+
+imu_topic: "/davis346/imu"
+image_topic: "/davis346/image_raw"
+event_topic: "/davis346/events"
+
+#camera calibration 
+model_type: PINHOLE
+camera_name: camera
+image_width: 346
+image_height: 260
+distortion_parameters:
+   k1: -0.373464
+   k2: 0.139924 
+   p1: -0.000309077
+   p2: 0.000635965
+projection_parameters:
+   fx: 259.355
+   fy: 259.58
+   cx: 177.005  
+   cy: 137.922
+
+extrinsicRotation: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [0.99892148, -0.04476788, 0.01231717,  
+                 0.04454212, 0.99884479, 0.01803002,
+                 -0.0131101, -0.01746194, 0.99976157]
+#Translation from camera frame to imu frame, imu^T_cam
+extrinsicTranslation: !!opencv-matrix
+   rows: 3
+   cols: 1
+   dt: d
+   data: [ 0.00014722,-0.00025718, 0.00005513]
+
+T_camera_imu: 1  # if we set the R and T as IMU to camera, we need to give an T to them
+
+
+#imu parameters       The more accurate parameters you provide, the better performance
+acc_n: 4.2153479580575477e-02 #0.1          # accelerometer measurement noise standard deviation. #0.2
+gyr_n: 3.4869979619824697e-03 #0.01         # gyroscope measurement noise standard deviation.     #0.05 
+acc_w: 8.5654389798364998e-04 #0.0002          # accelerometer bias random work noise standard deviation.  #0.02
+gyr_w: 4.4740603706140853e-05 #2.0e-5      # gyroscope bias random work noise standard deviation.     #4.0e-5
+g_norm: 9.805         # gravity magnitude
+
