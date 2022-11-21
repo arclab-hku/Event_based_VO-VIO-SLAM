@@ -1,0 +1,31 @@
+%YAML:1.0
+---
+model_type: PINHOLE
+camera_name: camera
+image_width: 346
+image_height: 260
+distortion_parameters:
+   k1: -0.3794794654640921
+   k2: 0.15393049046270296
+   p1: 0.0011400586965363895
+   p2: -0.0019042695753031854
+projection_parameters:
+   fx: 249.69341447817564
+   fy: 248.41625664694038
+   cx: 176.74240257052816
+   cy: 129.47631010746218
+
+#loop closure parameters
+loop_closure: 1                    # start loop closure
+# loop_closure_topic: "/stereo_event_tracker/timesurface_map"   #use the time surface for loop closure
+# loop_closure_topic: "/stereo_event_tracker/event_loop"   #use the event_msg for loop closure
+loop_closure_topic: "/davis_left/image_raw"   #采用image做回环 
+load_previous_pose_graph: 0 #1        # load and reuse previous pose graph; load from 'pose_graph_save_path'
+fast_relocalization: 0             # useful in real-time and large project
+# pose_graph_save_path: "/home/kwanwaipang/evio_result_visualization/outdoor_round3/pose_graph/" # save and load path
+
+#visualization parameters
+save_image: 1                   #  (DEBUG_IMAGE)   save image in pose graph for visualization purpose; you can close this function by setting 0 
+visualize_imu_forward: 1        # output imu forward propogation to achieve low latency and high frequence results
+visualize_camera_size: 0.4      # size of camera marker in RVIZ
+save_loop_match: 0              # 
