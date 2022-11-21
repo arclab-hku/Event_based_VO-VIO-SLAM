@@ -13,9 +13,7 @@
 ### Data Sequence
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
 --|:--|:--:|--:|--:|--:
-gate_01|2021-07-31|16.4g|172s|dark,around gate|[Rosbag](https://sjtueducn-my.sharepoint.com/:u:/g/personal/594666_sjtu_edu_cn/ET3mU1rvdTpEl8VYvC25q7YB5pmPQlwru0jBbQ9iu0oAMA?e=LrKUpJ)
-gate_02|2021-07-31|27.3g|327s|dark,loop back|[Rosbag](https://sjtueducn-my.sharepoint.com/:u:/g/personal/594666_sjtu_edu_cn/EY7fHSh4NnxBvemze1JS8TEBy5beLh_xlJ6mdi2IYmeY9w?e=xIcvDe)
-gate_03|2021-08-04|21.9g|283s|day|[Rosbag](https://sjtueducn-my.sharepoint.com/:u:/g/personal/594666_sjtu_edu_cn/EUthdjvVIVdFmFxR82jzVqUBQTpsfvvb26pYtb0yj-_hlw?e=6MWwmJ)
+name|---|---g|---|******|[Rosbag]()
 
 
 
@@ -36,6 +34,8 @@ gate_03|2021-08-04|21.9g|283s|day|[Rosbag](https://sjtueducn-my.sharepoint.com/:
  
 
 ### Data Sequence
+With VICON as ground truth:
+
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
 --|:--|:--:|--:|--:|--:
 vicon_aggressive_hdr|---|23.0g|---|HDR, Aggressive Motion|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/wpguan_connect_hku_hk/ESxBPJlRT4FApeMZgwvAo4YBuAhoOT5tcb_A9dAvPSEeeg?e=CRDVrD)
@@ -50,7 +50,22 @@ vicon_hdr4|---|19.6g|---|HDR|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:
 vicon_lighttodark1|---|17.0g|---|HDR|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/wpguan_connect_hku_hk/EfOYBysbkRtApSy6-qaMHVEBO7z92UZiQRRhYWnzCW-M1Q?e=sdvcV4)
 vicon_lighttodark2|---|12.0g|---|HDR|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/wpguan_connect_hku_hk/EXjiHBhmoMlOvtP_T-WP2sgBhJKu9oL9ZpMUIOq-trG4ww?e=rAnaKQ)
 
- 
+indoor (no ground truth):
+
+Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
+--|:--|:--:|--:|--:|--:
+indoor_aggressive_hdr_1|---|16.62g|---|HDR, Aggressive Motion|[Rosbag](https://drive.google.com/file/d/1dG7wVXdXIdvE-i1PGtUx5OcVMGyTeUkF/view?usp=share_link)
+indoor_aggressive_hdr_2|---|15.66g|---|HDR, Aggressive Motion|[Rosbag](https://drive.google.com/file/d/15I709SGwTDspI6P89jxrm3gLenlSVInW/view?usp=sharing)
+indoor_aggressive_test_1|---|17.94g|---|Aggressive Motion|[Rosbag](https://drive.google.com/file/d/1Ch-OruuoJXHmrUE8Q-k_IzWWPkd_QTL-/view?usp=sharing)
+indoor_aggressive_test_2|---|8.385g|---|Aggressive Motion|[Rosbag](https://drive.google.com/file/d/1wvTuUtc0Xpj7Q9UJAEfezIt4EH5o9hjI/view?usp=sharing)
+indoor_1|---|3.45g|---|---|[Rosbag](https://drive.google.com/file/d/1VL30PRG9COkfXx924n0Jmv24xnPHzGwT/view?usp=share_link)
+indoor_2|---|5.31g|---|---|[Rosbag](https://drive.google.com/file/d/1uA1S3Vn3jJmFdE3IiIvzBihPpBYb-Dme/view?usp=share_link)
+indoor_3|---|5.28g|---|---|[Rosbag](https://drive.google.com/file/d/1mYZi7uyXi9v8BOPFe_byK3QbQ9v4Ip1r/view?usp=share_link)
+indoor_4|---|6.72g|---|---|[Rosbag](https://drive.google.com/file/d/1HbEPansHpFVjlVgwNYs_E4crdFiAfm8c/view?usp=share_link)
+indoor_5|---|13.79g|---|---|[Rosbag](https://drive.google.com/file/d/1UI4WwjdUwBmGcJfTBE4G-DdmVsvLeaUh/view?usp=share_link)
+indoor_6|---|20.39g|---|---|[Rosbag](https://drive.google.com/file/d/1KFrplYO86H1U6k00vFGc1pIK4onLUbjv/view?usp=share_link)
+
+Outdoor (no ground truth):
 
 
 ## Our Works in Event-based Vision
@@ -79,11 +94,11 @@ vicon_lighttodark2|---|12.0g|---|HDR|[Rosbag](https://connecthkuhk-my.sharepoint
 
 ### If you have any suggestions or questions, do not hesitate to propose an issue. And if you find our dataset helpful in your research, a simple star or citation are the best affirmation for us.
 
-## Other Event-based Dataset
-* [M2DGR](https://github.com/SJTU-ViSYS/M2DGR)
-*
+
 
 ## ACKNOWLEGEMENT
+
+
 
 ## Reference
 * [Event Camera Calibration using dv-gui](https://blog.csdn.net/gwplovekimi/article/details/121637241?spm=1001.2014.3001.5501)
