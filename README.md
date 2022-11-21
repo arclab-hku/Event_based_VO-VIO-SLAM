@@ -30,7 +30,7 @@ gate_03|2021-08-04|21.9g|283s|day|[Rosbag](https://sjtueducn-my.sharepoint.com/:
 </center>
 <p align="center"> The Platform for Data Collection </p>
 The configuration files is in [link](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/2022IROS/)
-
+ 
 
 ### Data Sequence
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
