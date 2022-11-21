@@ -6,7 +6,21 @@
 
 
 ## Our Works in Event-based Vision
-In the future, we plan to update and extend our project from time to time, striving to build a comprehensive SLAM benchmark similar to the KITTI dataset for ground robots.
+1. IROS2022
+~~~
+@inproceedings{GWPHKU:MyEVIO,
+  title={Monocular Event Visual Inertial Odometry based on Event-corner using Sliding Windows Graph-based Optimization},
+  author={Guan, Weipeng and Lu, Peng},
+  booktitle={2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  pages={******},
+  year={2022},
+  organization={IEEE}
+}
+~~~
+
+
+
+
 ### If you have any suggestions or questions, do not hesitate to propose an issue. And if you find our dataset helpful in your research, a simple star or citation are the best affirmation for us.
 
 ## Other Event-based Dataset
