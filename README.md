@@ -4,6 +4,8 @@
 
 
 
+This is the repositorie that collects the dataset we used in our papers.
+We hope that we can make some contribution for the event-based VO/VIO/SLAM.
 
 
 
@@ -13,15 +15,7 @@
 ### Data Sequence
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
 --|:--|:--:|--:|--:|--:
-hku_agg_translation|---|---g|---|aggressive|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EfM2ytBNx7dIiIX4QkMQVGIBzVtMHEf4pl4EWA81iQZKEw?e=T6RA57)
-hku_agg_rotation|---|---g|---|aggressive|[Rosbag]()
-hku_agg_flip|---|---g|---|aggressive|[Rosbag]()
-hku_agg_walk|---|---g|---|aggressive|[Rosbag]()
-hku_hdr_circle|---|---g|---|hdr|[Rosbag]()
-hku_hdr_slow|---|---g|---|hdr|[Rosbag]()
-hku_hdr_tran_rota|---|---g|---|aggressive & hdr|[Rosbag]()
-hku_hdr_agg|---|---g|---|aggressive & hdr|[Rosbag]()
-hku_dark_normal|---|---g|---|dark & hdr|[Rosbag]()
+name|---|---g|---|******|[Rosbag]()
 
 
 
@@ -126,7 +120,10 @@ outdoor_large_scale|---|--g|---|******|[Rosbag]()
   year={2022}
 }
 ~~~
-3. 
+3. ESVIO
+~~~
+ Coming soon
+~~~
 
 
 ### If you have any suggestions or questions, do not hesitate to propose an issue. And if you find our dataset helpful in your research, a simple star or citation are the best affirmation for us.
