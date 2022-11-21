@@ -25,7 +25,21 @@ gate_03|2021-08-04|21.9g|283s|day|[Rosbag](https://sjtueducn-my.sharepoint.com/:
 ## Dataset for Event-based Monocular Visual-inertial Odometry
 ### Acquisition Platform
 
+<center>
+<img src="https://github.com/arclab-hku/Datasequence_Event_based_SLAM/2022IROS/sensor_setup.png" width="70%">
+</center>
+<p align="center"> The Platform for Data Collection </p>
+The configuration files is in [link](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/2022IROS/)
+
+
 ### Data Sequence
+Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
+--|:--|:--:|--:|--:|--:
+gate_01|2021-07-31|16.4g|---|HDR|[Rosbag](https://sjtueducn-my.sharepoint.com/:u:/g/personal/594666_sjtu_edu_cn/ET3mU1rvdTpEl8VYvC25q7YB5pmPQlwru0jBbQ9iu0oAMA?e=LrKUpJ)
+gate_02|2021-07-31|27.3g|---|HDR|[Rosbag](https://sjtueducn-my.sharepoint.com/:u:/g/personal/594666_sjtu_edu_cn/EY7fHSh4NnxBvemze1JS8TEBy5beLh_xlJ6mdi2IYmeY9w?e=xIcvDe)
+gate_03|2021-08-04|21.9g|---|HDR|[Rosbag](https://sjtueducn-my.sharepoint.com/:u:/g/personal/594666_sjtu_edu_cn/EUthdjvVIVdFmFxR82jzVqUBQTpsfvvb26pYtb0yj-_hlw?e=6MWwmJ)
+
+
 
 
 ## Our Works in Event-based Vision
@@ -59,5 +73,8 @@ gate_03|2021-08-04|21.9g|283s|day|[Rosbag](https://sjtueducn-my.sharepoint.com/:
 *
 
 ## ACKNOWLEGEMENT
+
+## Reference
+* [Event Camera Calibration using dv-gui](https://blog.csdn.net/gwplovekimi/article/details/121637241?spm=1001.2014.3001.5501)
 
 
