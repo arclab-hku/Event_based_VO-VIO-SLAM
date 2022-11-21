@@ -29,7 +29,7 @@ gate_03|2021-08-04|21.9g|283s|day|[Rosbag](https://sjtueducn-my.sharepoint.com/:
 <img src="https://github.com/arclab-hku/Datasequence_Event_based_SLAM/2022IROS/sensor_setup.png" width="70%">
 </center>
 <p align="center"> The Platform for Data Collection </p>
-The configuration files is in [link](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/2022IROS/)
+The configuration files is in [link](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/tree/main/2022IROS)
  
 
 ### Data Sequence
