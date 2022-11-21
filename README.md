@@ -84,7 +84,7 @@ outdoor_round3|---|37.26g|---|******|[Rosbag](https://drive.google.com/file/d/1_
 
 On quadrotor platform (PL-EVIO):
 <center>
-<img src="https://github.com/arclab-hku/Datasequence_Event_based_SLAM/blob/main/PL-EVIO/sensor_setup.png" width="100%">
+<img src="https://github.com/arclab-hku/Datasequence_Event_based_SLAM/blob/main/PL-EVIO/sensor_setup.jpg" width="100%">
 </center>
 <p align="center"> The Platform for Data Collection </p>
 
