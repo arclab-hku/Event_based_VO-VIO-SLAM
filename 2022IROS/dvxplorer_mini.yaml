@@ -1,0 +1,43 @@
+
+imu_topic: "/dvxplorer_mini/imu"
+event_topic: "/dvxplorer_mini/events"
+output_path: "/home/kwanwaipang/catkin_ws_dvs/src/EVIO/pose_graph/output"
+
+#camera calibration 
+model_type: PINHOLE
+camera_name: camera
+image_width: 640
+image_height: 480
+distortion_parameters:
+   k1: -0.177771 #-0.372447
+   k2: 0.0547503 #0.153642
+   p1: -0.00540675 #-0.000399186
+   p2: 0.00438044 #-0.000157163
+projection_parameters:
+   fx: 458.628 #566.672
+   fy: 459.19 #566.73 
+   cx: 307.809 #337.847 
+   cy: 256.888 #259.916
+
+extrinsicRotation: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [0.99892148, -0.04476788, 0.01231717,  
+                 0.04454212, 0.99884479, 0.01803002,
+                 -0.0131101, -0.01746194, 0.99976157]
+#Translation from camera frame to imu frame, imu^T_cam
+extrinsicTranslation: !!opencv-matrix
+   rows: 3
+   cols: 1
+   dt: d
+   data: [ 0.00014722,-0.00025718, 0.00005513]
+
+T_camera_imu: 1  # if we set the R and T as IMU to camera, we need to give an T to them
+
+#imu parameters       The more accurate parameters you provide, the better performance
+acc_n: 3.7863819264639269e-02 #0.1          # accelerometer measurement noise standard deviation. #0.2   0.04
+gyr_n: 3.1745424413195111e-03 #0.01         # gyroscope measurement noise standard deviation.     #0.05  0.004
+acc_w: 6.8693717455312715e-04 #0.001         # accelerometer bias random work noise standard deviation.  #0.002
+gyr_w: 3.3271308846999896e-05 #0.0001       # gyroscope bias random work noise standard deviation.     #4.0e-5
+g_norm: 9.805         # gravity magnitude
