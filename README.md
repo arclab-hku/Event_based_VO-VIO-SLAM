@@ -9,10 +9,10 @@ We hope that we can make some contribution for the event-based VO/VIO/SLAM.
 
 
 
-## Dataset for Event-based Stereo Visual-inertial Odometry
-### Acquisition Platform
+# Dataset for Event-based Stereo Visual-inertial Odometry
+## Acquisition Platform
 
-### Driver Installation
+## Driver Installation
 We thanks the [rpg_dvs_ros](https://github.com/uzh-rpg/rpg_dvs_ros) for intructions of event camera driver.
 However, it still has some problems.
 We modified the source code of the [rpg_dvs_ros](https://github.com/uzh-rpg/rpg_dvs_ros) with consistent image size, and add the function of the hardware synchronized for stereo setup, the source code is available in [link](双目驱动源码).
@@ -21,7 +21,7 @@ After installing the driver, the user can directly run the following command:
 
 ~~~
 
-### Data Sequence
+## Data Sequence
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
 --|:--|:--:|--:|--:|--:
 hku_agg_translation|---|3.63g|---|aggressive|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EfM2ytBNx7dIiIX4QkMQVGIBzVtMHEf4pl4EWA81iQZKEw?e=T6RA57)
@@ -39,8 +39,8 @@ hku_dark_normal|---|4.24g|---|dark & hdr|[Rosbag](https://connecthkuhk-my.sharep
 
 
 
-## Dataset for Event-based Monocular Visual-inertial Odometry
-### Acquisition Platform
+# Dataset for Event-based Monocular Visual-inertial Odometry
+## Acquisition Platform
 
 <center>
 <img src="https://github.com/arclab-hku/Datasequence_Event_based_SLAM/blob/main/IROS2022/sensor_setup.png" width="100%">
@@ -50,9 +50,8 @@ hku_dark_normal|---|4.24g|---|dark & hdr|[Rosbag](https://connecthkuhk-my.sharep
 
 * The configuration files is in [link](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/tree/main/IROS2022)
 
- 
 
-### Data Sequence
+## Data Sequence
 With VICON as ground truth:
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
@@ -117,7 +116,7 @@ outdoor_large_scale1|---|9.38g|---|******|[Rosbag](https://connecthkuhk-my.share
 outdoor_large_scale2|---|9.34g|---|******|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EQ5iXzEXjOFNvbqTMuuK03UBkcY7lDOCRuX0HwyZpR2blw?e=cCJQsu)
 
 
-## Our Works in Event-based Vision
+# Our Works in Event-based Vision
 1. IROS2022 [Demo Link](https://b23.tv/Xe8MZyt)
 ~~~
 @inproceedings{GWPHKU:EVIO,
@@ -148,7 +147,7 @@ outdoor_large_scale2|---|9.34g|---|******|[Rosbag](https://connecthkuhk-my.share
 
 
 
-## Reference
+# Reference
 * More demo of event-based VO/VIO/SLAM can be seen in our bilibili [Guan Weipeng](https://space.bilibili.com/499377825?spm_id_from=333.1007.0.0) & [Chen Peiyu](https://space.bilibili.com/279299582/?spm_id_from=333.999.0.0)
 * [Event Camera Calibration using dv-gui](https://blog.csdn.net/gwplovekimi/article/details/121637241?spm=1001.2014.3001.5501)
 * The DAVIS comprises an image camera and event camera on the same pixel array, thus calibration can be done using standard image-based methods, such as [Kalibr](https://github.com/ethz-asl/kalibr)
