@@ -1,0 +1,55 @@
+
+#common parameters
+imu_topic: "/dvs/imu"
+image_topic: "/dvs/image_raw"
+event_topic: "/dvs/events"
+
+###########################################################################################################################
+
+#camera calibration 
+model_type: PINHOLE
+camera_name: camera
+image_width: 346
+image_height: 260
+distortion_parameters:
+   k1: -0.3674645003666135
+   k2: 0.13685246896794986
+   p1: -0.0004006812242899775
+   p2: 0.000030969134907500055
+projection_parameters:
+   fx: 248.7782253406866
+   fy: 247.93713572288877
+   cx: 176.4921016549297  
+   cy: 129.31466885208272
+
+###########################################################################################################################
+extrinsicRotation: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [0.99995523,  0.00599467, -0.00732165,  
+          -0.00603191,  0.99996893, -0.00507505,
+          0.007291,    0.00511898,  0.99996032]
+#Translation from camera frame to imu frame, imu^T_cam
+extrinsicTranslation: !!opencv-matrix
+   rows: 3
+   cols: 1
+   dt: d
+   data: [ -0.00054603,0.00046837, 0.06016175]
+
+T_camera_imu: 1  # 需要的为camera到imu。但一般矫正出来的都是imu到camera   if we set the R and T as IMU to camera, we need to give an T to them
+
+###########################################################################################################################
+
+#imu parameters       The more accurate parameters you provide, the better performance
+# acc_n: 0.2          # accelerometer measurement noise standard deviation. #0.2   0.04
+# gyr_n: 0.05         # gyroscope measurement noise standard deviation.     #0.05  0.004
+# acc_w: 0.002         # accelerometer bias random work noise standard deviation.  #0.002
+# gyr_w: 4.0e-5       # gyroscope bias random work noise standard deviation.     #4.0e-5
+acc_n: 4.4793336127290362e-02 #4.2153479580575477e-02 #0.1          # accelerometer measurement noise standard deviation. #0.2
+gyr_n: 3.1404034561189407e-03 #3.4869979619824697e-03 #0.01         # gyroscope measurement noise standard deviation.     #0.05 
+acc_w: 8.0169405615955990e-04 #8.5654389798364998e-04 #0.0002          # accelerometer bias random work noise standard deviation.  #0.02
+gyr_w: 2.8618210492185127e-05 #4.4740603706140853e-05 #2.0e-5      # gyroscope bias random work noise standard deviation.     #4.0e-5
+g_norm: 9.805         # gravity magnitude
+
+###########################################################################################################################

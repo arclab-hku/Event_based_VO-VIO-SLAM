@@ -82,6 +82,19 @@ outdoor_round1|---|11.27g|---|******|[Rosbag](https://drive.google.com/file/d/1y
 outdoor_round2|---|13.34g|---|******|[Rosbag](https://drive.google.com/file/d/1W9zR2y_EnLA-MWoJjJQZIlYbj0320C3g/view?usp=share_link)
 outdoor_round3|---|37.26g|---|******|[Rosbag](https://drive.google.com/file/d/1_EXmjIWtX4jWt2h3zjU3gO93JKxye_IQ/view?usp=share_link)
 
+On quadrotor platform (PL-EVIO):
+<center>
+<img src="https://github.com/arclab-hku/Datasequence_Event_based_SLAM/blob/main/PL-EVIO/sensor_setup.png" width="100%">
+</center>
+<p align="center"> The Platform for Data Collection </p>
+
+* The configuration files is in [link](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/tree/main/PL-EVIO)
+
+Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
+--|:--|:--:|--:|--:|--:
+Vicon_dvs_fix_eight|---|1.08g|---|******|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/wpguan_connect_hku_hk/EeObT20UhbdDpemA3ZFwn7oB0UmbAmgqVObiQYwlZiBQCQ?e=j5H4ZU)
+Vicon_dvs_varing_eight|---|1.48g|---|******|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/wpguan_connect_hku_hk/EWZPnY_Jr1lBiS2uglBysOIBEKdnHyyIGFqgg_oiVXT0BQ?e=UgrBCm)
+outdoor_large_scale|---|--g|---|******|[Rosbag]()
 
 
 ## Our Works in Event-based Vision
