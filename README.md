@@ -38,9 +38,17 @@ gate_03|2021-08-04|21.9g|283s|day|[Rosbag](https://sjtueducn-my.sharepoint.com/:
 ### Data Sequence
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
 --|:--|:--:|--:|--:|--:
-gate_01|2021-07-31|16.4g|---|HDR|[Rosbag](https://sjtueducn-my.sharepoint.com/:u:/g/personal/594666_sjtu_edu_cn/ET3mU1rvdTpEl8VYvC25q7YB5pmPQlwru0jBbQ9iu0oAMA?e=LrKUpJ)
-gate_02|2021-07-31|27.3g|---|HDR|[Rosbag](https://sjtueducn-my.sharepoint.com/:u:/g/personal/594666_sjtu_edu_cn/EY7fHSh4NnxBvemze1JS8TEBy5beLh_xlJ6mdi2IYmeY9w?e=xIcvDe)
-gate_03|2021-08-04|21.9g|---|HDR|[Rosbag](https://sjtueducn-my.sharepoint.com/:u:/g/personal/594666_sjtu_edu_cn/EUthdjvVIVdFmFxR82jzVqUBQTpsfvvb26pYtb0yj-_hlw?e=6MWwmJ)
+vicon_aggressive_hdr|---|23.0g|---|HDR, Aggressive Motion|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/wpguan_connect_hku_hk/ESxBPJlRT4FApeMZgwvAo4YBuAhoOT5tcb_A9dAvPSEeeg?e=CRDVrD)
+gate_02|---|27.3g|---|HDR|[Rosbag]()
+gate_03|---|21.9g|---|HDR|[Rosbag]()
+gate_03|---|21.9g|---|HDR|[Rosbag]()
+gate_03|---|21.9g|---|HDR|[Rosbag]()
+gate_03|---|21.9g|---|HDR|[Rosbag]()
+gate_03|---|21.9g|---|HDR|[Rosbag]()
+gate_03|---|21.9g|---|HDR|[Rosbag]()
+gate_03|---|21.9g|---|HDR|[Rosbag]()
+gate_03|---|21.9g|---|HDR|[Rosbag]()
+gate_03|---|21.9g|---|HDR|[Rosbag]()
 
 
 
