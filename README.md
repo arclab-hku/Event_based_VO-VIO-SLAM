@@ -48,7 +48,7 @@ hku_dark_normal|---|4.24g|---|dark & hdr|[Rosbag](https://connecthkuhk-my.sharep
 
 <p align="center"> The Platform for Data Collection </p>
 
-* The configuration files is in [link](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/tree/main/IROS2022)
+* The configuration file is in [link](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/tree/main/IROS2022)
 
 
 ## Data Sequence
@@ -106,7 +106,7 @@ On quadrotor platform (PL-EVIO):
 </center>
 <p align="center"> The Platform for Data Collection </p>
 
-* The configuration files is in [link](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/tree/main/PL-EVIO)
+* The configuration file is in [link](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/tree/main/PL-EVIO)
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
 --|:--|:--:|--:|--:|--:
