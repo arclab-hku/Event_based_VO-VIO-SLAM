@@ -12,6 +12,14 @@ We hope that we can make some contribution for the event-based VO/VIO/SLAM.
 ## Dataset for Event-based Stereo Visual-inertial Odometry
 ### Acquisition Platform
 
+### Driver Installation
+We thanks the [rpg_dvs_ros](https://github.com/uzh-rpg/rpg_dvs_ros) for intructions of event camera driver.
+However, we modified the source code of the [rpg_dvs_ros](https://github.com/uzh-rpg/rpg_dvs_ros) with consistent image size, and add the function of the hardware synchronized for stereo setup, the source code is available in [link](双目驱动源码).
+After installing the driver, the user can directly run the following command:
+~~~
+
+~~~
+
 ### Data Sequence
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
 --|:--|:--:|--:|--:|--:
