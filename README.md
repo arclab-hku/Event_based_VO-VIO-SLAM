@@ -113,6 +113,7 @@ outdoor_round3|---|37.26g|---|******|[Rosbag](https://drive.google.com/file/d/1_
 
 
 ## Reference
+* More demo of event-based VO/VIO/SLAM can be seen in our bilibili [Guan Weipeng](https://space.bilibili.com/499377825?spm_id_from=333.1007.0.0) [Chen Peiyu](https://space.bilibili.com/279299582/?spm_id_from=333.999.0.0)
 * [Event Camera Calibration using dv-gui](https://blog.csdn.net/gwplovekimi/article/details/121637241?spm=1001.2014.3001.5501)
 
 
