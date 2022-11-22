@@ -26,7 +26,7 @@ We hope that we can make some contribution for the event-based VO/VIO/SLAM.
 
 # Dataset for Event-based Stereo Visual-inertial Odometry
 ## Acquisition Platform
-* The configuration file is in [link](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/tree/main/esvio)
+* The configuration file is in [link](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/tree/main/ESVIO)
 ## Driver Installation
 We thanks the [rpg_dvs_ros](https://github.com/uzh-rpg/rpg_dvs_ros) for intructions of event camera driver.
 However, it still has some problems.
