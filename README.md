@@ -39,7 +39,7 @@ After installing the driver, the user can directly run the following command:
 ## Data Sequence
 
 <div align="center">
-<a target="_blank"><img src="PL-EVIO/sensor_setup.jpg" alt="image" width="100%" /></a>
+<a target="_blank"><img src="ESVIO/quadrotor_flight.png" alt="image" width="100%" /></a>
 <p> The Platform for Data Collection </p>
 <div align="center">
 
