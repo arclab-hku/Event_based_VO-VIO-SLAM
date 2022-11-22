@@ -27,7 +27,7 @@ We hope that we can make some contributions for the development of event-based V
 # Dataset for Event-based Stereo Visual-inertial Odometry
 ## Acquisition Platform
 <div align="center">
-<a target="_blank"><img src="ESVIO/quadrotor_flight.png" alt="image" width="80%" /></a>
+<a target="_blank"><img src="ESVIO/quadrotor_flight.jpg" alt="image" width="80%" /></a>
 <p> The Platform for Data Collection </p>
 </div> 
 
