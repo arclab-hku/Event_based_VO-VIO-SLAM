@@ -43,7 +43,9 @@ After installing the driver, the user can directly run the following command:
 ~~~
 
 ## Data Sequence
-  
+
+HKU datasets
+
 <div align="center">
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
