@@ -118,6 +118,12 @@ outdoor_large_scale2|---|9.34g|---|******|[Rosbag](https://connecthkuhk-my.share
 
 # Our Works in Event-based Vision
 ## 1. IROS2022 
+
+<div align="center">
+<a href="https://b23.tv/Xe8MZyt" target="_blank"><img src="IROS2022/cover.jpg" alt="video" width="100%" /></a>
+<p> Demo Video </p>
+</div>
+
 <div align="center">
 
 [![Demo Video](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/blob/main/IROS2022/cover.jpg)](https://b23.tv/Xe8MZyt)
