@@ -44,7 +44,7 @@ After installing the driver, the user can directly run the following command:
 
 ## Data Sequence
 
-HKU datasets
+HKU datasets:
 
 <div align="center">
 
@@ -63,8 +63,9 @@ hku_dark_normal|---|4.24g|---|dark & hdr|[Rosbag](https://connecthkuhk-my.sharep
 </div>
 
 Modified VECtor Dataset:
-
-We modified the frequency of the event_left and event_right (60Hz) in the VECtor dataset, so that we can extract effective point and line features from the event stream. We release this modified VECtor Dataset to facilitate research on event camera.
+We thanks the [VECtor](https://star-datasets.github.io/vector/) for providing event-based dataset.
+However, it still has some problems.
+We modified the frequency of the event_left and event_right (60Hz) in the VECtor dataset [VECtor](https://star-datasets.github.io/vector/), so that we can extract effective point and line features from the event stream. We release this modified VECtor Dataset to facilitate research on event camera.
 
 <div align="center">
 
