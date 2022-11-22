@@ -26,7 +26,7 @@ We hope that we can make some contributions for the development of event-based V
 
 # Dataset for Event-based Stereo Visual-inertial Odometry
 ## Acquisition Platform
-* The configuration file is in [link](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/tree/main/ESVIO)
+
 ## Driver Installation
 We thanks the [rpg_dvs_ros](https://github.com/uzh-rpg/rpg_dvs_ros) for intructions of event camera driver.
 However, it still has some problems.
@@ -42,6 +42,8 @@ After installing the driver, the user can directly run the following command:
 <a target="_blank"><img src="ESVIO/quadrotor_flight.png" alt="image" width="80%" /></a>
 <p> The Platform for Data Collection </p>
 </div> 
+
+* The configuration file is in [link](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/tree/main/ESVIO)
   
 <div align="center">
 
