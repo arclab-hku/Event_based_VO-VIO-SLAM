@@ -1,14 +1,12 @@
 
-# An Event-based Dataset for VO/VIO/SLAM in Robotics
-## Author: [Guan Weipeng](https://scholar.google.com/citations?hl=zh-CN&user=fUU5Cv0AAAAJ), [Chen Peiyu](https://github.com/cpymaple)
+An Event-based Dataset for VO/VIO/SLAM in Robotics
+Author: [Guan Weipeng](https://scholar.google.com/citations?hl=zh-CN&user=fUU5Cv0AAAAJ), [Chen Peiyu](https://github.com/cpymaple)
 
 
 
 This is the repositorie that collects the dataset we used in our papers.
 We hope that we can make some contribution for the event-based VO/VIO/SLAM.
 
-- [An Event-based Dataset for VO/VIO/SLAM in Robotics](#an-event-based-dataset-for-vovioslam-in-robotics)
-  - [Author: Guan Weipeng, Chen Peiyu](#author-guan-weipeng-chen-peiyu)
 - [Dataset for Event-based Stereo Visual-inertial Odometry](#dataset-for-event-based-stereo-visual-inertial-odometry)
   - [Acquisition Platform](#acquisition-platform)
   - [Driver Installation](#driver-installation)
@@ -20,7 +18,6 @@ We hope that we can make some contribution for the event-based VO/VIO/SLAM.
   - [1. IROS2022](#1-iros2022)
   - [2. PL-EVIO](#2-pl-evio)
   - [3. ESVIO](#3-esvio)
-    - [If you have any suggestions or questions, do not hesitate to propose an issue. And if you find our dataset helpful in your research, a simple star or citation are the best affirmation for us.](#if-you-have-any-suggestions-or-questions-do-not-hesitate-to-propose-an-issue-and-if-you-find-our-dataset-helpful-in-your-research-a-simple-star-or-citation-are-the-best-affirmation-for-us)
 - [Reference](#reference)
 
 
@@ -192,7 +189,7 @@ outdoor_large_scale2|---|9.34g|---|******|[Rosbag](https://connecthkuhk-my.share
 ~~~
 
 
-### If you have any suggestions or questions, do not hesitate to propose an issue. And if you find our dataset helpful in your research, a simple star or citation are the best affirmation for us.
+<font face="黑体" color=blue size=4>If you have any suggestions or questions, do not hesitate to propose an issue. And if you find our dataset helpful in your research, a simple star or citation are the best affirmation for us.</font>
 
 
 
