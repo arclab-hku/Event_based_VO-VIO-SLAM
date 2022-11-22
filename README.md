@@ -46,15 +46,9 @@ hku_dark_normal|---|4.24g|---|dark & hdr|[Rosbag](https://connecthkuhk-my.sharep
 ## Acquisition Platform
 
 <div align="center">
-<a target="_blank"><img src="IROS2022/sensor_setup.png" alt="video" width="100%" /></a>
+<a target="_blank"><img src="IROS2022/sensor_setup.png" alt="image" width="100%" /></a>
 <p> The Platform for Data Collection </p>
 </div>
-
-<center>
-<img src="https://github.com/arclab-hku/Datasequence_Event_based_SLAM/blob/main/IROS2022/sensor_setup.png">
-</center>
-
-<p align="center"> The Platform for Data Collection </p>
 
 * The configuration file is in [link](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/tree/main/IROS2022)
 
@@ -120,10 +114,11 @@ outdoor_round3|---|37.26g|---|******|[Rosbag](https://drive.google.com/file/d/1_
 </div>
 
 On quadrotor platform (PL-EVIO):
-<center>
-<img src="https://github.com/arclab-hku/Datasequence_Event_based_SLAM/blob/main/PL-EVIO/sensor_setup.jpg">
-</center>
-<p align="center"> The Platform for Data Collection </p>
+
+<div align="center">
+<a target="_blank"><img src="PL-EVIO/sensor_setup.jpg" alt="image" width="100%" /></a>
+<p> The Platform for Data Collection </p>
+</div>
 
 * The configuration file is in [link](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/tree/main/PL-EVIO)
 
