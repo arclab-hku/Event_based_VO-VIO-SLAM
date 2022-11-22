@@ -119,6 +119,7 @@ outdoor_large_scale2|---|9.34g|---|******|[Rosbag](https://connecthkuhk-my.share
 # Our Works in Event-based Vision
 ## 1. IROS2022 
 [![Demo Video](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/blob/main/IROS2022/cover.jpg)](https://b23.tv/Xe8MZyt)
+<p align="center"> Demo Video </p>
 ~~~
 @inproceedings{GWPHKU:EVIO,
   title={Monocular Event Visual Inertial Odometry based on Event-corner using Sliding Windows Graph-based Optimization},
