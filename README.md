@@ -22,6 +22,9 @@ After installing the driver, the user can directly run the following command:
 ~~~
 
 ## Data Sequence
+
+<div align="center">
+
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
 --|:--|:--:|--:|--:|--:
 hku_agg_translation|---|3.63g|---|aggressive|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EfM2ytBNx7dIiIX4QkMQVGIBzVtMHEf4pl4EWA81iQZKEw?e=T6RA57)
@@ -34,7 +37,7 @@ hku_hdr_tran_rota|---|3.37g|---|aggressive & hdr|[Rosbag](https://connecthkuhk-m
 hku_hdr_agg|---|4.43g|---|aggressive & hdr|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EZnpX0eqUc5MsR_mkNi7IEsBbLOI_GM9NRZebZvRQZHYEQ?e=qDGvN5)
 hku_dark_normal|---|4.24g|---|dark & hdr|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/Edhb8MveJlVEhnltVt4vBIsB2kJu3K4t8dW1MTLgsJ5gLQ?e=wqwzNs)
 
-
+</div>
 
 
 
@@ -54,6 +57,8 @@ hku_dark_normal|---|4.24g|---|dark & hdr|[Rosbag](https://connecthkuhk-my.sharep
 ## Data Sequence
 With VICON as ground truth:
 
+<div align="center">
+
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
 --|:--|:--:|--:|--:|--:
 vicon_aggressive_hdr|---|23.0g|---|HDR, Aggressive Motion|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/wpguan_connect_hku_hk/ESxBPJlRT4FApeMZgwvAo4YBuAhoOT5tcb_A9dAvPSEeeg?e=CRDVrD)
@@ -68,8 +73,11 @@ vicon_hdr4|---|19.6g|---|HDR|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:
 vicon_lighttodark1|---|17.0g|---|HDR|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/wpguan_connect_hku_hk/EfOYBysbkRtApSy6-qaMHVEBO7z92UZiQRRhYWnzCW-M1Q?e=sdvcV4)
 vicon_lighttodark2|---|12.0g|---|HDR|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/wpguan_connect_hku_hk/EXjiHBhmoMlOvtP_T-WP2sgBhJKu9oL9ZpMUIOq-trG4ww?e=rAnaKQ)
 
+</div>
 
 indoor (no ground truth):
+
+<div align="center">
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
 --|:--|:--:|--:|--:|--:
@@ -84,7 +92,11 @@ indoor_4|---|6.72g|---|---|[Rosbag](https://drive.google.com/file/d/1HbEPansHpFV
 indoor_5|---|13.79g|---|---|[Rosbag](https://drive.google.com/file/d/1UI4WwjdUwBmGcJfTBE4G-DdmVsvLeaUh/view?usp=share_link)
 indoor_6|---|20.39g|---|---|[Rosbag](https://drive.google.com/file/d/1KFrplYO86H1U6k00vFGc1pIK4onLUbjv/view?usp=share_link)
 
+</div>
+
 Outdoor (no ground truth):
+
+<div align="center">
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
 --|:--|:--:|--:|--:|--:
@@ -100,6 +112,8 @@ outdoor_round1|---|11.27g|---|******|[Rosbag](https://drive.google.com/file/d/1y
 outdoor_round2|---|13.34g|---|******|[Rosbag](https://drive.google.com/file/d/1W9zR2y_EnLA-MWoJjJQZIlYbj0320C3g/view?usp=share_link)
 outdoor_round3|---|37.26g|---|******|[Rosbag](https://drive.google.com/file/d/1_EXmjIWtX4jWt2h3zjU3gO93JKxye_IQ/view?usp=share_link)
 
+</div>
+
 On quadrotor platform (PL-EVIO):
 <center>
 <img src="https://github.com/arclab-hku/Datasequence_Event_based_SLAM/blob/main/PL-EVIO/sensor_setup.jpg">
@@ -107,6 +121,7 @@ On quadrotor platform (PL-EVIO):
 <p align="center"> The Platform for Data Collection </p>
 
 * The configuration file is in [link](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/tree/main/PL-EVIO)
+
 <div align="center">
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
