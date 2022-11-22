@@ -136,8 +136,8 @@ outdoor_large_scale2|---|9.34g|---|******|[Rosbag](https://connecthkuhk-my.share
 [![Demo Video](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/blob/main/PL-EVIO/cover.jpg)](https://b23.tv/OE3QM6j)
 <p align="center"> Demo Video </p>
 
-[![Demo Video](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/blob/main/PL-EVIO/flip.jpg)](https://www.bilibili.com/video/BV1i24y1R7KV/?spm_id_from=333.999.list.card_archive.click&vd_source=a88e426798937812a8ffc1a9be5a3cb7)
-<p align="center"> Onboard Quadrotor Flip </p>
+[![Demo Video](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/blob/main/PL-EVIO/flip.jpg width = "300")](https://www.bilibili.com/video/BV1i24y1R7KV/?spm_id_from=333.999.list.card_archive.click&vd_source=a88e426798937812a8ffc1a9be5a3cb7)
+<p align="center"> Onboard Quadrotor Flipping </p>
 
 ~~~
 @article{PL-EVIO,
