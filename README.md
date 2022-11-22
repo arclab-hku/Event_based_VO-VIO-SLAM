@@ -159,6 +159,7 @@ outdoor_large_scale2|---|9.34g|---|******|[Rosbag](https://connecthkuhk-my.share
 # Edited VECtor Dataset
 
 ## Data Sequence
+We modified the frequency of the event_left and event_right (60Hz) in the VECtor dataset, so that we can extract effective point and line features from the event stream. We release this modified VECtor Dataset to facilitate research on event camera.
 
 <div align="center">
 
