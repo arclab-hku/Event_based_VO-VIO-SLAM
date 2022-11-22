@@ -191,7 +191,9 @@ outdoor_large_scale2|---|9.34g|---|******|[Rosbag](https://connecthkuhk-my.share
  Coming soon
 ~~~
 
-### If you have any suggestions or questions, do not hesitate to propose an issue. And if you find our dataset helpful in your research, a simple star or citation are the best affirmation for us. :blush: 
+### If you have any suggestions or questions, do not hesitate to propose an issue. 
+
+### And if you find our dataset helpful in your research, a simple star or citation are the best affirmation for us. :blush: 
 
 
 
