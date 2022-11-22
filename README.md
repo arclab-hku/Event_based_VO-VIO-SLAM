@@ -141,7 +141,7 @@ outdoor_large_scale2|---|9.34g|---|******|[Rosbag](https://connecthkuhk-my.share
 </div>
 
 <div align="center">
-<a href="https://www.bilibili.com/video/BV1i24y1R7KV/?spm_id_from=333.999.list.card_archive.click&vd_source=a88e426798937812a8ffc1a9be5a3cb7" target="_blank"><img src="PL-EVIO/flip.jpg" alt="video" width="1800" /></a>
+<a href="https://www.bilibili.com/video/BV1i24y1R7KV/?spm_id_from=333.999.list.card_archive.click&vd_source=a88e426798937812a8ffc1a9be5a3cb7" target="_blank"><img src="PL-EVIO/flip.jpg" alt="video" width="2000" /></a>
 <p> Onboard Quadrotor Flip using Our PL-EVIO </p>
 </div>
 
