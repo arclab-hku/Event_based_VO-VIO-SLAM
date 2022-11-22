@@ -187,7 +187,7 @@ outdoor_large_scale2|---|9.34g|---|******|[Rosbag](https://connecthkuhk-my.share
 ## 1. IROS2022 
 <div align="center">
 <a href="https://b23.tv/Xe8MZyt" target="_blank"><img src="IROS2022/cover.jpg" alt="video" width="100%" /></a>
-<p> Demo Video </p>
+<p> Demo Video (click the image to open) </p>
 </div>
 
 ~~~
@@ -204,12 +204,12 @@ outdoor_large_scale2|---|9.34g|---|******|[Rosbag](https://connecthkuhk-my.share
 ## 2. PL-EVIO 
 <div align="center">
 <a href="https://b23.tv/OE3QM6j" target="_blank"><img src="PL-EVIO/cover.jpg" alt="video" width="100%" /></a>
-<p> Demo Video </p>
+<p> Demo Video (click the image to open) </p>
 </div>
 
 <div align="center">
 <a href="https://www.bilibili.com/video/BV1i24y1R7KV/?spm_id_from=333.999.list.card_archive.click&vd_source=a88e426798937812a8ffc1a9be5a3cb7" target="_blank"><img src="PL-EVIO/flip.jpg" alt="video" width="100%" /></a>
-<p> Onboard Quadrotor Flip using Our PL-EVIO </p>
+<p> Onboard Quadrotor Flip using Our PL-EVIO (click the image to open) </p>
 </div>
 
 ~~~
