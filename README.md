@@ -45,6 +45,11 @@ hku_dark_normal|---|4.24g|---|dark & hdr|[Rosbag](https://connecthkuhk-my.sharep
 # Dataset for Event-based Monocular Visual-inertial Odometry
 ## Acquisition Platform
 
+<div align="center">
+<a target="_blank"><img src="IROS2022/sensor_setup.png" alt="video" width="100%" /></a>
+<p> The Platform for Data Collection </p>
+</div>
+
 <center>
 <img src="https://github.com/arclab-hku/Datasequence_Event_based_SLAM/blob/main/IROS2022/sensor_setup.png">
 </center>
