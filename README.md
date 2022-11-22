@@ -1,7 +1,9 @@
 
+<div align="center">
 An Event-based Dataset for VO/VIO/SLAM in Robotics
-Author: [Guan Weipeng](https://scholar.google.com/citations?hl=zh-CN&user=fUU5Cv0AAAAJ), [Chen Peiyu](https://github.com/cpymaple)
 
+Author: [Guan Weipeng](https://scholar.google.com/citations?hl=zh-CN&user=fUU5Cv0AAAAJ), [Chen Peiyu](https://github.com/cpymaple)
+</div>
 
 
 This is the repositorie that collects the dataset we used in our papers.
