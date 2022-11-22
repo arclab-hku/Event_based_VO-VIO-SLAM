@@ -17,7 +17,7 @@ We hope that we can make some contributions for the development of event-based V
 - [Dataset for Event-based Monocular Visual-inertial Odometry](#dataset-for-event-based-monocular-visual-inertial-odometry)
   - [Acquisition Platform](#acquisition-platform-1)
   - [Data Sequence](#data-sequence-1)
-- [Edited VECtor Dataset](#Edited VECtor Dataset)
+- [Edited VECtor Dataset](#edited-VECtor-Dataset)
   - [Data Sequence](#data-sequence)
 - [Our Works in Event-based Vision](#our-works-in-event-based-vision)
   - [1. IROS2022](#1-iros2022)
