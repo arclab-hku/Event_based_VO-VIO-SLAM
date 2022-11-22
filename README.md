@@ -39,9 +39,6 @@ After installing the driver, the user can directly run the following command:
 ## Data Sequence
 
 <div align="center">
-<a target="_blank"><img src="ESVIO/quadrotor_flight.png" alt="image" width="80%" /></a>
-<p> The Platform for Data Collection </p>
-<div align="center">
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
 --|:--|:--:|--:|--:|--:
