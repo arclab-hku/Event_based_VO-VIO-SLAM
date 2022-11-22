@@ -1,18 +1,9 @@
-%YAML:1.0
 
-#common parameters
 imu_topic: "/davis_left/imu"
 event0_topic: "/davis_left/events"
 event1_topic: "/davis_right/events"
 image0_topic: "/davis_left/image_raw"
 image1_topic: "/davis_right/image_raw"
-# image0_topic: "/record_new_image/left_image_raw"
-# image1_topic: "/record_new_image/right_image_raw"
-
-use_stereo: 1   #参数文件中默认为0
-use_stereo_event: 1 #参数文件中默认为0
-
-output_path: "/home/cpy/Datasets/output"
 
 ###########################################################################################################################
 
@@ -24,33 +15,9 @@ cam1_calib: "cam1_esvio.yaml"
 event0_calib: "event0_esvio.yaml"
 event1_calib: "event1_esvio.yaml"
 
-model_type: PINHOLE
-camera_name: camera
-image_width: 346
-image_height: 260
-distortion_parameters:
-   k1: -0.3794794654640921
-   k2: 0.15393049046270296
-   p1: 0.0011400586965363895
-   p2: -0.0019042695753031854
-projection_parameters:
-   fx: 249.69341447817564
-   fy: 248.41625664694038
-   cx: 176.74240257052816
-   cy: 129.47631010746218
-
-event_width: 346
-event_height: 260
 
 
 ###########################################################################################################################
-# 下面是左相机跟IMU之间的关系
-
-# Extrinsic parameter between IMU and Camera.
-estimate_extrinsic: 1   # 0  Have an accurate extrinsic parameters. We will trust the following imu^R_cam, imu^T_cam, don't change it.
-                        # 1  Have an initial guess about extrinsic parameters. We will optimize around your initial guess.
-                        # 2  Don't know anything about extrinsic parameters. You don't need to give R,T. We will try to calibrate it. Do some rotation movement at beginning.
-#If you choose 0 or 1, you should write down the following matrix.
 
 #Rotation from camera frame to imu frame, imu^R_cam; 
 extrinsicRotation: !!opencv-matrix 
@@ -151,39 +118,6 @@ body_T_event1: !!opencv-matrix # event1 到IMU的变换, 右event到imu
            0.00000000, 0.00000000, 0.00000000, 1.00000000 ]
 
 ###########################################################################################################################
-#time surface map
-ignore_polarity: 0 #true 1 false 0;
-decay_ms: 20 #20
-median_blur_kernel_size: 0 #1 or 0
-feature_filter_threshold: 0.01
-
-#feature traker paprameters
-TS_LK_threshold: 128.0   # the feature detection is based on the time surface
-max_cnt: 150 #250 #300 #150            # max feature number in feature tracking event 
-max_cnt_img: 150                       # max feature number in feature tracking image
-min_dist: 10 #10            # min distance between two event features 
-min_dist_img: 10            # min distance between two image features 
-freq: 15 # ESVIO 15  ESIO 10             # frequence (Hz) of publish tracking result. At least 10Hz for good estimation. If set 0, the frequence will be same as raw image 
-# freq_img: 15           #图像频率
-F_threshold: 1.0        # ransac threshold (pixel)
-show_track: 1           # publish tracking image as topic
-flow_back: 1            # perform forward and backward optical flow to improve feature tracking accuracy
-equalize: 0             # if image is too dark or light, trun on equalize to find enough features
-fisheye: 0              # if using fisheye, trun on it. A circle mask will be loaded to remove edge noisy points
-Num_of_thread: 4        #number of the threads for the big event data process
-
-# line feature
-MIN_length: 20 #5 #10
-Scale_image: 0.5 #0.8 #0.1 #1.0   #The scale of the image that will be used to find the lines. Range (0..1].
-Do_motion_correction: 1 #是否做event的运动补偿
-
-###########################################################################################################################
-#optimization parameters
-max_solver_time: 0.04  # max solver itration time (ms), to guarantee real time
-max_num_iterations: 8   # max solver itrations, to guarantee real time
-keyframe_parallax: 10.0 # keyframe selection threshold (pixel)
-
-###########################################################################################################################
 #imu parameters       The more accurate parameters you provide, the better performance
 # seems 0.12 & 0.02 is a better choice compared to 0.1 & 0.05
 acc_n: 0.2 #4.4793336127290362e-02 #0.1 #0.2  #4.4793336127290362e-02        # accelerometer measurement noise standard deviation. #0.2   0.04
@@ -192,29 +126,3 @@ acc_w: 0.002 #8.0169405615955990e-04 #0.001 #0.002 #8.0169405615955990e-04      
 gyr_w: 4.0e-5 #2.8618210492185127e-05 #2.0e-5 #4.0e-5 #2.8618210492185127e-05       # gyroscope bias random work noise standard deviation.     #4.0e-5
 g_norm: 9.80766     # gravity magnitude
 
-###########################################################################################################################
-
-#unsynchronization parameters
-estimate_td: 1                      # online estimate time offset between camera and imu
-td: 0.00777437    #0.0            # initial value of time offset. unit: s. readed image clock + td = real image clock (IMU clock)
-
-#rolling shutter parameters
-rolling_shutter: 0                  # 0: global shutter camera, 1: rolling shutter camera
-rolling_shutter_tr: 0               # unit: s. rolling shutter read out time per frame (from data sheet).
-
-###########################################################################################################################
-
-#loop closure parameters
-loop_closure: 1                    # start loop closure
-# loop_closure_topic: "/stereo_event_tracker/timesurface_map"   #use the time surface for loop closure
-# loop_closure_topic: "/stereo_event_tracker/event_loop"   #use the event_msg for loop closure
-loop_closure_topic: "/davis_left/image_raw"   #采用image做回环 
-load_previous_pose_graph: 0 #1        # load and reuse previous pose graph; load from 'pose_graph_save_path'
-fast_relocalization: 0             # useful in real-time and large project
-# pose_graph_save_path: "/home/kwanwaipang/evio_result_visualization/outdoor_round3/pose_graph/" # save and load path
-
-#visualization parameters
-save_image: 1                   #  (DEBUG_IMAGE)   save image in pose graph for visualization purpose; you can close this function by setting 0 
-visualize_imu_forward: 1        # output imu forward propogation to achieve low latency and high frequence results
-visualize_camera_size: 0.4      # size of camera marker in RVIZ
-save_loop_match: 0              # 
