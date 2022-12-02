@@ -11,6 +11,10 @@ This is the repositorie that collects the dataset we used in our papers.
 We also conclude our works in the field of event-based vision in robotics.
 We hope that we can make some contributions for the development of event-based VO/VIO/SLAM.
 
+### If you have any suggestions or questions, do not hesitate to propose an issue. 
+
+### And if you find this repositorie is helpful in your research, a simple star or citation of our works should be the best affirmation for us. :blush: 
+
 - [Data Sequence for Event-based Stereo Visual-inertial Odometry](#Data-sequence-for-event-based-stereo-visual-inertial-odometry)
   - [Acquisition Platform](#acquisition-platform)
   - [Driver Installation](#driver-installation)
@@ -234,10 +238,6 @@ outdoor_large_scale2|---|9.34g|---|******|[Rosbag](https://connecthkuhk-my.share
 ~~~
  Coming soon
 ~~~
-
-### If you have any suggestions or questions, do not hesitate to propose an issue. 
-
-### And if you find our dataset helpful in your research, a simple star or citation are the best affirmation for us. :blush: 
 
 
 
