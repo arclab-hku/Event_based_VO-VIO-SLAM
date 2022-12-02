@@ -11,11 +11,11 @@ This is the repositorie that collects the dataset we used in our papers.
 We also conclude our works in the field of event-based vision in robotics.
 We hope that we can make some contributions for the development of event-based VO/VIO/SLAM.
 
-- [Dataset for Event-based Stereo Visual-inertial Odometry](#dataset-for-event-based-stereo-visual-inertial-odometry)
+- [Data Sequence for Event-based Stereo Visual-inertial Odometry](#Data-sequence-for-event-based-stereo-visual-inertial-odometry)
   - [Acquisition Platform](#acquisition-platform)
   - [Driver Installation](#driver-installation)
   - [Data Sequence](#data-sequence)
-- [Dataset for Event-based Monocular Visual-inertial Odometry](#dataset-for-event-based-monocular-visual-inertial-odometry)
+- [Data Sequence for Event-based Monocular Visual-inertial Odometry](#Data-sequence-for-event-based-monocular-visual-inertial-odometry)
   - [Acquisition Platform](#acquisition-platform-1)
   - [Data Sequence](#data-sequence-1)
 - [Our Works in Event-based Vision](#our-works-in-event-based-vision)
@@ -25,7 +25,7 @@ We hope that we can make some contributions for the development of event-based V
 - [Reference](#reference)
 
 
-# Dataset for Event-based Stereo Visual-inertial Odometry
+# Data Sequence for Event-based Stereo Visual-inertial Odometry
 ## Acquisition Platform
 <div align="center">
 <a target="_blank"><img src="ESVIO/quadrotor_flight.jpg" alt="image" width="80%" /></a>
@@ -94,7 +94,7 @@ units-scooter|---|11.6g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/
 
 
 
-# Dataset for Event-based Monocular Visual-inertial Odometry
+# Data Sequence for Event-based Monocular Visual-inertial Odometry
 ## Acquisition Platform
 
 <div align="center">
