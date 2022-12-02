@@ -198,7 +198,7 @@ outdoor_large_scale2|---|9.34g|---|******|[Rosbag](https://connecthkuhk-my.share
   title={Monocular Event Visual Inertial Odometry based on Event-corner using Sliding Windows Graph-based Optimization},
   author={Guan, Weipeng and Lu, Peng},
   booktitle={2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-  pages={******},
+  pages={2438-2445},
   year={2022},
   organization={IEEE}
 }
