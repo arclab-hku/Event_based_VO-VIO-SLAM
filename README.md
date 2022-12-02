@@ -8,6 +8,7 @@
 
 
 This is the repositorie that collects the dataset we used in our papers.
+We also conclude our works in the field of event-based vision in robotics.
 We hope that we can make some contributions for the development of event-based VO/VIO/SLAM.
 
 - [Dataset for Event-based Stereo Visual-inertial Odometry](#dataset-for-event-based-stereo-visual-inertial-odometry)
