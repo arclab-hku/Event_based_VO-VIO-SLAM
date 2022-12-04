@@ -240,6 +240,11 @@ outdoor_large_scale2|---|9.34g|---|******|[Rosbag](https://connecthkuhk-my.share
 * PDF can be downloaded in [here]()
 * Code is available in [here](https://github.com/arclab-hku/ESVIO)
 
+<div align="center">
+<a href="https://www.bilibili.com/video/BV1i24y1R7KV/?spm_id_from=333.999.list.card_archive.click&vd_source=a88e426798937812a8ffc1a9be5a3cb7" target="_blank"><img src="ESVIO/ESVIO_hdr_flight _gif.gif" alt="video" width="100%" /></a>
+<p> Onboard Quadrotor Flight on HDR Scence using Our ESVIO (click the image to open) </p>
+</div>
+
 ~~~
  Coming soon
 ~~~
