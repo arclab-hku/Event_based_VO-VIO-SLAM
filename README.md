@@ -238,8 +238,8 @@ outdoor_large_scale2|---|9.34g|---|******|[Rosbag](https://connecthkuhk-my.share
 
 ## 3. ESVIO
 * PDF can be downloaded in [here]()
-* Code is available in [here](https://github.com/arclab-hku/ESVIO)
 * More demonstrations can be seen in [here]()
+* Code is available in [here](https://github.com/arclab-hku/ESVIO)
 
 <div align="center">
 <a href="https://b23.tv/wcZiKzG" target="_blank"><img src="ESVIO/ESVIO_hdr_flight _gif.gif" alt="video" width="100%" /></a>
