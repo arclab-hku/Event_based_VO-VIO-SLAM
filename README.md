@@ -101,6 +101,11 @@ units-scooter|---|11.6g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/
 
 
 # Data Sequence for Event-based Monocular Visual-inertial Odometry
+You can use these data sequence to test your Monocular EVIO in different resolution event cameras.
+The DAVIS346 (346*260) and DVXplorer (640*480) are attached together (shown in Figure) for facilitating comparison. 
+All the sequences are recorded in HDR scenarios with very low illumination or strong illumination changes through switching the strobe flash on and off.
+We also provide indoor and outdoor large-scale data sequence.
+
 ## Acquisition Platform
 
 <div align="center">
@@ -171,7 +176,8 @@ outdoor_round3|---|37.26g|---|******|[Rosbag](https://drive.google.com/file/d/1_
 
 </div>
 
-On quadrotor platform (PL-EVIO):
+On quadrotor platform (sample sequence in our PL-EVIO work):
+We also provide the data squences that are collected in the flighting quadrotor platform using DAVIS346.
 
 <div align="center">
 <a target="_blank"><img src="PL-EVIO/sensor_setup.jpg" alt="image" width="100%" /></a>
