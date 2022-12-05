@@ -177,6 +177,7 @@ outdoor_round3|---|37.26g|---|******|[Rosbag](https://drive.google.com/file/d/1_
 </div>
 
 On quadrotor platform (sample sequence in our PL-EVIO work):
+
 We also provide the data squences that are collected in the flighting quadrotor platform using DAVIS346.
 
 <div align="center">
