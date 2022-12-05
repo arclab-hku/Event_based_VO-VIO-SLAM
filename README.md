@@ -238,12 +238,11 @@ outdoor_large_scale2|---|9.34g|---|******|[Rosbag](https://connecthkuhk-my.share
 
 ## 3. ESVIO
 * PDF can be downloaded in [here]()
-* More demonstrations can be seen in [here]()
 * Code is available in [here](https://github.com/arclab-hku/ESVIO)
 
 <div align="center">
 <a href="https://b23.tv/wcZiKzG" target="_blank"><img src="ESVIO/ESVIO_hdr_flight _gif.gif" alt="video" width="100%" /></a>
-<p> Onboard Quadrotor Flight using Our ESVIO as State Estimator </p>
+<p> Onboard Quadrotor Flight using Our ESVIO as State Estimator (click the image to open)</p>
 </div>
 
 ~~~
