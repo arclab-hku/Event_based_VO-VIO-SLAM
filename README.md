@@ -56,7 +56,7 @@ HKU datasets:
 <div align="center">
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
---|:--|:--:|--:|--:|--:
+:--|:--:|:--:|:--:|:--:|:--:
 hku_agg_translation|---|3.63g|---|aggressive|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EfM2ytBNx7dIiIX4QkMQVGIBzVtMHEf4pl4EWA81iQZKEw?e=T6RA57)
 hku_agg_rotation|---|3.70g|---|aggressive|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/ER6-1BaiPJVOjlyG0Pau-vAB3oJ8eHK7hTVb2GmOUTjMpg?e=SQdYxH)
 hku_agg_flip|---|3.71g|---|aggressive|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EVPphYktymhEh4xF6Bp-S1EBdmHVj-YlBeDK1iu4_CakMg?e=6LuKuv)
@@ -75,7 +75,7 @@ We modified the frequency of the event_left and event_right (60Hz) and the messa
 <div align="center">
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
---|:--|:--:|--:|--:|--:
+:--|:--:|:--:|:--:|:--:|:--:
 board-slow|---|3.18g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EQcIz-Kf18pMl301YDr8KhQBfeziKZlb1zRBMWZBIezKLg?e=GTWE3t)
 corner-slow|---|3.51g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/ET0mYH9gDkVHuBmveuxPa8MB__oW7ti6H4a_JxduDglICw?e=TNMkyl)
 robot-normal|---|3.39g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EUwmAXpA39hIvMTRIJvcZhQBBrj95f6E-MhKkVuvovqadw?e=mLFIcb)
@@ -122,7 +122,7 @@ With VICON as ground truth:
 <div align="center">
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
---|:--|:--:|--:|--:|--:
+:--|:--:|:--:|:--:|:--:|:--:
 vicon_aggressive_hdr|2021-12|23.0g|---|HDR, Aggressive Motion|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/wpguan_connect_hku_hk/ESxBPJlRT4FApeMZgwvAo4YBuAhoOT5tcb_A9dAvPSEeeg?e=CRDVrD)
 vicon_dark1|2021-12|10.5g|---|HDR|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/wpguan_connect_hku_hk/EaY7bfm8ZytGvlFP3v1TNHgBXMubjQvjiuoiZVqqEmA2jA?e=OyZyyU)
 vicon_dark2|2021-12|16.6g|---|HDR|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/wpguan_connect_hku_hk/Ed1hZLF4mOJJlz8nuk92evYByN9PkbrJE_xS8yuKy14ZUg?e=gYqWbg)
@@ -142,7 +142,7 @@ indoor (no ground truth):
 <div align="center">
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
-:--:|:--:|:--:|:--:|:--:|:--:
+:--|:--:|:--:|:--:|:--:|:--:
 indoor_aggressive_hdr_1|2021-12|16.62g|---|HDR, Aggressive Motion|[Rosbag](https://drive.google.com/file/d/1dG7wVXdXIdvE-i1PGtUx5OcVMGyTeUkF/view?usp=share_link)
 indoor_aggressive_hdr_2|2021-12|15.66g|---|HDR, Aggressive Motion|[Rosbag](https://drive.google.com/file/d/15I709SGwTDspI6P89jxrm3gLenlSVInW/view?usp=sharing)
 indoor_aggressive_test_1|2021-12|17.94g|---|Aggressive Motion|[Rosbag](https://drive.google.com/file/d/1Ch-OruuoJXHmrUE8Q-k_IzWWPkd_QTL-/view?usp=sharing)
@@ -161,7 +161,7 @@ Outdoor (no ground truth):
 <div align="center">
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
---|:--|:--:|--:|--:|--:
+:--|:--:|:--:|:--:|:--:|:--:
 indoor_outdoor_1|2021-12|20.87g|---|******|[Rosbag](https://drive.google.com/file/d/1xUJOpk8o2g56yISKmgySs0C0qQGA3QkM/view?usp=share_link)
 indoor_outdoor_2|2021-12|39.5g|---|******|[Rosbag](https://drive.google.com/file/d/1wrwE4zPDtmW5I0Rs5dH8RlCLKxobsIyA/view?usp=share_link)
 outdoor_1|2021-12|5.52g|---|******|[Rosbag](https://drive.google.com/file/d/1F82KOmjODJCDOvERApJiChYgkwtlEHo4/view?usp=share_link)
@@ -190,7 +190,7 @@ We also provide the data squences that are collected in the flighting quadrotor 
 <div align="center">
 
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
---|:--|:--:|--:|--:|--:
+:--|:--:|:--:|:--:|:--:|:--:
 Vicon_dvs_fix_eight|2022-08|1.08g|---|quadrotor flighting|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/wpguan_connect_hku_hk/EeObT20UhbdDpemA3ZFwn7oB0UmbAmgqVObiQYwlZiBQCQ?e=j5H4ZU)
 Vicon_dvs_varing_eight|2022-08|1.48g|---|quadrotor flighting|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/wpguan_connect_hku_hk/EWZPnY_Jr1lBiS2uglBysOIBEKdnHyyIGFqgg_oiVXT0BQ?e=UgrBCm)
 outdoor_large_scale1|2022-08|9.38g|16 minutes|******|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EY7bTDAc6T5KkRgSB_VhhqYBnVdBYE80dJHwil7sVAeLMw?e=SN4PVU)
