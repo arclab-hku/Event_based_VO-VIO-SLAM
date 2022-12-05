@@ -242,7 +242,7 @@ outdoor_large_scale2|---|9.34g|---|******|[Rosbag](https://connecthkuhk-my.share
 
 <div align="center">
 <a href="https://b23.tv/wcZiKzG" target="_blank"><img src="ESVIO/ESVIO_hdr_flight _gif.gif" alt="video" width="100%" /></a>
-<p> Onboard Quadrotor Flight using Our ESVIO as State Estimator (click the image to open)</p>
+<p> Onboard Quadrotor Flight using Our ESVIO as State Estimator (click the gif to open)</p>
 </div>
 
 ~~~
