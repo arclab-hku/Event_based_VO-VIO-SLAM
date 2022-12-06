@@ -52,7 +52,7 @@ Note that this might cause the degradation of perception for both the event and 
 We thanks the [rpg_dvs_ros](https://github.com/uzh-rpg/rpg_dvs_ros) for intructions of event camera driver.
 <!-- We modified the source code of the [rpg_dvs_ros](https://github.com/uzh-rpg/rpg_dvs_ros) with consistent image size. -->
 We add the function of the hardware synchronized for stereo setup, the source code is available in [link](双目驱动源码路径).
-After installing the driver, the user can directly run the following command:
+After installing the driver, the user can directly run the following command to run your stereo event camera:
 ~~~
 
 ~~~
