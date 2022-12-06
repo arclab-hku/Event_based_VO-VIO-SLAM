@@ -35,9 +35,10 @@ We hope that we can make some contributions for the development of event-based v
 This dataset contains stereo event data at 60HZ and stereo image frames at 30Hz with resolution in 346 × 260, as well as IMU data at 1000Hz. 
 Timestamps between all sensors are synchronized in hardware. 
 We also provide ground truth poses from a motion capture system VICON at 50Hz during the beginning and end of each sequence, which can be used for trajectory evaluation.
-The data sequences feature aggressive motion and HDR.
 To alleviate disturbance from the motion capture system’s infrared light on the event camera, we add an infrared filter on the lens surface of the DAVIS346 camera.
 Note that this might cause the degradation of perception for both the event and image camera during the evaluation, but it can also further increase the difficulty of our dataset for the only image-based method.
+
+** This is a very challenge dataset for event-based VO/VIO, feature aggressive motion and HDR. EVO, ESVO, Ultimate SLAM are failed in most of the sequences**.
 
 ## Acquisition Platform
 <div align="center">
