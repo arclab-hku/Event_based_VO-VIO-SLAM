@@ -49,8 +49,8 @@ Note that this might cause the degradation of perception for both the event and 
 
 ## Driver Installation
 We thanks the [rpg_dvs_ros](https://github.com/uzh-rpg/rpg_dvs_ros) for intructions of event camera driver.
-However, it still has some problems.
-We modified the source code of the [rpg_dvs_ros](https://github.com/uzh-rpg/rpg_dvs_ros) with consistent image size, and add the function of the hardware synchronized for stereo setup, the source code is available in [link](双目驱动源码).
+<!-- We modified the source code of the [rpg_dvs_ros](https://github.com/uzh-rpg/rpg_dvs_ros) with consistent image size. -->
+We add the function of the hardware synchronized for stereo setup, the source code is available in [link](双目驱动源码路径).
 After installing the driver, the user can directly run the following command:
 ~~~
 
@@ -58,7 +58,7 @@ After installing the driver, the user can directly run the following command:
 
 ## Data Sequence
 
-HKU datasets:
+In our VICON room:
 
 <div align="center">
 
@@ -74,6 +74,13 @@ hku_hdr_tran_rota|---|3.37g|---|aggressive & hdr|[Rosbag](https://connecthkuhk-m
 hku_hdr_agg|---|4.43g|---|aggressive & hdr|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EZnpX0eqUc5MsR_mkNi7IEsBbLOI_GM9NRZebZvRQZHYEQ?e=qDGvN5)
 hku_dark_normal|---|4.24g|---|dark & hdr|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/Edhb8MveJlVEhnltVt4vBIsB2kJu3K4t8dW1MTLgsJ5gLQ?e=wqwzNs)
 
+</div>
+
+In HKU campus (outdoor without ground truth):
+
+Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
+:--|:--:|:--:|:--:|:--:|:--:
+hku_outdoor_large-scale|2022-11|**g|**minutes|Indoor+outdoor; large-scale|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EfM2ytBNx7dIiIX4QkMQVGIBzVtMHEf4pl4EWA81iQZKEw?e=T6RA57)
 </div>
 
 Modified VECtor Dataset:
