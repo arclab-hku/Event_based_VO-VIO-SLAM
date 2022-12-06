@@ -289,6 +289,6 @@ outdoor_large_scale2|2022-08|9.34g|16 minutes|******|[Rosbag](https://connecthku
 * [The course: Event-based Robot Vision, by Prof. Guillermo Gallego](https://www.youtube.com/playlist?list=PL03Gm3nZjVgUFYUh3v5x8jVonjrGfcal8)
 * The survey when I first meet "Event camera" can be seen in [Blog](https://blog.csdn.net/gwplovekimi/article/details/115908307?spm=1001.2014.3001.5502)
 * Useful tool:
-  -https://github.com/TimoStoff/event_utils
-  -https://github.com/tub-rip/events_viz
+   - https://github.com/TimoStoff/event_utils
+   - https://github.com/tub-rip/events_viz
 
