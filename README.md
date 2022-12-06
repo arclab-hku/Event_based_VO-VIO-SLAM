@@ -79,9 +79,11 @@ hku_dark_normal|---|4.24g|---|dark & hdr|[Rosbag](https://connecthkuhk-my.sharep
 In HKU campus (outdoor without ground truth):
 
 <div align="center">
+  
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
 :--|:--:|:--:|:--:|:--:|:--:
 hku_outdoor_large-scale|2022-11|**g|**minutes|Indoor+outdoor; large-scale|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EfM2ytBNx7dIiIX4QkMQVGIBzVtMHEf4pl4EWA81iQZKEw?e=T6RA57)
+  
 </div>
 
 Modified VECtor Dataset:
