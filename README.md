@@ -76,13 +76,16 @@ hku_dark_normal|---|4.24g|---|dark & hdr|[Rosbag](https://connecthkuhk-my.sharep
 
 </div>
 
-In HKU campus (outdoor without ground truth):
+Outdoor large-scale (outdoor without ground truth):
+
+The path length of this data sequence is about 1866m, which covers the place around 310m in length, 170m in width, and 55m in height changes, from Loke Yew Hall to the Eliot Hall and back to the Loke Yew Hall in HKU campus.
+That would be a long and nice travel for your visiting HKU :heart_eyes: Try it！
 
 <div align="center">
   
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
 :--|:--:|:--:|:--:|:--:|:--:
-hku_outdoor_large-scale|2022-11|**g|**minutes|Indoor+outdoor; large-scale|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EfM2ytBNx7dIiIX4QkMQVGIBzVtMHEf4pl4EWA81iQZKEw?e=T6RA57)
+hku_outdoor_large-scale|2022-11|**g|34.9minutes|Indoor+outdoor; large-scale|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EfM2ytBNx7dIiIX4QkMQVGIBzVtMHEf4pl4EWA81iQZKEw?e=T6RA57)
   
 </div>
 
