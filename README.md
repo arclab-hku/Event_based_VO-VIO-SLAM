@@ -32,6 +32,13 @@ We hope that we can make some contributions for the development of event-based v
 
 
 # Data Sequence for Event-based Stereo Visual-inertial Odometry
+This dataset contains stereo event data at 60HZ and stereo image frames at 30Hz with resolution in 346 × 260, as well as IMU data at 1000Hz. 
+Timestamps between all sensors are synchronized in hardware. 
+We also provide ground truth poses from a motion capture system VICON at 50Hz during the beginning and end of each sequence, which can be used for trajectory evaluation.
+The data sequences feature aggressive motion and HDR.
+To alleviate disturbance from the motion capture system’s infrared light on the event camera, we add an infrared filter on the lens surface of the DAVIS346 camera.
+Note that this might cause the degradation of perception for both the event and image camera during the evaluation, but it can also further increase the difficulty of our dataset for the only image-based method.
+
 ## Acquisition Platform
 <div align="center">
 <a target="_blank"><img src="ESVIO/quadrotor_flight.jpg" alt="image" width="80%" /></a>
@@ -101,7 +108,7 @@ units-scooter|---|11.6g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/
 
 
 # Data Sequence for Event-based Monocular Visual-inertial Odometry
-You can use these data sequence to test your Monocular EVIO in different resolution event cameras.
+You can use these data sequence to test your monocular EVIO in different resolution event cameras.
 The DAVIS346 (346x260) and DVXplorer (640x480) are attached together (shown in Figure) for facilitating comparison. 
 All the sequences are recorded in HDR scenarios with very low illumination or strong illumination changes through switching the strobe flash on and off.
 We also provide indoor and outdoor large-scale data sequence.
