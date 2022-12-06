@@ -86,7 +86,7 @@ That would be a nice travel for your visiting the HKU :heart_eyes: Try it！
   
 Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
 :--|:--:|:--:|:--:|:--:|:--:
-hku_outdoor_large-scale|2022-11|**g|34.9minutes|Indoor+outdoor; large-scale|[Rosbag](******)
+hku_outdoor_large-scale|2022-11|67.4g|34.9minutes|Indoor+outdoor; large-scale|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EaqqkI6DvapGsJ0PiYtYSXYBdgUM4szEKdozxklqfBDRcg?e=rHaYXr)
   
 </div>
 
