@@ -284,6 +284,7 @@ outdoor_large_scale2|2022-08|9.34g|16 minutes|******|[Rosbag](https://connecthku
 * More demo of event-based VO/VIO/SLAM can be seen in our bilibili [Guan Weipeng](https://space.bilibili.com/499377825?spm_id_from=333.1007.0.0) & [Chen Peiyu](https://space.bilibili.com/279299582/?spm_id_from=333.999.0.0)
 * Our survey on event-based 3D reconstruction [Link](https://www.bilibili.com/video/BV1mm4y1c7Rp/?spm_id_from=333.999.0.0)
 * [Event Camera Calibration using dv-gui](https://blog.csdn.net/gwplovekimi/article/details/121637241?spm=1001.2014.3001.5501)
+* [Event Camera Simulation in Gazebo](https://blog.csdn.net/gwplovekimi/article/details/120347034?spm=1001.2014.3001.5502)
 * The DAVIS comprises an image camera and event camera on the same pixel array, thus calibration can be done using standard image-based methods, such as [Kalibr](https://github.com/ethz-asl/kalibr)
 * [Event-based Vision Resources](https://github.com/uzh-rpg/event-based_vision_resources)
 * [The course: Event-based Robot Vision, by Prof. Guillermo Gallego](https://www.youtube.com/playlist?list=PL03Gm3nZjVgUFYUh3v5x8jVonjrGfcal8)
@@ -291,5 +292,4 @@ outdoor_large_scale2|2022-08|9.34g|16 minutes|******|[Rosbag](https://connecthku
 * Useful tool:
    - https://github.com/TimoStoff/event_utils
    - https://github.com/tub-rip/events_viz
-   - using Gazebo to simulate the Event Camera ([link](https://blog.csdn.net/gwplovekimi/article/details/120347034?spm=1001.2014.3001.5502))
 
