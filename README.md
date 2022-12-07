@@ -291,4 +291,5 @@ outdoor_large_scale2|2022-08|9.34g|16 minutes|******|[Rosbag](https://connecthku
 * Useful tool:
    - https://github.com/TimoStoff/event_utils
    - https://github.com/tub-rip/events_viz
+   - using Gazebo to simulate the Event Camera ([link](https://blog.csdn.net/gwplovekimi/article/details/120347034?spm=1001.2014.3001.5502))
 
