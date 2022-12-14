@@ -272,7 +272,7 @@ outdoor_large_scale2|2022-08|9.34g|16 minutes|******|[Rosbag](https://connecthku
 * Code is available in [here](https://github.com/arclab-hku/ESVIO)
 
 <div align="center">
-<a href="https://b23.tv/wcZiKzG" target="_blank"><img src="ESVIO/ESVIO_hdr_flight _gif.gif" alt="video" width="100%" /></a>
+<a href="https://www.bilibili.com/video/BV1ve4y1M7v4/?share_source=copy_web&vd_source=a722388e07ea53f32d00aed0a0117f3c" target="_blank"><img src="ESVIO/ESVIO_hdr_flight _gif.gif" alt="video" width="100%" /></a>
 <p> Onboard Quadrotor Flight using Our ESVIO as State Estimator (click the gif to open)</p>
 </div>
 
