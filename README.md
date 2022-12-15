@@ -53,10 +53,10 @@ We hope that our dataset can help to push the boundary of future research on ste
 ## Driver Installation
 We thanks the [rpg_dvs_ros](https://github.com/uzh-rpg/rpg_dvs_ros) for intructions of event camera driver.
 <!-- We modified the source code of the [rpg_dvs_ros](https://github.com/uzh-rpg/rpg_dvs_ros) with consistent image size. -->
-We add the function of the hardware synchronized for stereo setup, the source code is available in [link](双目驱动源码路径).
+We add the function of the hardware synchronized for stereo setup, the source code is available in [link](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/driver%20code/stereo_davis_open.launch).
 After installing the driver, the user can directly run the following command to run your stereo event camera:
 ~~~
-
+roslaunch stereo_davis_open.launch
 ~~~
 
 ## Data Sequence
