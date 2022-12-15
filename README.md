@@ -223,7 +223,8 @@ outdoor_large_scale2|2022-08|9.34g|16 minutes|******|[Rosbag](https://connecthku
 </div>
 
 # Our Works in Event-based Vision
-## 1. IROS2022 
+## 1. IROS2022
+This work proposed pruely event-based visual inertial odometry (VIO).
 * PDF can be downloaded in [here](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/IROS2022/Monocular%20Event%20Visual%20Inertial%20Odometry%20Based%20on%20Event-Corner%20Using%20Sliding%20Windows%20Graph-Based%20Optimization.pdf)
 * Code is available in [here](https://github.com/arclab-hku/EVIO/tree/evio_mono_noetic)
 
@@ -244,6 +245,7 @@ outdoor_large_scale2|2022-08|9.34g|16 minutes|******|[Rosbag](https://connecthku
 ~~~
 
 ## 2. PL-EVIO 
+This work proposed the event-based VIO framework with point and line features, including: pruely event (PL-EIO) and event+image (PL-EVIO).
 * PDF can be downloaded in [here]()
 * An extended version of our PL-EVIO: realizing high-accurate 6-DoF pose tracking and 3D semi-dense mapping (monocular event only) can be seen in [Link](https://www.bilibili.com/video/BV1924y1y7pn/?spm_id_from=333.999.0.0&vd_source=a88e426798937812a8ffc1a9be5a3cb7)
 * Code is available in [here](https://github.com/arclab-hku/EVIO/tree/PL-EIO)
@@ -268,6 +270,7 @@ outdoor_large_scale2|2022-08|9.34g|16 minutes|******|[Rosbag](https://connecthku
 ~~~
 
 ## 3. ESVIO
+This work proposed the first stereo event-based visual inertial odometry framework.
 * PDF can be downloaded in [here]()
 * Code is available in [here](https://github.com/arclab-hku/ESVIO)
 
