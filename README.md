@@ -59,6 +59,9 @@ After installing the driver, the user can directly run the following command to 
 roslaunch stereo_davis_open.launch
 ~~~
 
+Please note we need to adjust the lens of the camera, such as the focal length, aperture. For the dvxplorer, the sensitive of event generation '''bias_sensitivity'''
+[M2DGR](https://github.com/SJTU-ViSYS/M2DGR)
+
 ## Data Sequence
 
 In our VICON room:
