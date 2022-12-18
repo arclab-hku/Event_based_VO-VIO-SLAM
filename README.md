@@ -62,6 +62,7 @@ roslaunch stereo_davis_open.launch
 Tips: Users need to adjust the lens of the camera, such as the focal length, aperture.
 Filters are needed for avoiding the interfere from infrared light under the motion capture system.
 For the dvxplorer, the sensitive of event generation should be set, e.g. `bias_sensitivity`.
+Users can visualize the event streams to see whether it is similiar to the edge map of the testing environments, and then fine-tune it.
 Otherwise, the event sensor would output noise and is useless just like [M2DGR](https://github.com/SJTU-ViSYS/M2DGR).
 
 ## Data Sequence
