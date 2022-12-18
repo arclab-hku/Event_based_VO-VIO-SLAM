@@ -1,0 +1,155 @@
+From 7cc9af7909847f2335ffc9135eef6415865c2556 Mon Sep 17 00:00:00 2001
+From: Martin Pecka <peckama2@fel.cvut.cz>
+Date: Mon, 26 Sep 2016 16:07:49 +0200
+Subject: [PATCH] Added the 0.5 suffix to the shared library name.
+
+---
+ CMakeLists.txt      | 28 ++++++++++++++--------------
+ test/CMakeLists.txt |  2 +-
+ util/CMakeLists.txt |  6 +++---
+ yaml-cpp.pc.cmake   |  4 ++--
+ 4 files changed, 20 insertions(+), 20 deletions(-)
+
+diff --git CMakeLists.txt CMakeLists.txt
+index d4a8e29..cfdb08e 100644
+--- CMakeLists.txt
++++ CMakeLists.txt
+@@ -279,19 +279,19 @@ set(_INSTALL_DESTINATIONS
+ ###
+ ### Library
+ ###
+-add_library(yaml-cpp ${library_sources})
+-set_target_properties(yaml-cpp PROPERTIES
++add_library(yaml-cpp0.5 ${library_sources})
++set_target_properties(yaml-cpp0.5 PROPERTIES
+   COMPILE_FLAGS "${yaml_c_flags} ${yaml_cxx_flags}"
+ )
+ 
+-set_target_properties(yaml-cpp PROPERTIES
++set_target_properties(yaml-cpp0.5 PROPERTIES
+ 	VERSION "${YAML_CPP_VERSION}"
+ 	SOVERSION "${YAML_CPP_VERSION_MAJOR}.${YAML_CPP_VERSION_MINOR}"
+-	PROJECT_LABEL "yaml-cpp ${LABEL_SUFFIX}"
++	PROJECT_LABEL "yaml-cpp0.5 ${LABEL_SUFFIX}"
+ )
+ 
+ if(IPHONE)
+-	set_target_properties(yaml-cpp PROPERTIES
++	set_target_properties(yaml-cpp0.5 PROPERTIES
+ 		XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET "3.0"
+ 	)
+ endif()
+@@ -299,7 +299,7 @@ endif()
+ if(MSVC)
+ 	if(NOT BUILD_SHARED_LIBS)
+ 		# correct library names
+-		set_target_properties(yaml-cpp PROPERTIES
++		set_target_properties(yaml-cpp0.5 PROPERTIES
+ 			DEBUG_POSTFIX "${LIB_TARGET_SUFFIX}d"
+ 			RELEASE_POSTFIX "${LIB_TARGET_SUFFIX}"
+ 			MINSIZEREL_POSTFIX "${LIB_TARGET_SUFFIX}"
+@@ -308,7 +308,7 @@ if(MSVC)
+ 	endif()
+ endif()
+ 
+-install(TARGETS yaml-cpp EXPORT yaml-cpp-targets ${_INSTALL_DESTINATIONS})
++install(TARGETS yaml-cpp0.5 EXPORT yaml-cpp0.5-targets ${_INSTALL_DESTINATIONS})
+ install(
+ 	DIRECTORY ${header_directory}
+ 	DESTINATION ${INCLUDE_INSTALL_DIR}
+@@ -316,14 +316,14 @@ install(
+ )
+ 
+ export(
+-    TARGETS yaml-cpp
+-    FILE "${PROJECT_BINARY_DIR}/yaml-cpp-targets.cmake")
+-export(PACKAGE yaml-cpp)
+-set(EXPORT_TARGETS yaml-cpp CACHE INTERNAL "export targets")
++    TARGETS yaml-cpp0.5
++    FILE "${PROJECT_BINARY_DIR}/yaml-cpp0.5-targets.cmake")
++export(PACKAGE yaml-cpp0.5)
++set(EXPORT_TARGETS yaml-cpp0.5 CACHE INTERNAL "export targets")
+ 
+ set(CONFIG_INCLUDE_DIRS "${YAML_CPP_SOURCE_DIR}/include")
+ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/yaml-cpp-config.cmake.in
+-	"${PROJECT_BINARY_DIR}/yaml-cpp-config.cmake" @ONLY)
++	"${PROJECT_BINARY_DIR}/yaml-cpp0.5-config.cmake" @ONLY)
+ 
+ if(WIN32 AND NOT CYGWIN)
+ 	set(INSTALL_CMAKE_DIR ${CMAKE_INSTALL_PREFIX}/CMake)
+@@ -334,19 +334,19 @@ endif()
+ file(RELATIVE_PATH REL_INCLUDE_DIR "${INSTALL_CMAKE_DIR}" "${INCLUDE_INSTALL_ROOT_DIR}")
+ set(CONFIG_INCLUDE_DIRS "\${YAML_CPP_CMAKE_DIR}/${REL_INCLUDE_DIR}")
+ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/yaml-cpp-config.cmake.in
+-	"${PROJECT_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/yaml-cpp-config.cmake" @ONLY)
++	"${PROJECT_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/yaml-cpp0.5-config.cmake" @ONLY)
+ 
+ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/yaml-cpp-config-version.cmake.in
+-	"${PROJECT_BINARY_DIR}/yaml-cpp-config-version.cmake" @ONLY)
++	"${PROJECT_BINARY_DIR}/yaml-cpp0.5-config-version.cmake" @ONLY)
+ 
+ install(FILES
+-	"${PROJECT_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/yaml-cpp-config.cmake"
+-	"${PROJECT_BINARY_DIR}/yaml-cpp-config-version.cmake"
++	"${PROJECT_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/yaml-cpp0.5-config.cmake"
++	"${PROJECT_BINARY_DIR}/yaml-cpp0.5-config-version.cmake"
+ 	DESTINATION "${INSTALL_CMAKE_DIR}" COMPONENT dev)
+-install(EXPORT yaml-cpp-targets DESTINATION ${INSTALL_CMAKE_DIR})
++install(EXPORT yaml-cpp0.5-targets DESTINATION ${INSTALL_CMAKE_DIR})
+ 
+ if(UNIX)
+-	set(PC_FILE ${CMAKE_BINARY_DIR}/yaml-cpp.pc)
++	set(PC_FILE ${CMAKE_BINARY_DIR}/yaml-cpp0.5.pc)
+ 	configure_file("yaml-cpp.pc.cmake" ${PC_FILE} @ONLY)
+ 	install(FILES ${PC_FILE} DESTINATION ${LIB_INSTALL_DIR}/pkgconfig)
+ endif()
+diff --git test/CMakeLists.txt test/CMakeLists.txt
+index 61f1f7f..ce67c54 100644
+--- test/CMakeLists.txt
++++ test/CMakeLists.txt
+@@ -35,6 +35,6 @@ add_executable(run-tests
+ set_target_properties(run-tests PROPERTIES
+   COMPILE_FLAGS "${yaml_c_flags} ${yaml_cxx_flags} ${yaml_test_flags}"
+ )
+-target_link_libraries(run-tests yaml-cpp gmock)
++target_link_libraries(run-tests yaml-cpp0.5 gmock)
+ 
+ add_test(yaml-test ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/run-tests)
+diff --git util/CMakeLists.txt util/CMakeLists.txt
+index 8a69631..cdad385 100644
+--- util/CMakeLists.txt
++++ util/CMakeLists.txt
+@@ -1,11 +1,11 @@
+ add_sources(parse.cpp)
+ add_executable(parse parse.cpp)
+-target_link_libraries(parse yaml-cpp)
++target_link_libraries(parse yaml-cpp0.5)
+ set_target_properties(parse PROPERTIES COMPILE_FLAGS "-std=c++11")
+ 
+ add_sources(sandbox.cpp)
+ add_executable(sandbox sandbox.cpp)
+-target_link_libraries(sandbox yaml-cpp)
++target_link_libraries(sandbox yaml-cpp0.5)
+ set_target_properties(sandbox PROPERTIES COMPILE_FLAGS "-std=c++11")
+ 
+ add_sources(read.cpp)
+ add_executable(read read.cpp)
+-target_link_libraries(read yaml-cpp)
++target_link_libraries(read yaml-cpp0.5)
+ set_target_properties(read PROPERTIES COMPILE_FLAGS "-std=c++11")
+diff --git yaml-cpp.pc.cmake yaml-cpp.pc.cmake
+index 04d343f..48c8006 100644
+--- yaml-cpp.pc.cmake
++++ yaml-cpp.pc.cmake
+@@ -1,9 +1,9 @@ exec_prefix=@CMAKE_INSTALL_PREFIX@
+ libdir=@LIB_INSTALL_DIR@
+ includedir=@INCLUDE_INSTALL_ROOT_DIR@
+ 
+-Name: Yaml-cpp
++Name: Yaml-cpp0.5
+ Description: A YAML parser and emitter for C++
+ Version: @YAML_CPP_VERSION@
+ Requires:
+-Libs: -L${libdir} -lyaml-cpp
++Libs: -L${libdir} -lyaml-cpp0.5
+ Cflags: -I${includedir}

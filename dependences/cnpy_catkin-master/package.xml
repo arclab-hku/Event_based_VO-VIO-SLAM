@@ -1,0 +1,11 @@
+<package>
+  <name>cnpy_catkin</name>
+  <version>0.0.0</version>
+  <description>cnpy_catkin</description>
+  <maintainer email="rebecq@ifi.uzh.ch">Henri Rebecq</maintainer>
+
+  <license>See package</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>catkin_simple</buildtool_depend>
+</package>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>cmake_external_project_catkin</name>
+  <description>
+    CMake scripts for simplifying the usage of cmake's ExternalProject together with catkin workspaces.
+  </description>
+  <maintainer email="manuel.werlberger@WyssZurich.ch">Manuel Werlberger</maintainer>
+  <version>1.0.0</version>
+  <license>BSD 2-clause</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>catkin_simple</buildtool_depend>
+</package>

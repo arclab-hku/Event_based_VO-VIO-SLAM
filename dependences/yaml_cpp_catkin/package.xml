@@ -1,0 +1,11 @@
+<package>
+  <name>yaml_cpp_catkin</name>
+  <version>0.5.90</version>
+  <description>yaml_cpp_catkin</description>
+  <maintainer email="slynen@ethz.ch">Simon Lynen</maintainer>
+
+  <license>See package</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>catkin_simple</buildtool_depend>
+</package>

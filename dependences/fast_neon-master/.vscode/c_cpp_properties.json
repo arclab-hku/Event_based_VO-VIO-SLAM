@@ -1,0 +1,49 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/kwanwaipang/catkin_ws_dvs/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/EVIO/camera_model/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/EVIO/camera_models/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/rpg_dvs_ros/davis_ros_driver/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/rpg_dvs_ros/dvs_renderer/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/rpg_dvs_ros/dvxplorer_ros_driver/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/eigen_checks/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/fast_neon-master/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/rpg_ultimate_slam_open-main/imp/imp_bridge_opencv/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/rpg_ultimate_slam_open-main/imp/imp_bridge_ros/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/rpg_ultimate_slam_open-main/imp/imp_core/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/rpg_ultimate_slam_open-main/imp/imp_correspondence/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/rpg_ultimate_slam_open-main/imp/imp_features/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/rpg_ultimate_slam_open-main/imp/imp_imgproc/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/line_tracking_with_event_cameras-main/line_event_tracker/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/line_tracking_with_event_cameras-main/line_event_tracker_visualizer/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/minkindr/minkindr/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/opengv-master/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/rpg_ultimate_slam_open-main/common/ze_cameras/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/rpg_ultimate_slam_open-main/applications/ze_ceres_backend/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/rpg_ultimate_slam_open-main/common/ze_common/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/rpg_ultimate_slam_open-main/common/ze_data_provider/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/rpg_ultimate_slam_open-main/common/ze_geometry/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/rpg_ultimate_slam_open-main/common/ze_imu/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/rpg_ultimate_slam_open-main/common/ze_ros/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/rpg_ultimate_slam_open-main/applications/ze_vio_ceres/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/rpg_ultimate_slam_open-main/common/ze_vio_common/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/rpg_ultimate_slam_open-main/applications/ze_vio_frontend/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/rpg_ultimate_slam_open-main/ui/ze_visualization/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

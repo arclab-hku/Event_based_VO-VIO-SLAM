@@ -1,0 +1,23 @@
+<package>
+  <name>ceres_catkin</name>
+  <version>1.14.0</version>
+  <description>ceres_catkin</description>
+  <maintainer email="sameeragarwal@google.com">Sameer Agarwal</maintainer>
+
+  <license>New BSD</license>
+
+  <url type="website">https://code.google.com/p/ceres-solver/</url>
+
+  <author>Sameer Agarwal</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>catkin_simple</buildtool_depend>
+
+  <build_depend>atlas</build_depend>
+  <build_depend>eigen</build_depend>
+  <build_depend>libblas-dev</build_depend>
+  <build_depend>liblapack-dev</build_depend>
+  <build_depend>gflags_catkin</build_depend>
+  <build_depend>glog_catkin</build_depend>
+  <build_depend>suitesparse</build_depend>
+</package>

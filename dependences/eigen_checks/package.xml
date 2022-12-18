@@ -1,0 +1,20 @@
+<package>
+  <name>eigen_checks</name>
+  <version>0.0.1</version>
+  <description>Glog and Gtest check, assert, expect macros for eigen types.</description>
+  <maintainer email="simon.lynen@mavt.ethz.ch">simonlynen</maintainer>
+
+  <license>New BSD</license>
+
+  <url type="website">https://github.com/ethz-asl/eigen_checks</url>
+  <url type="bugtracker">https://github.com/ethz-asl/eigen_checks/issues</url>
+
+  <author>Simon Lynen</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>catkin_simple</buildtool_depend>
+
+  <build_depend>eigen_catkin</build_depend>
+  <build_depend>gflags_catkin</build_depend>
+  <build_depend>glog_catkin</build_depend>
+</package>
