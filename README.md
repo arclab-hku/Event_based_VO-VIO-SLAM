@@ -59,8 +59,10 @@ After installing the driver, the user can directly run the following command to 
 roslaunch stereo_davis_open.launch
 ~~~
 
-Please note we need to adjust the lens of the camera, such as the focal length, aperture. For the dvxplorer, the sensitive of event generation '''bias_sensitivity'''
-[M2DGR](https://github.com/SJTU-ViSYS/M2DGR)
+Please note users need to adjust the lens of the camera, such as the focal length, aperture.
+Filters are needed for avoiding the interfere from infrared light under the motion capture system.
+For the dvxplorer, the sensitive of event generation should be set, e.g. `bias_sensitivity`.
+Otherwise, the event sensor would just output noise and useless, just like [M2DGR](https://github.com/SJTU-ViSYS/M2DGR).
 
 ## Data Sequence
 
