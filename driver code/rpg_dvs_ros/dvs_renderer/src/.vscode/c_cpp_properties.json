@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/opt/ros/melodic/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/devel/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/EVIO/camera_models/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/rpg_dvs_ros/davis_ros_driver/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/rpg_dvs_ros/dvs_renderer/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/rpg_dvs_ros/dvxplorer_ros_driver/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/eigen_checks/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/ESVO/esvo_core/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/ESVO/esvo_time_surface/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/minkindr/minkindr/include/**",
+        "/home/kwanwaipang/catkin_ws_dvs/src/minkindr_ros/minkindr_conversions/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}
