@@ -14,7 +14,7 @@ We hope that we can make some contributions for the development of event-based v
 
 ### if you find this repositorie is helpful in your research, a simple star or citation of our works should be the best affirmation for us. :blush: 
 
-[![HitCount](https://hits.dwyl.com/arclab-hku/Event_based_VO-VIO-SLAM.svg?style=flat)](http://hits.dwyl.com/arclab-hku/Event_based_VO-VIO-SLAM)
+[![HitCount](https://hits.dwyl.com/arclab-hku/Event_based_VO-VIO-SLAM.svg?style=flat-square)](http://hits.dwyl.com/arclab-hku/Event_based_VO-VIO-SLAM)
 
 - [Data Sequence for Event-based Stereo Visual-inertial Odometry](#Data-sequence-for-event-based-stereo-visual-inertial-odometry)
   - [Acquisition Platform](#acquisition-platform)
