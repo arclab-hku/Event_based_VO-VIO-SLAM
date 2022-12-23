@@ -11,9 +11,6 @@ This is the repositorie that collects the dataset we used in our papers.
 We also conclude our works in the field of event-based vision.
 We hope that we can make some contributions for the development of event-based vision in robotics.
 
-# LICENSE
-This work is licensed under MIT license. International License and is provided for academic purpose. If you are interested in our project for commercial purposes, please contact us for further communication.
-
 ### If you have any suggestions or questions, do not hesitate to propose an issue. 
 
 ### if you find this repositorie is helpful in your research, a simple star or citation of our works should be the best affirmation for us. :blush: 
@@ -307,3 +304,7 @@ This work proposed the first stereo event-based visual inertial odometry framewo
    - https://github.com/TimoStoff/event_utils
    - https://github.com/tub-rip/events_viz
 
+
+
+# LICENSE
+This work is licensed under MIT license. International License and is provided for academic purpose. If you are interested in our project for commercial purposes, please contact us for further communication.
