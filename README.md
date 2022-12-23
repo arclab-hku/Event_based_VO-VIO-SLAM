@@ -6,18 +6,15 @@
 ### Author: [Guan Weipeng](https://scholar.google.com/citations?hl=zh-CN&user=fUU5Cv0AAAAJ), [Chen Peiyu](https://github.com/cpymaple)
 </div>
 
-
 This is the repositorie that collects the dataset we used in our papers.
 We also conclude our works in the field of event-based vision.
 We hope that we can make some contributions for the development of event-based vision in robotics.
-
- [![HitCount](https://hits.dwyl.com/arclab-hku/Event_based_VO-VIO-SLAM.svg?style=flat-square)](http://hits.dwyl.com/arclab-hku/Event_based_VO-VIO-SLAM)
 
 ### If you have any suggestions or questions, do not hesitate to propose an issue. 
 
 ### if you find this repositorie is helpful in your research, a simple star or citation of our works should be the best affirmation for us. :blush: 
 
-
+ [![HitCount](https://hits.dwyl.com/arclab-hku/Event_based_VO-VIO-SLAM.svg?style=flat-square)](http://hits.dwyl.com/arclab-hku/Event_based_VO-VIO-SLAM)
 
 - [Data Sequence for Event-based Stereo Visual-inertial Odometry](#Data-sequence-for-event-based-stereo-visual-inertial-odometry)
   - [Acquisition Platform](#acquisition-platform)
