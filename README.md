@@ -309,4 +309,4 @@ This work proposed the first stereo event-based visual inertial odometry framewo
 # LICENSE
 This repositorie is licensed under MIT license. International License and is provided for academic purpose. If you are interested in our project for commercial purposes, please contact [Dr. Peng LU](https://arclab.hku.hk/People.html) for further communication.
 
-  [![HitCount](https://hits.dwyl.com/arclab-hku/Event_based_VO-VIO-SLAM.svg?style=flat-square)](http://hits.dwyl.com/arclab-hku/Event_based_VO-VIO-SLAM)
+  [![unique visitors since December 2022](https://hits.dwyl.com/arclab-hku/Event_based_VO-VIO-SLAM.svg?style=flat-square)](http://hits.dwyl.com/arclab-hku/Event_based_VO-VIO-SLAM)
