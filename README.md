@@ -233,6 +233,8 @@ outdoor_large_scale2|2022-08|9.34g|16 minutes|******|[Rosbag](https://connecthku
 # Our Works in Event-based Vision
 ## 1. IROS2022
 This work proposed pruely event-based visual inertial odometry (VIO).
+We do not rely on the use of image-based corner detection but design a asynchronously detected and uniformly distributed event-cornerdetector from events-only data.
+The event-corner features tracker are then integrated into a sliding windows graph-based optimization framework that tightly fuses the event-corner features with IMU measurement to estimate the 6-DoF ego-motion.
 * PDF can be downloaded in [here](https://ieeexplore.ieee.org/document/9981970)
 * Code is available in [here](https://github.com/arclab-hku/EVIO/tree/evio_mono_noetic)
 
@@ -278,7 +280,9 @@ This work proposed the event-based VIO framework with point and line features, i
 ~~~
 
 ## 3. ESVIO
-This work proposed the first stereo event-based visual inertial odometry framework.
+This work proposed the first stereo event-based visual inertial odometry framework, including ESIO (purely event-based) and ESVIO (event with image-aided).
+The stereo event-corner features are temporally and spatially associated through an event-based representation with spatio-temporal and exponential decay kernel.
+The stereo event tracker are then tightly coupled into a sliding windows graph-based optimization framework for the estimation of ego-motion.
 * PDF can be downloaded in [here](https://arxiv.org/abs/2212.13184)
 * Code is available in [here](https://github.com/arclab-hku/ESVIO)
 
