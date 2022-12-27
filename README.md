@@ -279,7 +279,7 @@ This work proposed the event-based VIO framework with point and line features, i
 
 ## 3. ESVIO
 This work proposed the first stereo event-based visual inertial odometry framework.
-* PDF can be downloaded in [here]()
+* PDF can be downloaded in [here](https://arxiv.org/abs/2212.13184)
 * Code is available in [here](https://github.com/arclab-hku/ESVIO)
 
 <div align="center">
