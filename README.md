@@ -299,7 +299,7 @@ This work proposed the first stereo event-based visual inertial odometry framewo
 * [Event Camera Calibration using dv-gui](https://blog.csdn.net/gwplovekimi/article/details/121637241?spm=1001.2014.3001.5501)
 * [Event Camera Calibration using Kalibr and imu_utils](https://blog.csdn.net/gwplovekimi/article/details/120948986)
 * [Event Camera Simulation in Gazebo](https://blog.csdn.net/gwplovekimi/article/details/120347034?spm=1001.2014.3001.5502)
-* The survey when I first meet "Event camera" can be seen in [Blog](https://blog.csdn.net/gwplovekimi/article/details/115908307?spm=1001.2014.3001.5502)
+* The survey when I first meet "Event Camera" can be seen in [Blog](https://blog.csdn.net/gwplovekimi/article/details/115908307?spm=1001.2014.3001.5502)
 * [Event-based Vision Resources](https://github.com/uzh-rpg/event-based_vision_resources)
 * [The course: Event-based Robot Vision, by Prof. Guillermo Gallego](https://www.youtube.com/playlist?list=PL03Gm3nZjVgUFYUh3v5x8jVonjrGfcal8)
 * Useful tools:
