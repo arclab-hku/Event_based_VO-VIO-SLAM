@@ -236,7 +236,7 @@ This work proposed pruely event-based visual inertial odometry (VIO).
 We do not rely on the use of image-based corner detection but design a asynchronously detected and uniformly distributed event-cornerdetector from events-only data.
 The event-corner features tracker are then integrated into a sliding windows graph-based optimization framework that tightly fuses the event-corner features with IMU measurement to estimate the 6-DoF ego-motion.
 * PDF can be downloaded in [here](https://ieeexplore.ieee.org/document/9981970)
-* Code is available in [here](https://github.com/arclab-hku/EVIO/tree/evio_mono_noetic)
+* Code is available in [internal-accessed link](https://github.com/arclab-hku/EVIO/tree/evio_mono_noetic)
 
 <div align="center">
 <a href="https://b23.tv/Xe8MZyt" target="_blank"><img src="IROS2022/cover.jpg" alt="video" width="100%" /></a>
@@ -258,7 +258,7 @@ The event-corner features tracker are then integrated into a sliding windows gra
 This work proposed the event-based VIO framework with point and line features, including: pruely event (PL-EIO) and event+image (PL-EVIO).
 It is reliable and accurate enough to provide onboard pose feedback control for the quadrotor to achieve aggressive motion, e.g. flipping.
 * PDF can be downloaded in [here](https://arxiv.org/abs/2209.12160)
-* Code is available in [here](https://github.com/arclab-hku/EVIO/tree/PL-EIO)
+* Code is available in [internal-accessed link](https://github.com/arclab-hku/EVIO/tree/PL-EIO)
 * An extended version of our PL-EVIO: realizing high-accurate 6-DoF pose tracking and 3D semi-dense mapping (monocular event only) can be seen in [Link](https://www.bilibili.com/video/BV1924y1y7pn/?spm_id_from=333.999.0.0&vd_source=a88e426798937812a8ffc1a9be5a3cb7)
 
 <div align="center">
@@ -285,7 +285,7 @@ This work proposed the first stereo event-based visual inertial odometry framewo
 The stereo event-corner features are temporally and spatially associated through an event-based representation with spatio-temporal and exponential decay kernel.
 The stereo event tracker are then tightly coupled into a sliding windows graph-based optimization framework for the estimation of ego-motion.
 * PDF can be downloaded in [here](https://arxiv.org/abs/2212.13184)
-* Code is available in [here](https://github.com/arclab-hku/ESVIO)
+* Code is available in [internal-accessed link](https://github.com/arclab-hku/ESVIO)
 
 <div align="center">
 <a href="https://www.bilibili.com/video/BV1ve4y1M7v4/?share_source=copy_web&vd_source=a722388e07ea53f32d00aed0a0117f3c" target="_blank"><img src="ESVIO/ESVIO_hdr_flight _gif.gif" alt="video" width="100%" /></a>
