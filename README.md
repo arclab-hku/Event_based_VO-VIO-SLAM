@@ -258,8 +258,8 @@ The event-corner features tracker are then integrated into a sliding windows gra
 This work proposed the event-based VIO framework with point and line features, including: pruely event (PL-EIO) and event+image (PL-EVIO).
 It is reliable and accurate enough to provide onboard pose feedback control for the quadrotor to achieve aggressive motion, e.g. flipping.
 * PDF can be downloaded in [here](https://arxiv.org/abs/2209.12160)
-* An extended version of our PL-EVIO: realizing high-accurate 6-DoF pose tracking and 3D semi-dense mapping (monocular event only) can be seen in [Link](https://www.bilibili.com/video/BV1924y1y7pn/?spm_id_from=333.999.0.0&vd_source=a88e426798937812a8ffc1a9be5a3cb7)
 * Code is available in [here](https://github.com/arclab-hku/EVIO/tree/PL-EIO)
+* An extended version of our PL-EVIO: realizing high-accurate 6-DoF pose tracking and 3D semi-dense mapping (monocular event only) can be seen in [Link](https://www.bilibili.com/video/BV1924y1y7pn/?spm_id_from=333.999.0.0&vd_source=a88e426798937812a8ffc1a9be5a3cb7)
 
 <div align="center">
 <a href="https://b23.tv/OE3QM6j" target="_blank"><img src="PL-EVIO/cover.jpg" alt="video" width="100%" /></a>
