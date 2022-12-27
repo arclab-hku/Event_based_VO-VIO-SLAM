@@ -48,6 +48,7 @@ We hope that our dataset can help to push the boundary of future research on ste
 </div> 
 
 * The configuration file is in [link](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/tree/main/ESVIO)
+* The DAVIS comprises an image camera and event camera on the same pixel array, thus calibration can be done using standard image-based methods, such as [Kalibr](https://github.com/ethz-asl/kalibr)
 * We also provide the rosbag (including the event, image, IMU measurements) for camera and IMU calibration: [Rosbag1]() (for the IMU calibration of our DAVIS), [Rosbag2]() (for camera-IMU calibration of our DAVIS).
 * [Event Camera Calibration using Kalibr and imu_utils](https://blog.csdn.net/gwplovekimi/article/details/120948986)
 
@@ -299,7 +300,6 @@ This work proposed the first stereo event-based visual inertial odometry framewo
 * [Event Camera Calibration using Kalibr and imu_utils](https://blog.csdn.net/gwplovekimi/article/details/120948986)
 * [Event Camera Simulation in Gazebo](https://blog.csdn.net/gwplovekimi/article/details/120347034?spm=1001.2014.3001.5502)
 * The survey when I first meet "Event camera" can be seen in [Blog](https://blog.csdn.net/gwplovekimi/article/details/115908307?spm=1001.2014.3001.5502)
-* The DAVIS comprises an image camera and event camera on the same pixel array, thus calibration can be done using standard image-based methods, such as [Kalibr](https://github.com/ethz-asl/kalibr)
 * [Event-based Vision Resources](https://github.com/uzh-rpg/event-based_vision_resources)
 * [The course: Event-based Robot Vision, by Prof. Guillermo Gallego](https://www.youtube.com/playlist?list=PL03Gm3nZjVgUFYUh3v5x8jVonjrGfcal8)
 * Useful tools:
