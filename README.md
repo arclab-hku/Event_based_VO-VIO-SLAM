@@ -293,6 +293,7 @@ This work proposed the first stereo event-based visual inertial odometry framewo
   author={Chen, Peiyu and Guan, Weipeng and Lu, Peng},
   journal={arXiv preprint arXiv:2212.13184},
   year={2022}
+}
 ~~~
 
 
