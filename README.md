@@ -233,7 +233,7 @@ outdoor_large_scale2|2022-08|9.34g|16 minutes|******|[Rosbag](https://connecthku
 # Our Works in Event-based Vision
 ## 1. IROS2022
 This work proposed pruely event-based visual inertial odometry (VIO).
-* PDF can be downloaded in [here](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/IROS2022/Monocular%20Event%20Visual%20Inertial%20Odometry%20Based%20on%20Event-Corner%20Using%20Sliding%20Windows%20Graph-Based%20Optimization.pdf)
+* PDF can be downloaded in [here](https://ieeexplore.ieee.org/document/9981970)
 * Code is available in [here](https://github.com/arclab-hku/EVIO/tree/evio_mono_noetic)
 
 <div align="center">
