@@ -254,7 +254,7 @@ This work proposed pruely event-based visual inertial odometry (VIO).
 
 ## 2. PL-EVIO 
 This work proposed the event-based VIO framework with point and line features, including: pruely event (PL-EIO) and event+image (PL-EVIO).
-* PDF can be downloaded in [here]()
+* PDF can be downloaded in [here](https://arxiv.org/abs/2209.12160)
 * An extended version of our PL-EVIO: realizing high-accurate 6-DoF pose tracking and 3D semi-dense mapping (monocular event only) can be seen in [Link](https://www.bilibili.com/video/BV1924y1y7pn/?spm_id_from=333.999.0.0&vd_source=a88e426798937812a8ffc1a9be5a3cb7)
 * Code is available in [here](https://github.com/arclab-hku/EVIO/tree/PL-EIO)
 
@@ -288,7 +288,11 @@ This work proposed the first stereo event-based visual inertial odometry framewo
 </div>
 
 ~~~
- Coming soon
+@article{ESVIO,
+  title={ESVIO: Event-based Stereo Visual Inertial Odometry},
+  author={Chen, Peiyu and Guan, Weipeng and Lu, Peng},
+  journal={arXiv preprint arXiv:2212.13184},
+  year={2022}
 ~~~
 
 
