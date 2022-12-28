@@ -92,4 +92,4 @@ poster_translation|---
 
 
 
-[here](https://rpg.ifi.uzh.ch/ultimateslam.html)
+Both [BMVC17_EVIO](https://rpg.ifi.uzh.ch/docs/BMVC17_Rebecq.pdf) and [Ultimate SLAM](https://rpg.ifi.uzh.ch/docs/RAL18_VidalRebecq.pdf) release their raw results of this dataset in [here](https://rpg.ifi.uzh.ch/ultimateslam.html)
