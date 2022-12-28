@@ -77,7 +77,7 @@ units-scooter|---|---|---
 Evaluation results in [DAVIS 240C Datasets](https://rpg.ifi.uzh.ch/davis_data.html):
 <div align="center">
   
-Sequence Name|[CVPR17](https://openaccess.thecvf.com/content_cvpr_2017/papers/Zhu_Event-Based_Visual_Inertial_CVPR_2017_paper.pdf)|[BMVC17](https://rpg.ifi.uzh.ch/docs/BMVC17_Rebecq.pdf)|[Ultimate SLAM EIO](https://rpg.ifi.uzh.ch/docs/RAL18_VidalRebecq.pdf)|[Ultimate SLAM EVIO](https://rpg.ifi.uzh.ch/docs/RAL18_VidalRebecq.pdf)|[3DV19](https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/380462/1/3DV2019.pdf)|[RAL22](https://arxiv.org/pdf/2204.05880.pdf)|Our [EIO](https://ieeexplore.ieee.org/document/9981970)|PL-EVIO|
+Sequence Name|[CVPR17 EIO](https://openaccess.thecvf.com/content_cvpr_2017/papers/Zhu_Event-Based_Visual_Inertial_CVPR_2017_paper.pdf)|[BMVC17 EIO](https://rpg.ifi.uzh.ch/docs/BMVC17_Rebecq.pdf)|[Ultimate SLAM EIO](https://rpg.ifi.uzh.ch/docs/RAL18_VidalRebecq.pdf)|[Ultimate SLAM EVIO](https://rpg.ifi.uzh.ch/docs/RAL18_VidalRebecq.pdf)|[3DV19 EIO](https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/380462/1/3DV2019.pdf)|[RAL22 EVIO](https://arxiv.org/pdf/2204.05880.pdf)|Our [EIO](https://ieeexplore.ieee.org/document/9981970)|PL-EVIO|
 :--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:
 boxes_translation      | 2.69 | 0.57 | 0.76             |0.27 | 2.55 | 0.48 | 0.34  | 0.06
 hdr_boxes              | 1.23 | 0.92 | 0.67             |0.37 | 1.75 | 0.46 | 0.40  | 0.10
@@ -94,4 +94,4 @@ Tips:
 The estimated and ground-truth trajectories were aligned with a 6-DOF transformation (in SE3), using 5 seconds [0-5s] of the resulting trajectory. 
 The result is obtained through computing the mean position error (Euclidean distance in meters) as percentages of the total traveled distance of the ground truth.
 
-BTW: both [BMVC17_EVIO](https://rpg.ifi.uzh.ch/docs/BMVC17_Rebecq.pdf) and [Ultimate SLAM](https://rpg.ifi.uzh.ch/docs/RAL18_VidalRebecq.pdf) release their raw results of this dataset in [here](https://rpg.ifi.uzh.ch/ultimateslam.html). However, it seems that the released results is worse than the results of the paper.
+BTW: both [BMVC17](https://rpg.ifi.uzh.ch/docs/BMVC17_Rebecq.pdf) and [Ultimate SLAM](https://rpg.ifi.uzh.ch/docs/RAL18_VidalRebecq.pdf) release their raw results of this dataset in [here](https://rpg.ifi.uzh.ch/ultimateslam.html). However, it seems that the released results is worse than the results of the paper.
