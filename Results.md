@@ -9,8 +9,8 @@ Since our source code is only internal-accessed and not publicly available, we r
 Tips: We recommend this [Python package for the evaluation of odometry and SLAM](https://github.com/MichaelGrupp/evo).
 
 # Our own dataset
-Evaluation Results in [Data Sequence for Event-based Stereo Visual-inertial Odometry](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-stereo-visual-inertial-odometry):
-<div align="center"> 
+Evaluation Results in the [data sequences](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-stereo-visual-inertial-odometry):
+<div align="center"> which are designed for stereo event-based VIO. 
  
 Sequence Name|PL-EVIO|ESIO|ESVIO|
 :--|:--:|:--:|:--:
@@ -26,7 +26,7 @@ hku_dark_normal|---|---|---
 
 </div>
 
-Evaluation Results in [Data sequence for monocular EVIO dataset with different resolution event camera](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-monocular-visual-inertial-odometry):
+Evaluation Results from monocular purely event-based VIO using different resolution event camera in [dataset](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-monocular-visual-inertial-odometry):
 
 <div align="center">
 
