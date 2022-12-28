@@ -15,8 +15,9 @@ Tips: we recommend this [Python package for the evaluation of odometry and SLAM]
   - [DAVIS 240C Datasets](#DAVIS-240C-Datasets)
 
 # Our Own Dataset
-Evaluation results in the [data sequences](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-stereo-visual-inertial-odometry):
-<div align="center"> which are designed for stereo event-based VIO. 
+Evaluation results in the [dataset](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-stereo-visual-inertial-odometry)which are designed for stereo event-based VIO. 
+Although this dataset uses stereo event cameras, it also would be good choice for the evaluation of monocular event-based VIO method.
+<div align="center"> 
  
 Sequence Name|PL-EVIO|ESIO|ESVIO|
 :--|:--:|:--:|:--:
