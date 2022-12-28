@@ -27,7 +27,7 @@ We hope that we can make some contributions for the development of event-based v
   - [1. IROS2022](#1-iros2022)
   - [2. PL-EVIO](#2-pl-evio)
   - [3. ESVIO](#3-esvio)
-- [Compared with Our Methods](#Compared-with-Our-Methods)
+- [Using Our Methods as Comparison](#using-Our-Methods-as-Comparison)
 - [Recommendation](#recommendation)
 
 
@@ -307,7 +307,7 @@ The stereo event tracker are then tightly coupled into a sliding windows graph-b
 
 
 
-# Compared with Our Methods
+# Using Our Methods as Comparison
 We strongly recommend the peers to evaluate their proposed method using our dataset, and do the comparison with the raw results from our methods using their own accuracy criterion.
 
 The raw results (raw trajectories) of our methods can be obtained in [here](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results.md).
