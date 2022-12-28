@@ -77,7 +77,7 @@ The accuracy is measured with absolute trajectory error (ATE) aligning the estim
 For example, you can run the following command to evaluate the accuracy:
 
 ~~~
-evo_ape bag ESVIO_MVSEC_indoor_flying_1.bag /davis/left/odometry /pose_graph/evio_odometry -va -p
+evo_ape bag ESVIO_VECtor_corner_slow.bag /gt/pose /pose_graph/evio_odometry -va -p
 ~~~
 <div align="center">
   
@@ -114,7 +114,7 @@ The accuracy is measured with absolute trajectory error (ATE) aligning the estim
 For example, you can run the following command to evaluate the accuracy:
 
 ~~~
-evo_ape bag ESVIO_VECtor_corner_slow.bag /gt/pose /pose_graph/evio_odometry -va -p
+evo_ape bag ESVIO_MVSEC_indoor_flying_1.bag /davis/left/odometry /pose_graph/evio_odometry -va -p
 ~~~
 <div align="center">
   
