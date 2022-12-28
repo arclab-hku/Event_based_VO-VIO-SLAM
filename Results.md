@@ -86,14 +86,14 @@ Evaluation results in [DAVIS 240C Datasets](https://rpg.ifi.uzh.ch/davis_data.ht
   
 Sequence Name|[CVPR17 EIO](https://openaccess.thecvf.com/content_cvpr_2017/papers/Zhu_Event-Based_Visual_Inertial_CVPR_2017_paper.pdf)|[BMVC17 EIO](https://rpg.ifi.uzh.ch/docs/BMVC17_Rebecq.pdf)|[Ultimate SLAM EIO](https://rpg.ifi.uzh.ch/docs/RAL18_VidalRebecq.pdf)|[Ultimate SLAM EVIO](https://rpg.ifi.uzh.ch/docs/RAL18_VidalRebecq.pdf)|[3DV19 EIO](https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/380462/1/3DV2019.pdf)|[RAL22 EVIO](https://arxiv.org/pdf/2204.05880.pdf)|[IROS22 EIO](https://ieeexplore.ieee.org/document/9981249)|Our [EIO](https://ieeexplore.ieee.org/document/9981970)|PL-EVIO|
 :--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:
-boxes_translation      | 2.69 | 0.57 | 0.76             |0.27 | 2.55 | 0.48 || 0.34  | 0.06
-hdr_boxes              | 1.23 | 0.92 | 0.67             |0.37 | 1.75 | 0.46 || 0.40  | 0.10
-boxes_6dof             | 3.61 | 0.69 | 0.44             |0.30 | 2.03 | 0.84 || 0.61  | 0.21
-dynamic_translation    | 1.90 | 0.47 | 0.59             |0.18 | 1.32 | 0.40 || 0.26  | 0.24
-dynamic_6dof           | 4.07 | 0.54 | 0.38             |0.19 | 0.52 | 0.79 || 0.43  | 0.48
-poster_translation     | 0.94 | 0.89 | 0.15             |0.12 | 1.34 | 0.35 || 0.40  | 0.54
-hdr_poster             | 2.63 | 0.59 | 0.49             |0.31 | 0.57 | 0.65 || 0.40  | 0.12
-poster_6dof            | 3.56 | 0.82 | 0.30             |0.28 | 1.50 | 0.35 || 0.26  | 0.14
+boxes_translation      | 2.69 | 0.57 | 0.76             |0.27 | 2.55 | 0.48 |1.0| 0.34  | 0.06
+hdr_boxes              | 1.23 | 0.92 | 0.67             |0.37 | 1.75 | 0.46 |1.8| 0.40  | 0.10
+boxes_6dof             | 3.61 | 0.69 | 0.44             |0.30 | 2.03 | 0.84 |1.5| 0.61  | 0.21
+dynamic_translation    | 1.90 | 0.47 | 0.59             |0.18 | 1.32 | 0.40 |0.9| 0.26  | 0.24
+dynamic_6dof           | 4.07 | 0.54 | 0.38             |0.19 | 0.52 | 0.79 |1.5| 0.43  | 0.48
+poster_translation     | 0.94 | 0.89 | 0.15             |0.12 | 1.34 | 0.35 |1.9| 0.40  | 0.54
+hdr_poster             | 2.63 | 0.59 | 0.49             |0.31 | 0.57 | 0.65 |2.8| 0.40  | 0.12
+poster_6dof            | 3.56 | 0.82 | 0.30             |0.28 | 1.50 | 0.35 |1.2| 0.26  | 0.14
 
 </div>
 
