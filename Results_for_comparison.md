@@ -22,6 +22,8 @@ Although this dataset uses stereo event cameras, it also would be good choice fo
 [The results (raw trajectory) of PL-EVIO, ESIO and ESVIO](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EsuuA9IzsolAl_J9GPB54R0B6NsJgJqa_wgvgTK3YZDLLg?e=639B7L).
 
 The accuracy is measured with absolute trajectory error (ATE) aligning the estimated trajectory with ground truth using 6-DOF transformation (in SE3), which is calculated by the public available tool [evo](https://github.com/MichaelGrupp/evo).
+The result is obtained through computing the mean position error (Euclidean distance in meters) of the ground truth. 
+`Unit: m` (e.g. 0.24 means the average error would be 0.24m in the sequence). 
 For example, you can run the following command to evaluate the accuracy:
 
 ~~~
@@ -72,6 +74,8 @@ Although this dataset uses stereo event cameras, it also would be good choice fo
 [The results (raw trajectory) of PL-EVIO and ESVIO](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EkYd25BE8hdGl08Stg8p8ecBHfrLkxyD_M6jSexAnBkxOQ?e=033lEb).
 
 The accuracy is measured with absolute trajectory error (ATE) aligning the estimated trajectory with ground truth using 6-DOF transformation (in SE3), which is calculated by the public available tool [evo](https://github.com/MichaelGrupp/evo).
+The result is obtained through computing the mean position error (Euclidean distance in meters) of the ground truth. 
+`Unit: m` (e.g. 0.24 means the average error would be 0.24m in the sequence). 
 For example, you can run the following command to evaluate the accuracy:
 
 ~~~
@@ -101,6 +105,7 @@ units-dolly|13.82|8.12
 units-scooter|11.66|6.64
 
 </div>
+
 
 ## DAVIS 240C Datasets
 Evaluation results in [DAVIS 240C Datasets](https://rpg.ifi.uzh.ch/davis_data.html). We also refer the raw results of the other event-based VIO works (EIO: purely event-based VIO; EVIO: Event+Image VIO) as following:
