@@ -10,7 +10,7 @@ Tips: We recommend this [Python package for the evaluation of odometry and SLAM]
 
 <div align="center">
 
- Evaluation Results in [Data Sequence for Event-based Stereo Visual-inertial Odometry](https://star-datasets.github.io/vector/](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-stereo-visual-inertial-odometry)
+ Evaluation Results in [Data Sequence for Event-based Stereo Visual-inertial Odometry](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-stereo-visual-inertial-odometry)
  
 Sequence Name|PL-EVIO|ESIO|ESVIO|
 :--|:--:|:--:|:--:
