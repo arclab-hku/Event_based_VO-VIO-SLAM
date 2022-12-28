@@ -16,7 +16,6 @@ The evaluations of our works in different data sequences are also recorded in vi
   - [DAVIS 240C Datasets](#DAVIS-240C-Datasets)
 
 Tips: we recommend this [Python package for the evaluation of odometry and SLAM](https://github.com/MichaelGrupp/evo).
-
 For example, you can run the following command to evaluate the accuracy:
 
 ~~~
