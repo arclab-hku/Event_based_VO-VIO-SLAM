@@ -33,11 +33,11 @@ hku_dark_normal|---|---|---
 
 </div>
 
-Evaluation results from monocular purely event-based VIO using different resolution event camera in [dataset](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-monocular-visual-inertial-odometry):
+Evaluation results from monocular purely event-based VIO using different resolution event cameras `DAVIS346 (346X260)` and `DVXplorer (640X480)` in [dataset](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-monocular-visual-inertial-odometry):
 
 <div align="center">
 
-Sequence Name|[EIO](https://ieeexplore.ieee.org/document/9981970) in DAVIS346|[EIO](https://ieeexplore.ieee.org/document/9981970) in Dvxplorer|[PL-EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio) in DAVIS346|[PL-EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio) in Dvxplorer
+Sequence Name|[EIO](https://ieeexplore.ieee.org/document/9981970) in DAVIS346|[EIO](https://ieeexplore.ieee.org/document/9981970) in DVXplorer|[PL-EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio) in DAVIS346|[PL-EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio) in DVXplorer
 :--|:--:|:--:|:--:|:--:
 vicon_aggressive_hdr|---|---|---|---
 vicon_dark1|---|---|---|---
