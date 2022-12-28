@@ -11,6 +11,12 @@ The evaluations of our works in different data sequences are also recorded in vi
 
 Tips: we recommend this [Python package for the evaluation of odometry and SLAM](https://github.com/MichaelGrupp/evo).
 
+For example, you can run the following command to evaluate the accuracy:
+
+~~~
+evo_ape bag ESVIO_hku_hdr_agg.bag /cpy_uav/viconros/odometry /pose_graph/evio_odometry -va -p
+~~~ 
+
 - [Our Own Dataset](#our-own-dataset)
 - [Public Dataset](#public-dataset)
   - [VECtor](#VECtor)
@@ -22,7 +28,6 @@ Tips: we recommend this [Python package for the evaluation of odometry and SLAM]
 Evaluation results in the [dataset](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-stereo-visual-inertial-odometry) which are designed for stereo event-based VIO. 
 Although this dataset uses stereo event cameras, it also would be good choice for the evaluation of monocular event-based VIO method.
 Below we give the results (raw trajectory) of our methods.
-<!-- The results (raw trajectory) of PL-EVIO, ESIO and ESVIO on Stereo HKU Dataset are given in this [link](). -->
 
 <!-- The accuracy is measured with absolute trajectory error (ATE) aligning the estimated trajectory with ground truth using 6-DOF transformation (in SE3), which is calculated by the public available tool [evo](https://github.com/MichaelGrupp/evo).
 `Unit: m` (e.g. 0.24 means the average error would be 0.24m in the sequence). 
