@@ -34,6 +34,7 @@ evo_ape bag ESVIO_hku_hdr_agg.bag /cpy_uav/viconros/odometry /pose_graph/evio_od
 <div align="center"> 
  
 Sequence Name|[PL-EVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio)|[ESIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio)|[ESVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio)|
+Results (raw trajectory)|[link]()|[link]()|[link]()
 :--|:--:|:--:|:--:
 hku_agg_translation|0.048|0.35|0.063
 hku_agg_rotation|0.15|0.51|0.11
