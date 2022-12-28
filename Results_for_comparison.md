@@ -98,19 +98,13 @@ units-scooter|11.66|6.64
 </div>
 
 ## MVSEC
-Evaluation results in [MVSEC](https://daniilidis-group.github.io/mvsec/) which are designed for stereo event-based VIO.
-Although this dataset uses stereo event cameras, it also would be good choice for the evaluation of monocular event-based VIO method.
-[The results (raw trajectory) of PL-EVIO and ESVIO](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EpemLX57EuNKq1mYJUNvFXIB1TUnbuGpcrfFC0sFstuy0Q?e=fEXHsd).
+Evaluation results in [MVSEC](https://daniilidis-group.github.io/mvsec/).
 
-For example, you can run the following command to evaluate the accuracy:
-
-~~~
-evo_ape bag ESVIO_MVSEC_indoor_flying_1.bag /davis/left/odometry /pose_graph/evio_odometry -va -p
-~~~
 <div align="center">
   
 Sequence Name|[PL-EVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio)|[ESVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio)|
 :--|:--:|:--:
+Results (raw trajectory)|[link]()|[link]()
 Indoor Flying 1|0.36|0.25
 Indoor Flying 2|0.30|0.30
 Indoor Flying 3|0.34|0.25
