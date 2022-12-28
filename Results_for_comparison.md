@@ -27,13 +27,6 @@ Evaluation results in the [dataset](https://github.com/arclab-hku/Event_based_VO
 Although this dataset uses stereo event cameras, it also would be good choice for the evaluation of monocular event-based VIO method.
 Below we give the results (raw trajectory) of our methods.
 
-<!-- The accuracy is measured with absolute trajectory error (ATE) aligning the estimated trajectory with ground truth using 6-DOF transformation (in SE3), which is calculated by the public available tool [evo](https://github.com/MichaelGrupp/evo).
-`Unit: m` (e.g. 0.24 means the average error would be 0.24m in the sequence). 
-For example, you can run the following command to evaluate the accuracy:
-
-~~~
-evo_ape bag ESVIO_hku_hdr_agg.bag /cpy_uav/viconros/odometry /pose_graph/evio_odometry -va -p
-~~~ -->
 
 <div align="center"> 
  
