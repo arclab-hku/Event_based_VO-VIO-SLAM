@@ -77,7 +77,7 @@ units-scooter|---|---|---
 Evaluation results in [DAVIS 240C Datasets](https://rpg.ifi.uzh.ch/davis_data.html):
 <div align="center">
   
-Sequence Name|Our EIO(https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#1-iros2022)|
+Sequence Name|Our [EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#1-iros2022)|
 :--|:--:
 boxes_6dof|---
 boxes_translation|---
