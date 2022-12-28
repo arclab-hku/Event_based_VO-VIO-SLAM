@@ -5,7 +5,7 @@
 </div>
 
 For the benfit of the community, we release the results of our methods, including the estimated 6-DoF pose and the ground truth, in the form of `rosbag`. 
-Since our source code is only internal-accessed and not publicly available, we strongly recommend the peers evaluate their proposed works using our [dataset](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM) and do the comparison with the raw results from our methods using their own accuracy criterion.
+Since our source code is only internal-accessed and not publicly available, we strongly recommend the peers to evaluate their proposed works using our [dataset](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM) and do the comparison with the raw results from our methods using their own accuracy criterion.
 
 The evaluations of our works in different data sequences are also recorded in video which can be seen in our bilibili: [Guan Weipeng](https://space.bilibili.com/499377825?spm_id_from=333.1007.0.0) or [Chen Peiyu](https://space.bilibili.com/279299582/?spm_id_from=333.999.0.0).
 
