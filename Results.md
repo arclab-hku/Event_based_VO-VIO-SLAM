@@ -30,7 +30,7 @@ Evaluation results from monocular purely event-based VIO using different resolut
 
 <div align="center">
 
-Sequence Name|[EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#1-iros2022) in DAVIS346|[EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#1-iros2022) in Dvxplorer|[PL-EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio) in DAVIS346|[PL-EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio) in Dvxplorer
+Sequence Name|[EIO](https://ieeexplore.ieee.org/document/9981970) in DAVIS346|[EIO](https://ieeexplore.ieee.org/document/9981970) in Dvxplorer|[PL-EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio) in DAVIS346|[PL-EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio) in Dvxplorer
 :--|:--:|:--:|:--:|:--:
 vicon_aggressive_hdr|---|---|---|---
 vicon_dark1|---|---|---|---
@@ -77,7 +77,7 @@ units-scooter|---|---|---
 Evaluation results in [DAVIS 240C Datasets](https://rpg.ifi.uzh.ch/davis_data.html):
 <div align="center">
   
-Sequence Name|Our [EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#1-iros2022)|
+Sequence Name|Our [EIO](https://ieeexplore.ieee.org/document/9981970)|
 :--|:--:
 boxes_6dof|---
 boxes_translation|---
