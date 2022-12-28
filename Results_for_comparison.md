@@ -9,6 +9,12 @@ Since our source code is only internal-accessed and not publicly available, we s
 
 The evaluations of our works in different data sequences are also recorded in video which can be seen in our bilibili: [Guan Weipeng](https://space.bilibili.com/499377825?spm_id_from=333.1007.0.0) or [Chen Peiyu](https://space.bilibili.com/279299582/?spm_id_from=333.999.0.0).
 
+- [Our Own Dataset](#our-own-dataset)
+- [Public Dataset](#public-dataset)
+  - [VECtor](#VECtor)
+  - [MVSEC](#MVSEC)
+  - [DAVIS 240C Datasets](#DAVIS-240C-Datasets)
+
 Tips: we recommend this [Python package for the evaluation of odometry and SLAM](https://github.com/MichaelGrupp/evo).
 
 For example, you can run the following command to evaluate the accuracy:
@@ -16,13 +22,6 @@ For example, you can run the following command to evaluate the accuracy:
 ~~~
 evo_ape bag ESVIO_hku_hdr_agg.bag /cpy_uav/viconros/odometry /pose_graph/evio_odometry -va -p
 ~~~ 
-
-- [Our Own Dataset](#our-own-dataset)
-- [Public Dataset](#public-dataset)
-  - [VECtor](#VECtor)
-  - [MVSEC](#MVSEC)
-  - [DAVIS 240C Datasets](#DAVIS-240C-Datasets)
-
 
 # Our Own Dataset
 Evaluation results in the [dataset](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-stereo-visual-inertial-odometry) which are designed for stereo event-based VIO. 
