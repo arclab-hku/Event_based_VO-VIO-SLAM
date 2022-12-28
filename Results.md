@@ -9,7 +9,7 @@ Since our source code is only internal-accessed and not publicly available, we r
 Tips: We recommend this [Python package for the evaluation of odometry and SLAM](https://github.com/MichaelGrupp/evo).
 
 # Our own dataset
-Evaluation Results in the [data sequences](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-stereo-visual-inertial-odometry):
+Evaluation results in the [data sequences](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-stereo-visual-inertial-odometry):
 <div align="center"> which are designed for stereo event-based VIO. 
  
 Sequence Name|PL-EVIO|ESIO|ESVIO|
@@ -26,7 +26,7 @@ hku_dark_normal|---|---|---
 
 </div>
 
-Evaluation Results from monocular purely event-based VIO using different resolution event camera in [dataset](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-monocular-visual-inertial-odometry):
+Evaluation results from monocular purely event-based VIO using different resolution event camera in [dataset](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-monocular-visual-inertial-odometry):
 
 <div align="center">
 
@@ -48,7 +48,7 @@ vicon_lighttodark2|---|---|---|---
 
 
 # Public dataset
-Evaluation Results in [VECtor](https://star-datasets.github.io/vector/):
+Evaluation results in [VECtor](https://star-datasets.github.io/vector/):
 <div align="center">
   
 Sequence Name|PL-EVIO|ESIO|ESVIO|
@@ -73,3 +73,23 @@ units-dolly|---|---|---
 units-scooter|---|---|---
 
 </div>
+
+Evaluation results in [DAVIS 240C Datasets](https://rpg.ifi.uzh.ch/davis_data.html):
+<div align="center">
+  
+Sequence Name|Our EIO(https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#1-iros2022)|
+:--|:--:
+boxes_6dof|---
+boxes_translation|---
+dynamic_6dof|---
+dynamic_translation|---
+hdr_boxes|---
+hdr_poster|---
+poster_6dof|---
+poster_translation|---
+
+</div>
+
+
+
+[here](https://rpg.ifi.uzh.ch/ultimateslam.html)
