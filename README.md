@@ -50,7 +50,7 @@ We hope that our dataset can help to push the boundary of future research on ste
 
 * The configuration file is in [link](https://github.com/arclab-hku/Datasequence_Event_based_SLAM/tree/main/ESVIO)
 * The DAVIS comprises an image camera and event camera on the same pixel array, thus calibration can be done using standard image-based methods, such as [Kalibr](https://github.com/ethz-asl/kalibr)
-* We also provide the rosbag (including the event, image, IMU measurements) for camera and IMU calibration: [Rosbag1]() (for the IMU calibration of our DAVIS), [Rosbag2](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EqgJ7ahYWgpIomCbkSSOqqkBMpslIkhlwg7T9GTFMgyNjw?e=UchdI0) (for camera-IMU calibration of our DAVIS).
+* We also provide the rosbag for stereo cameras and IMU calibration: [Rosbag](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EqgJ7ahYWgpIomCbkSSOqqkBMpslIkhlwg7T9GTFMgyNjw?e=UchdI0).
 * [Event Camera Calibration using Kalibr and imu_utils](https://blog.csdn.net/gwplovekimi/article/details/120948986)
 
 ## Driver Installation
