@@ -70,26 +70,26 @@ vicon_lighttodark2|---|---|---|---
 Evaluation results in [VECtor](https://star-datasets.github.io/vector/):
 <div align="center">
   
-Sequence Name|[PL-EVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio)|[ESIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio)|[ESVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio)|
+Sequence Name|[PL-EVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio)|[ESVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio)|
 :--|:--:|:--:|:--:
-board-slow|---|---|---
-corner-slow|---|---|---
-robot-normal|---|---|---
-robot-fast|---|---|---
-desk-normal|---|---|---
-desk-fast|---|---|---
-sofa-normal|---|---|---
-sofa-fast|---|---|---
-mountain-normal|---|---|---
-mountain-fast|---|---|---
-hdr-normal|---|---|---
-hdr-fast|---|---|---
-corridors-dolly|---|---|---
-corridors-walk|---|---|---
-school-dolly|---|---|---
-school-scooter|---|---|---
-units-dolly|---|---|---
-units-scooter|---|---|---
+board-slow|---|---
+corner-slow|0.017|0.012
+robot-normal|0.027|0.043
+robot-fast|0.037|0.042
+desk-normal|0.31|0.052
+desk-fast|0.043|0.042
+sofa-normal|0.058|0.047
+sofa-fast|0.050|0.052
+mountain-normal|0.32|0.044
+mountain-fast|0.031|0.039
+hdr-normal|0.12|0.017
+hdr-fast|0.036|0.039
+corridors-dolly|1.23|0.88
+corridors-walk|0.72|0.34
+school-dolly|3.11|0.53
+school-scooter|1.39|0.63
+units-dolly|13.82|8.12
+units-scooter|11.66|6.64
 
 </div>
 
