@@ -24,15 +24,15 @@ Although this dataset uses stereo event cameras, it also would be good choice fo
  
 Sequence Name|[PL-EVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio)|[ESIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio)|[ESVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio)|
 :--|:--:|:--:|:--:
-hku_agg_translation|---|---|---
-hku_agg_rotation|---|---|---
-hku_agg_flip|---|---|---
-hku_agg_walk|---|---|---
-hku_hdr_circle|---|---|---
-hku_hdr_slow|---|---|---
-hku_hdr_tran_rota|---|---|---
-hku_hdr_agg|---|---|---
-hku_dark_normal|---|---|---
+hku_agg_translation|0.048|0.35|0.063
+hku_agg_rotation|0.15|0.51|0.11
+hku_agg_flip|0.15|1.23|0.14
+hku_agg_walk|0.37|1.14|0.27
+hku_hdr_circle|0.068|0.23|0.081
+hku_hdr_slow|0.069|0.17|0.059
+hku_hdr_tran_rota|0.068|0.60|0.065
+hku_hdr_agg|0.14|1.37|0.10
+hku_dark_normal|1.25|0.32|0.39
 
 </div>
 
