@@ -19,7 +19,7 @@ Evaluation results in the [dataset](https://github.com/arclab-hku/Event_based_VO
 Although this dataset uses stereo event cameras, it also would be good choice for the evaluation of monocular event-based VIO method.
 <div align="center"> 
  
-Sequence Name|PL-EVIO|ESIO|ESVIO|
+Sequence Name|[PL-EVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio)|[ESIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio)|[ESVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio)|
 :--|:--:|:--:|:--:
 hku_agg_translation|---|---|---
 hku_agg_rotation|---|---|---
@@ -59,7 +59,7 @@ vicon_lighttodark2|---|---|---|---
 Evaluation results in [VECtor](https://star-datasets.github.io/vector/):
 <div align="center">
   
-Sequence Name|PL-EVIO|ESIO|ESVIO|
+Sequence Name|[PL-EVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio)|[ESIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio)|[ESVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio)|
 :--|:--:|:--:|:--:
 board-slow|---|---|---
 corner-slow|---|---|---
@@ -86,7 +86,7 @@ units-scooter|---|---|---
 Evaluation results in [DAVIS 240C Datasets](https://rpg.ifi.uzh.ch/davis_data.html) (EIO: purely event-based VIO; EVIO: Event+Image VIO):
 <div align="center">
   
-Sequence Name|[CVPR17 EIO](https://openaccess.thecvf.com/content_cvpr_2017/papers/Zhu_Event-Based_Visual_Inertial_CVPR_2017_paper.pdf)|[BMVC17 EIO](https://rpg.ifi.uzh.ch/docs/BMVC17_Rebecq.pdf)|[Ultimate SLAM EIO](https://rpg.ifi.uzh.ch/docs/RAL18_VidalRebecq.pdf)|[Ultimate SLAM EVIO](https://rpg.ifi.uzh.ch/docs/RAL18_VidalRebecq.pdf)|[3DV19 EIO](https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/380462/1/3DV2019.pdf)|[RAL22 EVIO](https://arxiv.org/pdf/2204.05880.pdf)|[IROS22 EIO](https://ieeexplore.ieee.org/document/9981249)|Our [EIO](https://ieeexplore.ieee.org/document/9981970)|PL-EVIO|
+Sequence Name|[CVPR17 EIO](https://openaccess.thecvf.com/content_cvpr_2017/papers/Zhu_Event-Based_Visual_Inertial_CVPR_2017_paper.pdf)|[BMVC17 EIO](https://rpg.ifi.uzh.ch/docs/BMVC17_Rebecq.pdf)|[Ultimate SLAM EIO](https://rpg.ifi.uzh.ch/docs/RAL18_VidalRebecq.pdf)|[Ultimate SLAM EVIO](https://rpg.ifi.uzh.ch/docs/RAL18_VidalRebecq.pdf)|[3DV19 EIO](https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/380462/1/3DV2019.pdf)|[RAL22 EVIO](https://arxiv.org/pdf/2204.05880.pdf)|[IROS22 EIO](https://ieeexplore.ieee.org/document/9981249)|Our [EIO](https://ieeexplore.ieee.org/document/9981970)|[PL-EVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio)|
 :--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:
 boxes_translation      | 2.69 | 0.57 | 0.76             |0.27 | 2.55 | 0.48 |1.0| 0.34  | 0.06
 hdr_boxes              | 1.23 | 0.92 | 0.67             |0.37 | 1.75 | 0.46 |1.8| 0.40  | 0.10
