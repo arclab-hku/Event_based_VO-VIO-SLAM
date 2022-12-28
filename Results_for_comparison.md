@@ -71,7 +71,7 @@ Evaluation results in [VECtor](https://star-datasets.github.io/vector/):
 <div align="center">
   
 Sequence Name|[PL-EVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio)|[ESVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio)|
-:--|:--:|:--:|:--:
+:--|:--:|:--:
 board-slow|---|---
 corner-slow|0.017|0.012
 robot-normal|0.027|0.043
