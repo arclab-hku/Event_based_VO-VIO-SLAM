@@ -18,7 +18,7 @@ The evaluations of our works in different data sequences are also recorded in vi
 Tips: we recommend this [Python package for the evaluation of odometry and SLAM](https://github.com/MichaelGrupp/evo).
 
 
-If you want to align all estimated trajectory with ground truth in SE3, you can run the following command:
+If you want to align all estimated trajectory with ground truth in SE3 to evaluate the Absolute Trajectory Error (ATE), you can run the following command:
 
 ~~~
 evo_ape bag ******.bag /ground_truth_pose /estimated_pose -va -p
