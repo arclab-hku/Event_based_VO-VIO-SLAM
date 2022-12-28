@@ -107,8 +107,6 @@ Evaluation results in [MVSEC](https://daniilidis-group.github.io/mvsec/) which a
 Although this dataset uses stereo event cameras, it also would be good choice for the evaluation of monocular event-based VIO method.
 [The results (raw trajectory) of PL-EVIO and ESVIO](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EpemLX57EuNKq1mYJUNvFXIB1TUnbuGpcrfFC0sFstuy0Q?e=fEXHsd).
 
-The accuracy is measured with absolute trajectory error (ATE) aligning the estimated trajectory with ground truth using 6-DOF transformation (in SE3), which is calculated by the public available tool [evo](https://github.com/MichaelGrupp/evo).
-`Unit: m` (e.g. 0.24 means the average error would be 0.24m in the sequence). 
 For example, you can run the following command to evaluate the accuracy:
 
 ~~~
