@@ -55,6 +55,7 @@ Evaluation results from monocular purely event-based VIO using different resolut
 
 Sequence Name|[EIO](https://ieeexplore.ieee.org/document/9981970) in DAVIS346|[EIO](https://ieeexplore.ieee.org/document/9981970) in DVXplorer|[PL-EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio) in DAVIS346|[PL-EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio) in DVXplorer
 :--|:--:|:--:|:--:|:--:
+Results (raw trajectory)|[link]()|[link]()|[link]()|[link]()
 vicon_aggressive_hdr|---|---|---|---
 vicon_dark1|---|---|---|---
 vicon_dark2|---|---|---|---
