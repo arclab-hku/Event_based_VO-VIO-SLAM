@@ -19,7 +19,7 @@ Tips: we recommend this [Python package for the evaluation of odometry and SLAM]
 For example, you can run the following command to evaluate the accuracy:
 
 ~~~
-evo_ape bag ESVIO_hku_hdr_agg.bag /cpy_uav/viconros/odometry /pose_graph/evio_odometry -va -p
+evo_ape bag ******.bag /ground_truth_pose /estimated_pose -va -p
 ~~~ 
 
 # Our Own Dataset
