@@ -74,7 +74,7 @@ units-scooter|---|---|---
 
 </div>
 
-Evaluation results in [DAVIS 240C Datasets](https://rpg.ifi.uzh.ch/davis_data.html):
+Evaluation results in [DAVIS 240C Datasets](https://rpg.ifi.uzh.ch/davis_data.html) (EIO: purely event-based VIO; EVIO: Event+Image VIO):
 <div align="center">
   
 Sequence Name|[CVPR17 EIO](https://openaccess.thecvf.com/content_cvpr_2017/papers/Zhu_Event-Based_Visual_Inertial_CVPR_2017_paper.pdf)|[BMVC17 EIO](https://rpg.ifi.uzh.ch/docs/BMVC17_Rebecq.pdf)|[Ultimate SLAM EIO](https://rpg.ifi.uzh.ch/docs/RAL18_VidalRebecq.pdf)|[Ultimate SLAM EVIO](https://rpg.ifi.uzh.ch/docs/RAL18_VidalRebecq.pdf)|[3DV19 EIO](https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/380462/1/3DV2019.pdf)|[RAL22 EVIO](https://arxiv.org/pdf/2204.05880.pdf)|Our [EIO](https://ieeexplore.ieee.org/document/9981970)|PL-EVIO|
