@@ -104,4 +104,4 @@ The estimated and ground-truth trajectories were aligned with a 6-DOF transforma
 The result is obtained through computing the mean position error (Euclidean distance in meters) as percentages of the total traveled distance of the ground truth. 
 `Unit: %/m` (e.g. 0.24 means the average error would be 0.24m for 100m motion). 
 BTW: both [BMVC17](https://rpg.ifi.uzh.ch/docs/BMVC17_Rebecq.pdf) and [Ultimate SLAM](https://rpg.ifi.uzh.ch/docs/RAL18_VidalRebecq.pdf) release their raw results of this dataset in [here](https://rpg.ifi.uzh.ch/ultimateslam.html).
-However, it seems that the released results is worse than the results of the paper.
+However, it seems that the released results is worse than the from of the paper.
