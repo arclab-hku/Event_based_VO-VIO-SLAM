@@ -30,11 +30,7 @@ hku_dark_normal|---|---|---
 
 <div align="center">
 
-Sequence Name
-|[EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#1-iros2022) in DAVIS346
-|[EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#1-iros2022) in Dvxplorer
-|[PL-EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio) in DAVIS346
-|[PL-EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio) in Dvxplorer
+Sequence Name|[EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#1-iros2022) in DAVIS346|[EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#1-iros2022) in Dvxplorer|[PL-EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio) in DAVIS346|[PL-EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio) in Dvxplorer
 :--|:--:|:--:|:--:|:--:
 vicon_aggressive_hdr|---|---|---|---
 vicon_dark1|---|---|---|---
