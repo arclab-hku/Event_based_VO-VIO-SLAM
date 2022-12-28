@@ -8,6 +8,7 @@ Since our source code is only internal-accessed and not publicly available, we r
 
 Tips: We recommend this [Python package for the evaluation of odometry and SLAM](https://github.com/MichaelGrupp/evo).
 
+# Our own dataset
 <div align="center">
 
  Evaluation Results in [Data Sequence for Event-based Stereo Visual-inertial Odometry](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-stereo-visual-inertial-odometry)
@@ -27,7 +28,7 @@ hku_dark_normal|---|---|---
 </div>
 
 
-
+# Public dataset
 
 <div align="center">
  
