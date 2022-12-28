@@ -67,7 +67,13 @@ vicon_lighttodark2|---|---|---|---
 
 # Public Dataset
 ## VECtor
-Evaluation results in [VECtor](https://star-datasets.github.io/vector/):
+Evaluation results in [VECtor](https://star-datasets.github.io/vector/).
+The accuracy is measured with absolute trajectory error (ATE) aligning the estimated trajectory with ground truth using 6-DOF transformation (in SE3), which is calculated by the public available tool [evo](https://github.com/MichaelGrupp/evo).
+For example, you can run the following command to evaluate the accuracy:
+
+~~~
+evo_ape bag ESVIO_VECtor_corner_slow.bag /gt/pose /pose_graph/evio_odometry -va -p
+~~~
 <div align="center">
   
 Sequence Name|[PL-EVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio)|[ESVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio)|
