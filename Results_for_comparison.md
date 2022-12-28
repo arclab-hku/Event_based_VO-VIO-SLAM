@@ -67,7 +67,8 @@ vicon_lighttodark2|---|---|---|---
 
 # Public Dataset
 ## VECtor
-Evaluation results in [VECtor](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EkYd25BE8hdGl08Stg8p8ecBHfrLkxyD_M6jSexAnBkxOQ?e=033lEb).
+Evaluation results in [VECtor](https://star-datasets.github.io/vector/).
+[The results (raw trajectory) of PL-EVIO and ESVIO](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EkYd25BE8hdGl08Stg8p8ecBHfrLkxyD_M6jSexAnBkxOQ?e=033lEb).
 The accuracy is measured with absolute trajectory error (ATE) aligning the estimated trajectory with ground truth using 6-DOF transformation (in SE3), which is calculated by the public available tool [evo](https://github.com/MichaelGrupp/evo).
 For example, you can run the following command to evaluate the accuracy:
 
