@@ -22,6 +22,7 @@ Although this dataset uses stereo event cameras, it also would be good choice fo
 [The results (raw trajectory) of PL-EVIO, ESIO and ESVIO]().
 
 The accuracy is measured with absolute trajectory error (ATE) aligning the estimated trajectory with ground truth using 6-DOF transformation (in SE3), which is calculated by the public available tool [evo](https://github.com/MichaelGrupp/evo).
+For example, you can run the following command to evaluate the accuracy:
 
 ~~~
 evo_ape bag ESVIO_hku_hdr_agg.bag /cpy_uav/viconros/odometry /pose_graph/evio_odometry -va -p
