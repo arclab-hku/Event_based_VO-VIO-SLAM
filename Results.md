@@ -23,3 +23,30 @@ hku_hdr_agg|---|---|---
 hku_dark_normal|---|---|---
 
 </div>
+
+<div align="center">
+ 
+ Evaluation in [VECtor](https://star-datasets.github.io/vector/)
+  
+Sequence Name|PL-EVIO|ESIO|ESVIO|
+:--|:--:|:--:|:--:
+board-slow|---|---|---
+corner-slow|---|---|---
+robot-normal|---|---|---
+robot-fast|---|---|---
+desk-normal|---|---|---
+desk-fast|---|---|---
+sofa-normal|---|---|---
+sofa-fast|---|---|---
+mountain-normal|---|---|---
+mountain-fast|---|---|---
+hdr-normal|---|---|---
+hdr-fast|---|---|---
+corridors-dolly|---|---|---
+corridors-walk|---|---|---
+school-dolly|---|---|---
+school-scooter|---|---|---
+units-dolly|---|---|---
+units-scooter|---|---|---
+
+</div>
