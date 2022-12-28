@@ -9,16 +9,16 @@ Since our source code is only internal-accessed and not publicly available, we r
 
 <div align="center">
 
-Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
-:--|:--:|:--:|:--:|:--:|:--:
-hku_agg_translation|---|---|---|---|---
-hku_agg_rotation|---|---|---|---|---
-hku_agg_flip|---|---|---|---|---
-hku_agg_walk|---|---|---|---|---
-hku_hdr_circle|---|---|---|---|---
-hku_hdr_slow|---|---|---|---|---
-hku_hdr_tran_rota|---|---|---|---|---
-hku_hdr_agg|---|---|---|---|---
-hku_dark_normal|---|---|---|---|---
+Sequence Name|PL-EVIO|ESIO|ESVIO|
+:--|:--:|:--:|:--:
+hku_agg_translation|---|---|---
+hku_agg_rotation|---|---|---
+hku_agg_flip|---|---|---
+hku_agg_walk|---|---|---
+hku_hdr_circle|---|---|---
+hku_hdr_slow|---|---|---
+hku_hdr_tran_rota|---|---|---
+hku_hdr_agg|---|---|---
+hku_dark_normal|---|---|---
 
 </div>
