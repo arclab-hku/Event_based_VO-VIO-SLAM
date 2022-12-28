@@ -1,6 +1,6 @@
 <div align="center">
 
-# Results (raw trajectories) of our methods
+# Results (Raw Trajectories) of Our Methods
 
 </div>
 
