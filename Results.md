@@ -101,6 +101,7 @@ poster_6dof            | 3.56 | 0.82 | 0.30             |0.28 | 1.50 | 0.35 |1.2
 
 Tips:
 The estimated and ground-truth trajectories were aligned with a 6-DOF transformation (in SE3), using 5 seconds [0-5s] of the resulting trajectory. 
-The result is obtained through computing the mean position error (Euclidean distance in meters) as percentages of the total traveled distance of the ground truth.
+The result is obtained through computing the mean position error (Euclidean distance in meters) as percentages of the total traveled distance of the ground truth. 
+Unit:%/m, e.g. 0.24 means the average error would be 0.24m for 100m motion.
 
 BTW: both [BMVC17](https://rpg.ifi.uzh.ch/docs/BMVC17_Rebecq.pdf) and [Ultimate SLAM](https://rpg.ifi.uzh.ch/docs/RAL18_VidalRebecq.pdf) release their raw results of this dataset in [here](https://rpg.ifi.uzh.ch/ultimateslam.html). However, it seems that the released results is worse than the results of the paper.
