@@ -104,6 +104,29 @@ units-scooter|11.66|6.64
 
 </div>
 
+## MVSEC
+Evaluation results in [MVSEC](https://daniilidis-group.github.io/mvsec/) which are designed for stereo event-based VIO.
+Although this dataset uses stereo event cameras, it also would be good choice for the evaluation of monocular event-based VIO method.
+[The results (raw trajectory) of PL-EVIO and ESVIO](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EpemLX57EuNKq1mYJUNvFXIB1TUnbuGpcrfFC0sFstuy0Q?e=fEXHsd).
+
+The accuracy is measured with absolute trajectory error (ATE) aligning the estimated trajectory with ground truth using 6-DOF transformation (in SE3), which is calculated by the public available tool [evo](https://github.com/MichaelGrupp/evo).
+`Unit: m` (e.g. 0.24 means the average error would be 0.24m in the sequence). 
+For example, you can run the following command to evaluate the accuracy:
+
+~~~
+evo_ape bag ESVIO_VECtor_corner_slow.bag /gt/pose /pose_graph/evio_odometry -va -p
+~~~
+<div align="center">
+  
+Sequence Name|[PL-EVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio)|[ESVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio)|
+:--|:--:|:--:
+Indoor Flying 1|0.36|0.25
+Indoor Flying 2|0.30|0.30
+Indoor Flying 3|0.34|0.25
+Indoor Flying 4|0.44|0.46
+
+</div>
+
 
 ## DAVIS 240C Datasets
 Evaluation results in [DAVIS 240C Datasets](https://rpg.ifi.uzh.ch/davis_data.html). We also refer the raw results of the other event-based VIO works (EIO: purely event-based VIO; EVIO: Event+Image VIO) as following:
