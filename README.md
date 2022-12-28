@@ -135,7 +135,7 @@ units-scooter|---|11.6g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/
 
 # Data Sequence for Event-based Monocular Visual-inertial Odometry
 You can use these data sequence to test your monocular EVIO in different resolution event cameras.
-The *DAVIS346 (346x260)* and *DVXplorer (640x480)* are attached together (shown in Figure) for facilitating comparison. 
+The`DAVIS346 (346x260)` and `DVXplorer (640x480)`are attached together (shown in Figure) for facilitating comparison. 
 All the sequences are recorded in HDR scenarios with very low illumination or strong illumination changes through switching the strobe flash on and off.
 We also provide indoor and outdoor large-scale data sequence.
 
