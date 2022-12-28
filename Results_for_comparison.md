@@ -72,8 +72,6 @@ vicon_lighttodark2|---|---|---|---
 We evaluate our PLEVIO and ESVIO on [VECtor](https://star-datasets.github.io/vector/) Dataset.
 The results (raw trajectory) are given in this [link](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EkYd25BE8hdGl08Stg8p8ecBHfrLkxyD_M6jSexAnBkxOQ?e=033lEb).
 
-The accuracy is measured with absolute trajectory error (ATE) aligning the estimated trajectory with ground truth using 6-DOF transformation (in SE3), which is calculated by the public available tool [evo](https://github.com/MichaelGrupp/evo).
-`Unit: m` (e.g. 0.24 means the average error would be 0.24m in the sequence). 
 For example, you can run the following command to evaluate the accuracy:
 
 ~~~
