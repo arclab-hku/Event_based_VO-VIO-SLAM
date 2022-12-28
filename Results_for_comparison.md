@@ -52,17 +52,17 @@ Evaluation results from monocular purely event-based VIO using different resolut
 Sequence Name|[EIO](https://ieeexplore.ieee.org/document/9981970) in DAVIS346|[EIO](https://ieeexplore.ieee.org/document/9981970) in DVXplorer|[PL-EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio) in DAVIS346|[PL-EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio) in DVXplorer
 :--|:--:|:--:|:--:|:--:
 Our results (raw trajectory)|[link](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EgSwO4tkJp1DsPnqDnrg7NUB-liAIGSweQFxDuqGFz5fow?e=kk1Pw8)|[link](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EtlwD7UFGRtJmwhpApTnFTIBf0kASxcXUZB-QTg_OoOPlQ?e=lIS6Qo)|[link](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/Ejdo_fgKLHhGuyd4KdVw6PkBAtdku5wlejwqHZqBdeBC-w?e=hJqC0U)|[link](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/Eqoayq33RdBApKvJQCA1F5sB2uN83NuMN8Fp057KfB0rbg?e=0PfX1Y)
-vicon_aggressive_hdr|0.66|0.65|---|---
-vicon_dark1|1.02|0.35|---|---
-vicon_dark2|0.49|0.41|---|---
-vicon_darktolight1|0.81|0.80|---|---
-vicon_darktolight2|0.42|0.57|---|---
-vicon_hdr1|0.59|0.30|---|---
-vicon_hdr2|0.74|0.37|---|---
-vicon_hdr3|0.72|0.69|---|---
-vicon_hdr4|0.37|0.26|---|---
-vicon_lighttodark1|0.29|0.81|---|---
-vicon_lighttodark2|0.79|0.75|---|---
+vicon_aggressive_hdr|0.66|0.65|0.62|0.62
+vicon_dark1|1.02|0.35|0.64|0.51
+vicon_dark2|0.49|0.41|0.30|0.38
+vicon_darktolight1|0.81|0.78|0.66|0.71
+vicon_darktolight2|0.42|0.44|0.51|0.56
+vicon_hdr1|0.59|0.30|0.67|0.47
+vicon_hdr2|0.74|0.37|0.45|0.22
+vicon_hdr3|0.72|0.69|0.74|0.47
+vicon_hdr4|0.37|0.26|0.37|0.27
+vicon_lighttodark1|0.29|0.42|0.33|0.43
+vicon_lighttodark2|0.79|0.73|0.53|0.67
 
 </div>
 
