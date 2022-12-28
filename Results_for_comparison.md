@@ -20,6 +20,8 @@ Tips: we recommend this [Python package for the evaluation of odometry and SLAM]
 Evaluation results in the [dataset](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-stereo-visual-inertial-odometry) which are designed for stereo event-based VIO. 
 Although this dataset uses stereo event cameras, it also would be good choice for the evaluation of monocular event-based VIO method.
 [The results (raw trajectory) of PL-EVIO, ESIO and ESVIO]().
+
+The accuracy is measured with absolute trajectory error (ATE) aligning the estimated trajectory with ground truth using 6-DOF transformation (in SE3), which is calculated by the public available tool.
 <div align="center"> 
  
 Sequence Name|[PL-EVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio)|[ESIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio)|[ESVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio)|
@@ -33,8 +35,8 @@ hku_hdr_slow|0.069|0.17|0.059
 hku_hdr_tran_rota|0.068|0.60|0.065
 hku_hdr_agg|0.14|1.37|0.10
 hku_dark_normal|1.25|0.32|0.39
-
 </div>
+
 
 Evaluation results from monocular purely event-based VIO using different resolution event cameras `DAVIS346 (346x260)` and `DVXplorer (640x480)` in [dataset](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-monocular-visual-inertial-odometry):
 
