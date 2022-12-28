@@ -237,7 +237,7 @@ This work proposed pruely event-based visual inertial odometry (VIO).
 We do not rely on the use of image-based corner detection but design a asynchronously detected and uniformly distributed event-cornerdetector from events-only data.
 The event-corner features tracker are then integrated into a sliding windows graph-based optimization framework that tightly fuses the event-corner features with IMU measurement to estimate the 6-DoF ego-motion.
 * PDF can be downloaded in [here](https://ieeexplore.ieee.org/document/9981970)
-* [Results (raw trajectories)](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results.md)
+* [Results (raw trajectories)](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results_for_comparison.md)
 * Code is available in [internal-accessed link](https://github.com/arclab-hku/EVIO/tree/evio_mono_noetic)
 
 <div align="center">
@@ -260,7 +260,7 @@ The event-corner features tracker are then integrated into a sliding windows gra
 This work proposed the event-based VIO framework with point and line features, including: pruely event (PL-EIO) and event+image (PL-EVIO).
 It is reliable and accurate enough to provide onboard pose feedback control for the quadrotor to achieve aggressive motion, e.g. flipping.
 * PDF can be downloaded in [here](https://arxiv.org/abs/2209.12160)
-* [Results (raw trajectories)](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results.md)
+* [Results (raw trajectories)](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results_for_comparison.md)
 * Code is available in [internal-accessed link](https://github.com/arclab-hku/EVIO/tree/PL-EIO)
 * An extended version of our PL-EVIO: realizing high-accurate 6-DoF pose tracking and 3D semi-dense mapping (monocular event only) can be seen in [Link](https://www.bilibili.com/video/BV1924y1y7pn/?spm_id_from=333.999.0.0&vd_source=a88e426798937812a8ffc1a9be5a3cb7)
 
@@ -288,7 +288,7 @@ This work proposed the first stereo event-based visual inertial odometry framewo
 The stereo event-corner features are temporally and spatially associated through an event-based representation with spatio-temporal and exponential decay kernel.
 The stereo event tracker are then tightly coupled into a sliding windows graph-based optimization framework for the estimation of ego-motion.
 * PDF can be downloaded in [here](https://arxiv.org/abs/2212.13184)
-* [Results (raw trajectories)](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results.md)
+* [Results (raw trajectories)](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results_for_comparison.md)
 * Code is available in [internal-accessed link](https://github.com/arclab-hku/ESVIO)
 
 <div align="center">
@@ -310,7 +310,7 @@ The stereo event tracker are then tightly coupled into a sliding windows graph-b
 # Using Our Methods as Comparison
 We strongly recommend the peers to evaluate their proposed method using our dataset, and do the comparison with the raw results from our methods using their own accuracy criterion.
 
-The raw results (raw trajectories) of our methods can be obtained in [here](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results.md).
+The raw results (raw trajectories) of our methods can be obtained in [here](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results_for_comparison.md).
 
 
 
