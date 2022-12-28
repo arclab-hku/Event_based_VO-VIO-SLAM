@@ -70,17 +70,12 @@ vicon_lighttodark2|---|---|---|---
 # Public Dataset
 ## VECtor
 Evaluation results in the [VECtor](https://star-datasets.github.io/vector/).
-The results (raw trajectory) are given in this [link](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EkYd25BE8hdGl08Stg8p8ecBHfrLkxyD_M6jSexAnBkxOQ?e=033lEb).
 
-For example, you can run the following command to evaluate the accuracy:
-
-~~~
-evo_ape bag ESVIO_VECtor_corner_slow.bag /gt/pose /pose_graph/evio_odometry -va -p
-~~~
 <div align="center">
   
 Sequence Name|[PL-EVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio)|[ESVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio)|
 :--|:--:|:--:
+Results (raw trajectory)|[link]()|[link]()
 board-slow|---|---
 corner-slow|0.017|0.012
 robot-normal|0.027|0.043
