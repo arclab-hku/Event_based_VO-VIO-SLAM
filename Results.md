@@ -8,7 +8,12 @@ Since our source code is only internal-accessed and not publicly available, we r
 
 Tips: we recommend this [Python package for the evaluation of odometry and SLAM](https://github.com/MichaelGrupp/evo).
 
-# Our own dataset
+- [Our Own Dataset](#our-own-dataset)
+- [Public Dataset](#public-dataset)
+  - [VECtor](#VECtor)
+  - [DAVIS 240C Datasets](#DAVIS-240C-Datasets)
+
+# Our Own Dataset
 Evaluation results in the [data sequences](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-stereo-visual-inertial-odometry):
 <div align="center"> which are designed for stereo event-based VIO. 
  
@@ -47,7 +52,7 @@ vicon_lighttodark2|---|---|---|---
 </div>
 
 
-# Public dataset
+# Public Dataset
 ## VECtor
 Evaluation results in [VECtor](https://star-datasets.github.io/vector/):
 <div align="center">
