@@ -308,7 +308,9 @@ The stereo event tracker are then tightly coupled into a sliding windows graph-b
 
 
 # Using Raw Trajectories of Our Methods as Comparison
-We strongly recommend the peers evaluate their proposed method using our dataset and do the comparison with the raw results from our methods ([here](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results.md)) using their own accuracy criterion.
+We strongly recommend the peers to evaluate their proposed method using our dataset and do the comparison with the raw results from our methods using their own accuracy criterion.
+
+The raw results of our methods can be obtained in [here](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results.md).
 
 
 
