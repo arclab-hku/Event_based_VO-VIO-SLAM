@@ -33,7 +33,7 @@ hku_dark_normal|---|---|---
 
 </div>
 
-Evaluation results from monocular purely event-based VIO using different resolution event cameras `*DAVIS346 (346x260)*` and `*DVXplorer (640x480)*` in [dataset](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-monocular-visual-inertial-odometry):
+Evaluation results from monocular purely event-based VIO using different resolution event cameras `DAVIS346 (346x260)` and `DVXplorer (640x480)` in [dataset](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-monocular-visual-inertial-odometry):
 
 <div align="center">
 
