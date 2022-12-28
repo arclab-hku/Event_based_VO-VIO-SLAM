@@ -23,11 +23,11 @@ We hope that we can make some contributions for the development of event-based v
 - [Data Sequence for Event-based Monocular Visual-inertial Odometry](#Data-sequence-for-event-based-monocular-visual-inertial-odometry)
   - [Acquisition Platform](#acquisition-platform-1)
   - [Data Sequence](#data-sequence-1)
-- [Leader Board of Our Dataset](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results.md)
 - [Our Works in Event-based Vision](#our-works-in-event-based-vision)
   - [1. IROS2022](#1-iros2022)
   - [2. PL-EVIO](#2-pl-evio)
   - [3. ESVIO](#3-esvio)
+- [Using Raw Trajectories of Our Methods as Comparison](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results.md)
 - [Recommendation](#recommendation)
 
 
