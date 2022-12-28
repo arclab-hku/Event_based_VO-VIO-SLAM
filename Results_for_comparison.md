@@ -14,8 +14,9 @@ Tips: we recommend this [Python package for the evaluation of odometry and SLAM]
 - [Our Own Dataset](#our-own-dataset)
 - [Public Dataset](#public-dataset)
   - [VECtor](#VECtor)
-  - [DAVIS 240C Datasets](#DAVIS-240C-Datasets)
   - [MVSEC](#MVSEC)
+  - [DAVIS 240C Datasets](#DAVIS-240C-Datasets)
+
 
 # Our Own Dataset
 Evaluation results in the [dataset](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-stereo-visual-inertial-odometry) which are designed for stereo event-based VIO. 
@@ -69,7 +70,7 @@ vicon_lighttodark2|---|---|---|---
 
 # Public Dataset
 ## VECtor
-We evaluate our PLEVIO and ESVIO on [VECtor](https://star-datasets.github.io/vector/) Dataset.
+Evaluation results in the [VECtor](https://star-datasets.github.io/vector/).
 The results (raw trajectory) are given in this [link](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EkYd25BE8hdGl08Stg8p8ecBHfrLkxyD_M6jSexAnBkxOQ?e=033lEb).
 
 For example, you can run the following command to evaluate the accuracy:
