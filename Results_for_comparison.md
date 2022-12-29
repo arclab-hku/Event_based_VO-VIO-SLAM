@@ -24,7 +24,7 @@ evo_ape bag bag_name.bag /ground_truth_pose /estimated_pose -va -p
 
 
 # Our Own Dataset
-Evaluation results in the [dataset](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-stereo-visual-inertial-odometry) which are designed for stereo event-based VIO. 
+Evaluation results in the [stereo event dataset](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-stereo-visual-inertial-odometry) which are designed for stereo event-based VIO. 
 Although this dataset uses stereo event cameras, it also would be good choice for the evaluation of monocular event-based VIO method.
 
 
@@ -45,7 +45,7 @@ hku_dark_normal|1.25|0.32|0.39
 </div>
 
 
-Evaluation results from monocular purely event-based VIO using different resolution event cameras `DAVIS346 (346x260)` and `DVXplorer (640x480)` in [dataset](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-monocular-visual-inertial-odometry):
+Evaluation results from monocular purely event-based VIO using different resolution event cameras `DAVIS346 (346x260)` and `DVXplorer (640x480)` in [monocular event dataset](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#Data-sequence-for-event-based-monocular-visual-inertial-odometry):
 
 <div align="center">
 
