@@ -102,7 +102,7 @@ units-scooter|11.66|6.64
 
 ## MVSEC
 Evaluation results in [MVSEC](https://daniilidis-group.github.io/mvsec/).
-Note that we use the whole and raw sequences without any timestamp modification, rather than just run part of the rosbag just like [ESVO](https://github.com/HKUST-Aerial-Robotics/ESVO).
+Note that we use the whole and raw sequences without any timestamp modification, rather than just run part of the rosbag just like [ESVO](https://arxiv.org/pdf/2007.15548.pdf).
 
 <div align="center">
   
