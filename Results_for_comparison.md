@@ -9,8 +9,8 @@ Since our source code is only internal-accessed and not publicly available, we s
 
 The evaluations of our works in different data sequences are also recorded in video which can be seen in our bilibili: [Guan Weipeng](https://space.bilibili.com/499377825?spm_id_from=333.1007.0.0) or [Chen Peiyu](https://space.bilibili.com/279299582/?spm_id_from=333.999.0.0).
 
-Tips: we recommend this [Python package for the evaluation of odometry and SLAM](https://github.com/MichaelGrupp/evo).
-If you want to align all estimated trajectory with ground truth in SE3 to evaluate the Absolute Trajectory Error (ATE), you can run the following command:
+Tips: we recommend this [Python package](https://github.com/MichaelGrupp/evo) for the evaluation of odometry and SLAM.
+e.g. If you want to align all estimated trajectory with ground truth in SE3 to evaluate the Absolute Trajectory Error (ATE), you can run the following command:
 ~~~
 evo_ape bag bag_name.bag /ground_truth_pose /estimated_pose -va -p
 ~~~ 
