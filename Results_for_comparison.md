@@ -33,7 +33,7 @@ Although this dataset uses stereo event cameras, it also would be good choice fo
 
 <div align="center"> 
  
-Sequence Name|[PL-EVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio)|[ESIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio) |[ESVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio)|
+Sequence Name|[PL-EVIO](https://arxiv.org/abs/2209.12160)|[ESIO](https://arxiv.org/abs/2212.13184) |[ESVIO](https://arxiv.org/abs/2212.13184)|
 :--|:--:|:--:|:--:
 Our results (raw trajectory)|[link](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EoP9dKKKH8NOsBut_U-p240BsfYXcSx0c_Y8MsR-OBsq2Q?e=fgc6kX)|[link](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EiuhqiP31Q1FoUulH1Qpg0sBpSnJMbxXUJlRBAR5kBZnoA?e=Ty41z8)|[link](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/Eige1g2NYrtFhr69RxqU5p4BEJe6kG_2BwfMXiRjZuU3Og?e=vmFtCE)
 hku_agg_translation|0.048|0.35|0.063
@@ -52,7 +52,7 @@ Evaluation results from monocular purely event-based VIO using different resolut
 
 <div align="center">
 
-Sequence Name|[EIO](https://ieeexplore.ieee.org/document/9981970) in DAVIS346|[EIO](https://ieeexplore.ieee.org/document/9981970) in DVXplorer|[PL-EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio) in DAVIS346|[PL-EIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio) in DVXplorer
+Sequence Name|[EIO](https://ieeexplore.ieee.org/document/9981970) in DAVIS346|[EIO](https://ieeexplore.ieee.org/document/9981970) in DVXplorer|[PL-EIO](https://arxiv.org/abs/2209.12160) in DAVIS346|[PL-EIO](https://arxiv.org/abs/2209.12160) in DVXplorer
 :--|:--:|:--:|:--:|:--:
 Our results (raw trajectory)|[link](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EgSwO4tkJp1DsPnqDnrg7NUB-liAIGSweQFxDuqGFz5fow?e=kk1Pw8)|[link](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EtlwD7UFGRtJmwhpApTnFTIBf0kASxcXUZB-QTg_OoOPlQ?e=lIS6Qo)|[link](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/Ejdo_fgKLHhGuyd4KdVw6PkBAtdku5wlejwqHZqBdeBC-w?e=hJqC0U)|[link](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/Eqoayq33RdBApKvJQCA1F5sB2uN83NuMN8Fp057KfB0rbg?e=0PfX1Y)
 vicon_aggressive_hdr|0.66|0.65|0.62|0.62
@@ -76,7 +76,7 @@ Evaluation results in the [VECtor](https://star-datasets.github.io/vector/).
 
 <div align="center">
   
-Sequence Name|[PL-EVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio)|[ESVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio)|
+Sequence Name|[PL-EVIO](https://arxiv.org/abs/2209.12160)|[ESVIO](https://arxiv.org/abs/2212.13184)|
 :--|:--:|:--:
 Our results (raw trajectory)|[link](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/Ehtu7WlE_IpHjiOkF5R3YREBPmmD2U-tKYMHEbZiRMkqFA?e=FFOwc1)|[link](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/Eo8EnI3BH_xBkKWTgFTsK7oBxYFe8MTuHGTJGp1jQGr1og?e=a31S8A)
 board-slow|---|---
@@ -106,7 +106,7 @@ Note that we use the whole and raw sequences without any timestamp modification,
 
 <div align="center">
   
-Sequence Name|[PL-EVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio)|[ESVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio)|
+Sequence Name|[PL-EVIO](https://arxiv.org/abs/2209.12160)|[ESVIO](https://arxiv.org/abs/2212.13184)|
 :--|:--:|:--:
 Our results (raw trajectory)|[link](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EvlapmUwWF5Esn89dmcD958B7xkrfMkhL6AplFU-dtelrg?e=Z4T31C)|[link](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/Ep4kVqpZpTdOje-d7mchpJkBuCEe3bIq-KDcccY3VSWOEQ?e=WY7oFt)
 Indoor Flying 1|0.36|0.25
@@ -121,7 +121,7 @@ Indoor Flying 4|0.44|0.46
 Evaluation results in [DAVIS 240C Datasets](https://rpg.ifi.uzh.ch/davis_data.html). We also refer the raw results of the other event-based VIO works (EIO: purely event-based VIO; EVIO: Event+Image VIO) as following:
 <div align="center">
   
-Sequence Name|[CVPR17 EIO](https://openaccess.thecvf.com/content_cvpr_2017/papers/Zhu_Event-Based_Visual_Inertial_CVPR_2017_paper.pdf)|[BMVC17 EIO](https://rpg.ifi.uzh.ch/docs/BMVC17_Rebecq.pdf)|[Ultimate SLAM EIO](https://rpg.ifi.uzh.ch/docs/RAL18_VidalRebecq.pdf)|[Ultimate SLAM EVIO](https://rpg.ifi.uzh.ch/docs/RAL18_VidalRebecq.pdf)|[3DV19 EIO](https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/380462/1/3DV2019.pdf)|[RAL22 EVIO](https://arxiv.org/pdf/2204.05880.pdf)|[IROS22 EIO](https://ieeexplore.ieee.org/document/9981249)|[Our IROS22 EIO](https://ieeexplore.ieee.org/document/9981970)|[PL-EVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio)|
+Sequence Name|[CVPR17 EIO](https://openaccess.thecvf.com/content_cvpr_2017/papers/Zhu_Event-Based_Visual_Inertial_CVPR_2017_paper.pdf)|[BMVC17 EIO](https://rpg.ifi.uzh.ch/docs/BMVC17_Rebecq.pdf)|[Ultimate SLAM EIO](https://rpg.ifi.uzh.ch/docs/RAL18_VidalRebecq.pdf)|[Ultimate SLAM EVIO](https://rpg.ifi.uzh.ch/docs/RAL18_VidalRebecq.pdf)|[3DV19 EIO](https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/380462/1/3DV2019.pdf)|[RAL22 EVIO](https://arxiv.org/pdf/2204.05880.pdf)|[IROS22 EIO](https://ieeexplore.ieee.org/document/9981249)|[Our IROS22 EIO](https://ieeexplore.ieee.org/document/9981970)|[PL-EVIO](https://arxiv.org/abs/2209.12160)|
 :--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:
 Results (raw trajectory)|---|---|---|---|---|---|---|[link](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EmHMfp3xjiRLuq8w51WoMPUBpHQNznVZKC36hWH5T49iZw?e=0LWR6N)|---
 boxes_translation      | 2.69 | 0.57 | 0.76             |0.27 | 2.55 | 0.48 |1.0| 0.34  | 0.06
