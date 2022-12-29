@@ -12,7 +12,7 @@ The evaluations of our works in different data sequences are also recorded in vi
 Tips: we recommend this [Python package for the evaluation of odometry and SLAM](https://github.com/MichaelGrupp/evo).
 If you want to align all estimated trajectory with ground truth in SE3 to evaluate the Absolute Trajectory Error (ATE), you can run the following command:
 ~~~
-evo_ape bag ******.bag /ground_truth_pose /estimated_pose -va -p
+evo_ape bag bag_name.bag /ground_truth_pose /estimated_pose -va -p
 ~~~ 
 
 - [Our Own Dataset](#our-own-dataset)
@@ -99,6 +99,7 @@ units-scooter|11.66|6.64
 
 ## MVSEC
 Evaluation results in [MVSEC](https://daniilidis-group.github.io/mvsec/).
+Note that we use the whole sequences without any timestamp modification, rather than just run part of the rosbag just like [ESVO](https://github.com/HKUST-Aerial-Robotics/ESVO).
 
 <div align="center">
   
