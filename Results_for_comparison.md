@@ -30,7 +30,7 @@ Although this dataset uses stereo event cameras, it also would be good choice fo
 
 <div align="center"> 
  
-Sequence Name|[PL-EVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio)|[ESIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio) (purely event-based VIO)|[ESVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio)|
+Sequence Name|[PL-EVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#2-pl-evio)|[ESIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio) |[ESVIO](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM#3-esvio)|
 :--|:--:|:--:|:--:
 Our results (raw trajectory)|[link](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EoP9dKKKH8NOsBut_U-p240BsfYXcSx0c_Y8MsR-OBsq2Q?e=fgc6kX)|[link](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EiuhqiP31Q1FoUulH1Qpg0sBpSnJMbxXUJlRBAR5kBZnoA?e=Ty41z8)|[link](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/Eige1g2NYrtFhr69RxqU5p4BEJe6kG_2BwfMXiRjZuU3Og?e=vmFtCE)
 hku_agg_translation|0.048|0.35|0.063
