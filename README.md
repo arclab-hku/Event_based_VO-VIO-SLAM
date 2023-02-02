@@ -74,9 +74,9 @@ In our VICON room:
 
 <div align="center">
 
-Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
-:--|:--:|:--:|:--:|:--:|:--:
-hku_agg_translation|2022-10|3.63g|---|aggressive|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EfM2ytBNx7dIiIX4QkMQVGIBzVtMHEf4pl4EWA81iQZKEw?e=T6RA57)
+Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|Baidu Disk
+:--|:--:|:--:|:--:|:--:|:--:|:--:
+hku_agg_translation|2022-10|3.63g|---|aggressive|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EfM2ytBNx7dIiIX4QkMQVGIBzVtMHEf4pl4EWA81iQZKEw?e=T6RA57)|[Rosbag](https://pan.baidu.com/s/173zuBK6W5AWQTLwE6yG1Nw?pwd=0yf2)
 hku_agg_rotation|2022-10|3.70g|---|aggressive|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/ER6-1BaiPJVOjlyG0Pau-vAB3oJ8eHK7hTVb2GmOUTjMpg?e=SQdYxH)
 hku_agg_flip|2022-10|3.71g|---|aggressive|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EVPphYktymhEh4xF6Bp-S1EBdmHVj-YlBeDK1iu4_CakMg?e=6LuKuv)
 hku_agg_walk|2022-10|4.52g|---|aggressive|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EYK8-WqZ001Pg6Kzdrau4NQBO7k21gahDB-22l1nyeKPkg?e=4pm4me)
