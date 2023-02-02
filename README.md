@@ -107,26 +107,26 @@ Modified VECtor Dataset:
 We modified the frequency of the event_left and event_right (60Hz) and the message format from "prophesee_event_msgs/EventArray" to "dvs_msgs/EventArray" in the [VECtor dataset](https://star-datasets.github.io/vector/), so that there is more event information in each frame and we can extract effective point and line features from the event stream. We release this modified VECtor Dataset to facilitate research on event camera. For the convenience of the user, we also fuse the individual rosbag from different sensors together (left_camera, right_camera, left_event, right_event, imu, groundtruth).
 <div align="center">
 
-Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag
-:--|:--:|:--:|:--:|:--:|:--:
-board-slow|---|3.18g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EQcIz-Kf18pMl301YDr8KhQBfeziKZlb1zRBMWZBIezKLg?e=GTWE3t)
-corner-slow|---|3.51g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/ET0mYH9gDkVHuBmveuxPa8MB__oW7ti6H4a_JxduDglICw?e=TNMkyl)
-robot-normal|---|3.39g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EUwmAXpA39hIvMTRIJvcZhQBBrj95f6E-MhKkVuvovqadw?e=mLFIcb)
-robot-fast|---|4.23g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EUxG6axtQJxEquh79ZXDsX8BhhGq3QwRjW4MBz8xTXgPcg?e=In6eTJ)
-desk-normal|---|8.82g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/ESIpNEnxygNIhevd_2eMx3IB8a2qke2CqFWI6E_tCsN39Q?e=dtsnNu)
-desk-fast|---|10.9g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EbtCM0It1R1FlEBk7XrcyWYB_CmOMNWtgL-8oGGg0uGylA?e=53WJlT)
-sofa-normal|---|10.8g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EURPc2bQMkhOqw-ppGHPfqkBSCTLLucJCPHS53KZiJq9NA?e=147MeU)
-sofa-fast|---|6.7g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/ETQ16aZMg_RKqD7r7rTzpzUB3L1RNrUsxOqP2StB8PSPtA?e=Zh32Mn)
-mountain-normal|---|10.9g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EfXGQD3k9uJDpgE6dkdo1-4BOueKcH3gLV-Y5mxZ6J-FlA?e=Lk6pht)
-mountain-fast|---|16.6g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/ERy_KiwAVmRHuHpMfNEruRkB3N8AKNcoz4PhM-D3BNVYhg?e=6Yuuau)
-hdr-normal|---|7.73g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/Ea0NpmfVv1ZPuzuMji23zugBwcAx5jpk1AIWSdsyOwJwCA?e=viYiOp)
-hdr-fast|---|13.1g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/ERggGm5O8mZKgMFcRGL9PrMBTerkSbiNZujROqQtUqBeNg?e=xCMtrZ)
-corridors-dolly|---|7.78g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/Ebd9sRvWt5NDuQm98pFt2moB8tUBXW6jVe5KEnzIu5QVhQ?e=G4PgKQ)
-corridors-walk|---|8.56g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EagcclyPjMRPsTjM_0DtE-wBhZKCGiIXFHggPAWiX-OaBw?e=VMgWiE)
-school-dolly|---|12.0g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EX4nOOrn0SFDrn14xncjINYBJA-YGjucLRUaJtEisoU8AQ?e=Tu3bAv)
-school-scooter|---|5.91g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EXrOFgvdxh5Oja9wi7Kin_4Bbzgc15QtFkjYjVCqy20xWg?e=V5hiMq)
-units-dolly|---|18.5g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/Ea-XpjMCUoJDuAQ9mwVo6IcBzYTz-twRRL2VfQmfUkq02g?e=yJ9VSb)
-units-scooter|---|11.6g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/ERKuQIFBDP5FgxA_fqkTP0MB8xsVJ9l3aVUlDGjoZIK1bQ?e=FL3yDk)
+Sequence Name|Collection Date|Total Size|Duration|Features|Rosbag|Baidu Disk
+:--|:--:|:--:|:--:|:--:|:--:|:--:
+board-slow|---|3.18g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EQcIz-Kf18pMl301YDr8KhQBfeziKZlb1zRBMWZBIezKLg?e=GTWE3t)|[Rosbag]()
+corner-slow|---|3.51g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/ET0mYH9gDkVHuBmveuxPa8MB__oW7ti6H4a_JxduDglICw?e=TNMkyl)|[Rosbag](https://pan.baidu.com/s/1r_LrLyDW0PY0aZ4WMf1XKg?pwd=8km1)
+robot-normal|---|3.39g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EUwmAXpA39hIvMTRIJvcZhQBBrj95f6E-MhKkVuvovqadw?e=mLFIcb)|[Rosbag](https://pan.baidu.com/s/1AlT_jS5JKoTGmHdvUXRe7w?pwd=8vu9)
+robot-fast|---|4.23g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EUxG6axtQJxEquh79ZXDsX8BhhGq3QwRjW4MBz8xTXgPcg?e=In6eTJ)|[Rosbag](https://pan.baidu.com/s/1e_VdXYlnoEDjDrRpB3I8sg?pwd=3upg)
+desk-normal|---|8.82g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/ESIpNEnxygNIhevd_2eMx3IB8a2qke2CqFWI6E_tCsN39Q?e=dtsnNu)|[Rosbag](https://pan.baidu.com/s/1e0XTXyeCLW90ywnv_Xf7og?pwd=nrxy)
+desk-fast|---|10.9g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EbtCM0It1R1FlEBk7XrcyWYB_CmOMNWtgL-8oGGg0uGylA?e=53WJlT)|[Rosbag](https://pan.baidu.com/s/1uXJbGoPff1T-r3IVSwTaCQ?pwd=mj34)
+sofa-normal|---|10.8g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EURPc2bQMkhOqw-ppGHPfqkBSCTLLucJCPHS53KZiJq9NA?e=147MeU)|[Rosbag](https://pan.baidu.com/s/1RrgQvoLx9Rg0uK3KueHRuQ?pwd=4suu)
+sofa-fast|---|6.7g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/ETQ16aZMg_RKqD7r7rTzpzUB3L1RNrUsxOqP2StB8PSPtA?e=Zh32Mn)|[Rosbag](https://pan.baidu.com/s/1KX1dHioLfEvZSk278TdPsA?pwd=52tn)
+mountain-normal|---|10.9g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EfXGQD3k9uJDpgE6dkdo1-4BOueKcH3gLV-Y5mxZ6J-FlA?e=Lk6pht)|[Rosbag](https://pan.baidu.com/s/1Paz-OtYVIlRYAKi4_TcHLg?pwd=qxld)
+mountain-fast|---|16.6g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/ERy_KiwAVmRHuHpMfNEruRkB3N8AKNcoz4PhM-D3BNVYhg?e=6Yuuau)|[Rosbag](https://pan.baidu.com/s/1Eg4hu4YvF-LKZtlU5pnSsA?pwd=s7w1)
+hdr-normal|---|7.73g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/Ea0NpmfVv1ZPuzuMji23zugBwcAx5jpk1AIWSdsyOwJwCA?e=viYiOp)|[Rosbag](https://pan.baidu.com/s/1kBGXDhxF1bWc3DEXOU2MSg?pwd=wdlo)
+hdr-fast|---|13.1g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/ERggGm5O8mZKgMFcRGL9PrMBTerkSbiNZujROqQtUqBeNg?e=xCMtrZ)|[Rosbag](https://pan.baidu.com/s/1ykGfjJZuJ5hm7pm9WChxCw?pwd=swcj)
+corridors-dolly|---|7.78g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/Ebd9sRvWt5NDuQm98pFt2moB8tUBXW6jVe5KEnzIu5QVhQ?e=G4PgKQ)|[Rosbag](https://pan.baidu.com/s/1W78Ag2auBO3rMUd5hw3LTw?pwd=d282)
+corridors-walk|---|8.56g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EagcclyPjMRPsTjM_0DtE-wBhZKCGiIXFHggPAWiX-OaBw?e=VMgWiE)|[Rosbag](https://pan.baidu.com/s/1PVrk3UF6XcT6bknlCp6x9A?pwd=4ixi)
+school-dolly|---|12.0g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EX4nOOrn0SFDrn14xncjINYBJA-YGjucLRUaJtEisoU8AQ?e=Tu3bAv)|[Rosbag](https://pan.baidu.com/s/1EIeg1SumhFMADTlMKF6hHA?pwd=edn6)
+school-scooter|---|5.91g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EXrOFgvdxh5Oja9wi7Kin_4Bbzgc15QtFkjYjVCqy20xWg?e=V5hiMq)|[Rosbag](https://pan.baidu.com/s/1fa8IHTSsTDsanJRFgOsoCw?pwd=0epu)
+units-dolly|---|18.5g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/Ea-XpjMCUoJDuAQ9mwVo6IcBzYTz-twRRL2VfQmfUkq02g?e=yJ9VSb)|[Rosbag](https://pan.baidu.com/s/1ub8YRaNSyIPhT31FpJcSvA?pwd=vtvs)
+units-scooter|---|11.6g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/ERKuQIFBDP5FgxA_fqkTP0MB8xsVJ9l3aVUlDGjoZIK1bQ?e=FL3yDk)|[Rosbag](https://pan.baidu.com/s/13TKhx6Leysdw2TJ5FU6nBg?pwd=q08j)
 
 </div>
 
