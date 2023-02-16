@@ -288,8 +288,8 @@ This work proposed the first stereo event-based visual inertial odometry framewo
 The stereo event-corner features are temporally and spatially associated through an event-based representation with spatio-temporal and exponential decay kernel.
 The stereo event tracker are then tightly coupled into a sliding windows graph-based optimization framework for the estimation of ego-motion.
 * PDF can be downloaded in [here](https://arxiv.org/abs/2212.13184)
-* [Results (raw trajectories)](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results_for_comparison.md)
 * The supplementary material of ESVIO is available in [link](******)
+* [Results (raw trajectories)](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results_for_comparison.md)
 <!-- * Code is available in [internal-accessed link](https://github.com/arclab-hku/ESVIO) -->
 
 <div align="center">
