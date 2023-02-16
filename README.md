@@ -261,8 +261,8 @@ This work proposed the event-based VIO framework with point and line features, i
 It is reliable and accurate enough to provide onboard pose feedback control for the quadrotor to achieve aggressive motion, e.g. flipping.
 * PDF can be downloaded in [here](https://arxiv.org/abs/2209.12160)
 * [Results (raw trajectories)](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results_for_comparison.md)
-<!-- * Code is available in [internal-accessed link](https://github.com/arclab-hku/EVIO/tree/PL-EIO) -->
 * An extended version of our PL-EVIO: realizing high-accurate 6-DoF pose tracking and 3D semi-dense mapping (monocular event only) can be seen in [Link](https://www.bilibili.com/video/BV1924y1y7pn/?spm_id_from=333.999.0.0&vd_source=a88e426798937812a8ffc1a9be5a3cb7)
+<!-- * Code is available in [internal-accessed link](https://github.com/arclab-hku/EVIO/tree/PL-EIO)  -->
 
 <div align="center">
 <a href="https://b23.tv/OE3QM6j" target="_blank"><img src="PL-EVIO/cover.jpg" alt="video" width="100%" /></a>
@@ -289,6 +289,7 @@ The stereo event-corner features are temporally and spatially associated through
 The stereo event tracker are then tightly coupled into a sliding windows graph-based optimization framework for the estimation of ego-motion.
 * PDF can be downloaded in [here](https://arxiv.org/abs/2212.13184)
 * [Results (raw trajectories)](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results_for_comparison.md)
+* The supplementary material of ESVIO is available in [link](******)
 <!-- * Code is available in [internal-accessed link](https://github.com/arclab-hku/ESVIO) -->
 
 <div align="center">
