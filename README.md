@@ -238,7 +238,7 @@ We do not rely on the use of image-based corner detection but design a asynchron
 The event-corner features tracker are then integrated into a sliding windows graph-based optimization framework that tightly fuses the event-corner features with IMU measurement to estimate the 6-DoF ego-motion.
 * PDF can be downloaded in [here](https://ieeexplore.ieee.org/document/9981970)
 * [Results (raw trajectories)](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results_for_comparison.md)
-* Code is available in [internal-accessed link](https://github.com/arclab-hku/EVIO/tree/evio_mono_noetic)
+// * Code is available in [internal-accessed link](https://github.com/arclab-hku/EVIO/tree/evio_mono_noetic)
 
 <div align="center">
 <a href="https://b23.tv/Xe8MZyt" target="_blank"><img src="IROS2022/cover.jpg" alt="video" width="100%" /></a>
