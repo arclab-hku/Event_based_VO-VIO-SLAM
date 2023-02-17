@@ -101,7 +101,8 @@ hku_outdoor_large-scale|2022-11|67.4g|34.9minutes|Indoor+outdoor; large-scale|[R
   
 </div>
 
-:heavy_exclamation_mark: Modified VECtor Dataset:
+:exclamation:
+Modified VECtor Dataset:
 
 [VECtor dataset](https://star-datasets.github.io/vector/) covering the full spectrum of motion dynamics, environment complexities, and illumination conditions for both small and large-scale scenarios.
 We modified the frequency of the event_left and event_right (60Hz) and the message format from "prophesee_event_msgs/EventArray" to "dvs_msgs/EventArray" in the [VECtor dataset](https://star-datasets.github.io/vector/), so that there is more event information in each frame and we can extract effective point and line features from the event stream. We release this modified VECtor Dataset to facilitate research on event camera. For the convenience of the user, we also fuse the individual rosbag from different sensors together (left_camera, right_camera, left_event, right_event, imu, groundtruth).
@@ -309,9 +310,7 @@ The stereo event tracker are then tightly coupled into a sliding windows graph-b
 
 
 # Using Our Methods as Comparison
-:exclamation:
 We strongly recommend the peers to evaluate their proposed method using our dataset, and do the comparison with the raw results from our methods using their own accuracy criterion.
-:exclamation:
 
 The raw results/trajectories of our methods can be obtained in :point_right: [here](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results_for_comparison.md).
 
