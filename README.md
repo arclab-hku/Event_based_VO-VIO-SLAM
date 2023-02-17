@@ -242,7 +242,7 @@ units-scooter|---|11.6g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/
 In addition, it also collects Lidar data, IMU and RTK GPS measurements.
 However, the data sequence of different sensors in DSEC are divided and in different data formats, which is very unfriendly to users.
 Therefore, we convert them into same rosbag which might be easier for event-based VIO evaluation.
-The code is also available in [here](******).
+The code of processing the data is also available in [here](******).
 
 
 
