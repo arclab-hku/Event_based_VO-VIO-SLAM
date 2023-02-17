@@ -238,6 +238,11 @@ units-scooter|---|11.6g|---|---|[Rosbag](https://connecthkuhk-my.sharepoint.com/
 
 
 ## Modified DSEC Dataset
+[DSEC](https://dsec.ifi.uzh.ch/) is a stereo camera dataset in driving scenarios that contains data from two monochrome event cameras and two global shutter color cameras in favorable and challenging illumination conditions. 
+In addition, it also collects Lidar data, IMU and RTK GPS measurements.
+However, the data sequence of different sensors in DSEC are divided and in different data formats, which is very unfriendly to users.
+Therefore, we convert them into same rosbag which might be easier for event-based VIO evaluation.
+The code is also available in [here](******).
 
 
 
