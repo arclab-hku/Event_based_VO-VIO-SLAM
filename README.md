@@ -214,7 +214,7 @@ We modified the frequency of the event_left and event_right (60Hz) and the messa
 
 <div align="center">
 <a target="_blank"><img src="Others/overview of Vector.png" alt="image" width="100%" /></a>
-<p> The overview of Vector dataset </p>
+<p> Overview of Vector dataset </p>
 </div> 
 
 <div align="center">
@@ -249,6 +249,12 @@ In addition, it also collects Lidar data, IMU and RTK GPS measurements.
 However, the data sequence of different sensors in DSEC are divided and in different data formats, which is very unfriendly to users.
 Therefore, we convert them into same rosbag which might be easier for event-based VIO evaluation.
 The code of processing the data can be also available in [here](******).
+
+<div align="center">
+<a target="_blank"><img src="Others/overview of DSEC.gif" alt="image" width="100%" /></a>
+<p> Overview of DSEC dataset </p>
+</div> 
+
 
 
 
