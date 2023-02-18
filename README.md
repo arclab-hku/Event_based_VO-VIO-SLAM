@@ -211,6 +211,12 @@ outdoor_large_scale2|2022-08|9.34g|16 minutes|******|[Rosbag](https://connecthku
 
 [VECtor dataset](https://star-datasets.github.io/vector/) covering the full spectrum of motion dynamics, environment complexities, and illumination conditions for both small and large-scale scenarios.
 We modified the frequency of the event_left and event_right (60Hz) and the message format from "prophesee_event_msgs/EventArray" to "dvs_msgs/EventArray" in the [VECtor dataset](https://star-datasets.github.io/vector/), so that there is more event information in each frame and we can extract effective point and line features from the event stream. We release this modified VECtor Dataset to facilitate research on event camera. For the convenience of the user, we also fuse the individual rosbag from different sensors together (left_camera, right_camera, left_event, right_event, imu, groundtruth).
+
+<div align="center">
+<a target="_blank"><img src="Others/overview of Vector.png" alt="image" width="80%" /></a>
+<p> The overview of Vector dataset </p>
+</div> 
+
 <div align="center">
 
 Sequence Name|Collection Date|Total Size|Duration|Features|One Drive|Baidu Disk
