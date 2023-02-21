@@ -45,6 +45,11 @@ Note that this might cause the degradation of perception for both the event and 
 We think that parameter tuning is infeasible, therefore, we suggest the users use same set of parameters during the evaluation.
 We hope that our dataset can help to push the boundary of future research on event-based VO/VIO algorithms, especially the ones that are really useful and can be applied in practice.
 
+<div align="center">
+<a target="_blank"><img src="ESVIO/ESVIO_comparision_with_SOTA.gif" alt="image" width="100%" /></a>
+<p> Evaluation using Our Dataset </p>
+</div> 
+
 ## Acquisition Platform
 <div align="center">
 <a target="_blank"><img src="ESVIO/quadrotor_flight.jpg" alt="image" width="80%" /></a>
