@@ -45,10 +45,7 @@ Note that this might cause the degradation of perception for both the event and 
 We think that parameter tuning is infeasible, therefore, we suggest the users use same set of parameters during the evaluation.
 We hope that our dataset can help to push the boundary of future research on event-based VO/VIO algorithms, especially the ones that are really useful and can be applied in practice.
 
-<div align="center">
-<a target="_blank"><img src="ESVIO/ESVIO_comparision_with_SOTA.gif" alt="image" width="100%" /></a>
-<p> Evaluation using Our Dataset </p>
-</div> 
+
 
 ## Acquisition Platform
 <div align="center">
@@ -328,6 +325,11 @@ The stereo event tracker are then tightly coupled into a sliding windows graph-b
 <div align="center">
 <a href="https://www.bilibili.com/video/BV1ve4y1M7v4/?share_source=copy_web&vd_source=a722388e07ea53f32d00aed0a0117f3c" target="_blank"><img src="ESVIO/ESVIO_hdr_flight _gif.gif" alt="video" width="100%" /></a>
 <p> Onboard Quadrotor Flight using Our ESVIO as State Estimator (click the gif to open)</p>
+</div>
+
+<div align="center">
+<a href="https://www.bilibili.com/video/BV168411778U/?spm_id_from=333.999.0.0&vd_source=a88e426798937812a8ffc1a9be5a3cb7" target="_blank"><img src="ESVIO/ESVIO_comparision_with_SOTA.gif" alt="video" width="100%" /></a>
+<p>Performance Comparison of Our ESIO (event-only)(click the gif to open)</p>
 </div>
 
 ~~~
