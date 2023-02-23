@@ -259,14 +259,14 @@ The code of processing the data can be also available in [here](******).
 
 <div align="center">
 
-Sequence Name|Total Size|One Drive|Baidu Disk
-:--|:--:|:--:|:--:
-zurich city 04(a)|***g|[Rosbag]()|[Rosbag]()
-zurich city 04(b)|***g|[Rosbag]()|[Rosbag]()
-zurich city 04(c)|***g|[Rosbag]()|[Rosbag]()
-zurich city 04(d)|***g|[Rosbag]()|[Rosbag]()
-zurich city 04(e)|***g|[Rosbag]()|[Rosbag]()
-zurich city 04(f)|***g|[Rosbag]()|[Rosbag]()
+Sequence Name|Total Size|One Drive
+:--|:--:|:--:
+zurich city 04 (a)|***g|[Rosbag]()
+zurich city 04 (b)|***g|[Rosbag]()
+zurich city 04 (c)|***g|[Rosbag]()
+zurich city 04 (d)|***g|[Rosbag]()
+zurich city 04 (e)|***g|[Rosbag]()
+zurich city 04 (f)|***g|[Rosbag]()
 
 </div>
 
