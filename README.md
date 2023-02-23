@@ -257,7 +257,18 @@ The code of processing the data can be also available in [here](******).
 <p> Overview of DSEC dataset </p>
 </div> 
 
+<div align="center">
 
+Sequence Name|Total Size|One Drive|Baidu Disk
+:--|:--:|:--:|:--:
+zurich city 04(a)|***g|[Rosbag]()|[Rosbag]()
+zurich city 04(b)|***g|[Rosbag]()|[Rosbag]()
+zurich city 04(c)|***g|[Rosbag]()|[Rosbag]()
+zurich city 04(d)|***g|[Rosbag]()|[Rosbag]()
+zurich city 04(e)|***g|[Rosbag]()|[Rosbag]()
+zurich city 04(f)|***g|[Rosbag]()|[Rosbag]()
+
+</div>
 
 
 
