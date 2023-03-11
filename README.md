@@ -261,12 +261,12 @@ The code of processing the data can be also available in [here](******).
 
 Sequence Name|Total Size|One Drive
 :--|:--:|:--:
-zurich city 04 (a)|***g|[Rosbag]()
-zurich city 04 (b)|***g|[Rosbag]()
-zurich city 04 (c)|***g|[Rosbag]()
-zurich city 04 (d)|***g|[Rosbag]()
-zurich city 04 (e)|***g|[Rosbag]()
-zurich city 04 (f)|***g|[Rosbag]()
+zurich city 04 (a)|13.8g|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EZAES7i9y39ElJ9iuyGcuwUBnJM9V6Mds3JatJmBuvME8g?e=xhgsN8)
+zurich city 04 (b)|5.33g|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/Edz6DSndhcRKsNWsrnCPw0kBG1MyxwVi-nr2ErtYHKVnig?e=yH9tEV)
+zurich city 04 (c)|18.7g|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/Eek93pMg9CBKotKSv-tU8g0Baxu9nOcGFja8JTA6GFsHrw?e=G7z4TO)
+zurich city 04 (d)|15.5g|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/Ef4FUqhPxzlIr_xWMR0NJCYBloeiiXuoTu-vnqNNosEu8g?e=DYDttw)
+zurich city 04 (e)|4.94g|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EeWJC5upKztDpfWrg4oCo0QBNfPnXGNoTCh3QlZyFgpOSg?e=GWvLvQ)
+zurich city 04 (f)|15.1g|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/personal/chenpyhk_connect_hku_hk/EVePcqU3ex1ColT58_ZtOBkB2JRie3ZZzXngkGmL8v873Q?e=F6bQDD)
 
 </div>
 
