@@ -364,9 +364,11 @@ The raw results/trajectories of our methods can be obtained in :point_right: [he
 * The survey when I first meet "Event Camera" can be seen in [Blog](https://blog.csdn.net/gwplovekimi/article/details/115908307?spm=1001.2014.3001.5502)
 * [Event-based Vision Resources](https://github.com/uzh-rpg/event-based_vision_resources)
 * [The course: Event-based Robot Vision, by Prof. Guillermo Gallego](https://www.youtube.com/playlist?list=PL03Gm3nZjVgUFYUh3v5x8jVonjrGfcal8)
+<!--
 * Useful tools:
    - https://github.com/TimoStoff/event_utils
    - https://github.com/tub-rip/events_viz
+-->
 
 
 
