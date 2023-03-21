@@ -1,0 +1,4 @@
+<launch>
+  <rosparam command="load" file="$(find mpl_dataset_toolbox)/config/event_visualizer.yaml"/>
+  <node pkg="mpl_dataset_toolbox" type="event_visualizer" name="event_visualizer" output="screen"/>
+</launch>

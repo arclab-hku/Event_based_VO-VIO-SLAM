@@ -1,0 +1,5 @@
+<launch>
+  <param name="bag_path" value="$(arg bag_path)"/>
+  <rosparam command="load" file="$(find mpl_dataset_toolbox)/config/message_topic.yaml"/>
+  <node pkg="mpl_dataset_toolbox" type="bag2rawfile" name="bag2rawfile" output="screen"/>
+</launch>

@@ -1,0 +1,9 @@
+<launch>
+  <arg name="gt_path" default="None"/>
+  <node pkg="mpl_dataset_toolbox" type="timeline_reconstructor" name="timeline_reconstructor" output="screen" clear_params="true">
+    <param name="bag_path" value="$(arg bag_path)"/>
+    <param name="gt_path" value="$(arg gt_path)"/>
+    <rosparam command="load" file="$(find mpl_dataset_toolbox)/config/message_topic.yaml"/>
+    <rosparam command="load" file="$(find mpl_dataset_toolbox)/config/raw_message_topic.yaml"/>
+  </node>
+</launch>

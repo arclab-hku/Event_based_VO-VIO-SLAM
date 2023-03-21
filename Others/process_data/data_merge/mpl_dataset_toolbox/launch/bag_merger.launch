@@ -1,0 +1,4 @@
+<launch>
+  <param name="directory_path" value="$(arg directory_path)"/>
+  <node pkg="mpl_dataset_toolbox" type="bag_merger" name="bag_merger" output="screen"/>
+</launch>

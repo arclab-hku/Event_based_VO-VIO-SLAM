@@ -1,0 +1,7 @@
+in_event_stream_topic: [
+  "/prophesee/camera/cd_events_buffer"
+]
+out_event_frame_topic: [  
+  "/prophesee/event_frame"
+]
+out_frequency: 30 # [Hz]

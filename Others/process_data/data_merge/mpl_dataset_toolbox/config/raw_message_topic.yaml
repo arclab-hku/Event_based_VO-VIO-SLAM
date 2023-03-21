@@ -1,0 +1,8 @@
+in_imu_topic: "/imu/data"
+in_event_left_topic: "/prophesee/camera_left/cd_events_buffer_reconstructed"
+in_event_right_topic: "/prophesee/camera_right/cd_events_buffer_reconstructed"
+in_camera_left_topic: "/stereo/left/image_mono"
+in_camera_right_topic: "/stereo/right/image_mono"
+in_kinect_color_topic: "/rgb/image_raw"
+in_kinect_depth_topic: "/depth/image_raw"
+in_lidar_topic: "/os_cloud_node/points"

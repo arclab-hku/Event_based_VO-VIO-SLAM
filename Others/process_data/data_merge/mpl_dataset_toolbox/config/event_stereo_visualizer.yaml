@@ -1,0 +1,9 @@
+in_event_stream_topic: [
+  "/prophesee/left/events", 
+  "/prophesee/right/events"
+]
+out_event_frame_topic: [  
+  "/prophesee/left/event_frame", # <-- follow the same order as above
+  "/prophesee/right/event_frame"
+]
+out_frequency: 30 # [Hz]

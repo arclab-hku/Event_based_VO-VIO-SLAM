@@ -1,0 +1,77 @@
+--- CMakeLists.txt
++++ CMakeLists.txt
+@@ -416,16 +416,15 @@ add_subdirectory(Eigen)
+
+ add_subdirectory(doc EXCLUDE_FROM_ALL)
+
+-include(EigenConfigureTesting)
++option(BUILD_TESTING "Enable creation of Eigen tests." ON)
++if(BUILD_TESTING)
++  include(EigenConfigureTesting)
+
+-# fixme, not sure this line is still needed:
+-enable_testing() # must be called from the root CMakeLists, see man page
+-
+-
+-if(EIGEN_LEAVE_TEST_IN_ALL_TARGET)
+-  add_subdirectory(test) # can't do EXCLUDE_FROM_ALL here, breaks CTest
+-else()
+-  add_subdirectory(test EXCLUDE_FROM_ALL)
++  if(EIGEN_LEAVE_TEST_IN_ALL_TARGET)
++    add_subdirectory(test) # can't do EXCLUDE_FROM_ALL here, breaks CTest
++  else()
++    add_subdirectory(test EXCLUDE_FROM_ALL)
++  endif()
+ endif()
+
+ if(EIGEN_LEAVE_TEST_IN_ALL_TARGET)
+@@ -461,7 +460,9 @@ endif(NOT WIN32)
+
+ configure_file(scripts/cdashtesting.cmake.in cdashtesting.cmake @ONLY)
+
+-ei_testing_print_summary()
++if(BUILD_TESTING)
++  ei_testing_print_summary()
++endif()
+
+ message(STATUS "")
+ message(STATUS "Configured Eigen ${EIGEN_VERSION_NUMBER}")
+diff --git a/blas/CMakeLists.txt b/blas/CMakeLists.txt
+index d0efb4188..9887d5804 100644
+--- blas/CMakeLists.txt
++++ blas/CMakeLists.txt
+@@ -45,10 +45,12 @@ install(TARGETS eigen_blas eigen_blas_static
+
+ if(EIGEN_Fortran_COMPILER_WORKS)
+
+-if(EIGEN_LEAVE_TEST_IN_ALL_TARGET)
+-  add_subdirectory(testing) # can't do EXCLUDE_FROM_ALL here, breaks CTest
+-else()
+-  add_subdirectory(testing EXCLUDE_FROM_ALL)
++if(BUILD_TESTING)
++  if(EIGEN_LEAVE_TEST_IN_ALL_TARGET)
++    add_subdirectory(testing) # can't do EXCLUDE_FROM_ALL here, breaks CTest
++  else()
++    add_subdirectory(testing EXCLUDE_FROM_ALL)
++  endif()
+ endif()
+
+ endif()
+diff --git a/unsupported/CMakeLists.txt b/unsupported/CMakeLists.txt
+index 4fef40a86..9a5666105 100644
+--- unsupported/CMakeLists.txt
++++ unsupported/CMakeLists.txt
+@@ -1,7 +1,9 @@
+ add_subdirectory(Eigen)
+ add_subdirectory(doc EXCLUDE_FROM_ALL)
+-if(EIGEN_LEAVE_TEST_IN_ALL_TARGET)
+-  add_subdirectory(test) # can't do EXCLUDE_FROM_ALL here, breaks CTest
+-else()
+-  add_subdirectory(test EXCLUDE_FROM_ALL)
++if(BUILD_TESTING)
++  if(EIGEN_LEAVE_TEST_IN_ALL_TARGET)
++    add_subdirectory(test) # can't do EXCLUDE_FROM_ALL here, breaks CTest
++  else()
++    add_subdirectory(test EXCLUDE_FROM_ALL)
++  endif()
+ endif()

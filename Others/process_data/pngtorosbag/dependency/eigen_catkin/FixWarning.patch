@@ -1,0 +1,40 @@
+--- Eigen/src/Core/AssignEvaluator.h	2019-12-25 13:19:30.927689094 +0100
++++ Eigen/src/Core/AssignEvaluator.h	2019-12-25 13:19:32.779688334 +0100
+@@ -83,11 +83,11 @@
+                        && int(OuterStride)!=Dynamic && int(OuterStride)%int(InnerPacketSize)==0
+                        && (EIGEN_UNALIGNED_VECTORIZE  || int(JointAlignment)>=int(InnerRequiredAlignment)),
+     MayLinearize = bool(StorageOrdersAgree) && (int(DstFlags) & int(SrcFlags) & LinearAccessBit),
+-    MayLinearVectorize = bool(MightVectorize) && MayLinearize && DstHasDirectAccess
++    MayLinearVectorize = bool(MightVectorize) && MayLinearize && (DstHasDirectAccess!=0)
+                        && (EIGEN_UNALIGNED_VECTORIZE || (int(DstAlignment)>=int(LinearRequiredAlignment)) || MaxSizeAtCompileTime == Dynamic),
+       /* If the destination isn't aligned, we have to do runtime checks and we don't unroll,
+          so it's only good for large enough sizes. */
+-    MaySliceVectorize  = bool(MightVectorize) && bool(DstHasDirectAccess)
++    MaySliceVectorize  = bool(MightVectorize) && (DstHasDirectAccess!=0)
+                        && (int(InnerMaxSize)==Dynamic || int(InnerMaxSize)>=(EIGEN_UNALIGNED_VECTORIZE?InnerPacketSize:(3*InnerPacketSize)))
+       /* slice vectorization can be slow, so we only want it if the slices are big, which is
+          indicated by InnerMaxSize rather than InnerSize, think of the case of a dynamic block
+--- Eigen/src/Core/products/GeneralMatrixVector.h	2017-06-15 09:10:20.000000000 +0200
++++ Eigen/src/Core/products/GeneralMatrixVector.h	2019-12-25 13:59:41.286547822 +0100
+@@ -183,8 +183,8 @@
+     alignmentPattern = AllAligned;
+   }
+
+-  const Index offset1 = (FirstAligned && alignmentStep==1)?3:1;
+-  const Index offset3 = (FirstAligned && alignmentStep==1)?1:3;
++  const Index offset1 = (FirstAligned!=0 && alignmentStep==1)?3:1;
++  const Index offset3 = (FirstAligned!=0 && alignmentStep==1)?1:3;
+
+   Index columnBound = ((cols-skipColumns)/columnsAtOnce)*columnsAtOnce + skipColumns;
+   for (Index i=skipColumns; i<columnBound; i+=columnsAtOnce)
+@@ -457,8 +457,8 @@
+     alignmentPattern = AllAligned;
+   }
+
+-  const Index offset1 = (FirstAligned && alignmentStep==1)?3:1;
+-  const Index offset3 = (FirstAligned && alignmentStep==1)?1:3;
++  const Index offset1 = (FirstAligned!=0 && alignmentStep==1)?3:1;
++  const Index offset3 = (FirstAligned!=0 && alignmentStep==1)?1:3;
+
+   Index rowBound = ((rows-skipRows)/rowsAtOnce)*rowsAtOnce + skipRows;
+   for (Index i=skipRows; i<rowBound; i+=rowsAtOnce)

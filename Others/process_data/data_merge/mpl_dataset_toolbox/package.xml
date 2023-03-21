@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>mpl_dataset_toolbox</name>
+  <version>2.1.0</version>
+  <description>The MPL Dataset Toolbox</description>
+  <maintainer email="gaoling@shanghaitech.edu.cn">Ling Gao</maintainer>
+  <license>BSD-3-Clause-Clear</license>
+  <url type="website">https://star-datasets.github.io/vector/download/</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>cv_bridge</depend>
+  <depend>geometry_msgs</depend>
+  <depend>message_generation</depend> 
+  <!-- <depend>prophesee_event_msgs</depend> -->
+  <depend>opencv</depend>
+  <depend>pcl_conversions</depend>
+  <depend>pcl_ros</depend>
+  <depend>rosbag</depend>
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+</package>

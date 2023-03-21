@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>minkindr_python</name>
+  <version>1.0.0</version>
+  <description>Python exports for minkindr.</description>
+
+  <maintainer email="mathias.buerki@mavt.ethz.ch">Mathias Buerki</maintainer>
+  <license>New BSD</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>catkin_simple</buildtool_depend>
+
+  <depend>catkin_boost_python_buildtool</depend>
+  <depend>glog_catkin</depend>
+  <depend>minkindr</depend>
+  <depend>numpy_eigen</depend>
+
+</package>

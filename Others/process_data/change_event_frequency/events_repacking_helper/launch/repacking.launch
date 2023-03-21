@@ -1,0 +1,140 @@
+<!-- <launch>
+  <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/zhouyi/workspace/dataset/DVS/hkust_HDR/2020-07-14-12-38-42.bag
+          /home/zhouyi/workspace/dataset/DVS/hkust_HDR/hahaha.bag">
+  </node>
+</launch> -->
+
+<launch>
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/desk_fast_hku.bag
+          /home/cpy/desk_fast_events.bag">
+  </node> -->
+
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/VECtor/board_slow_events/merged_bags/board_slow1.synced.merged.bag
+          /home/cpy/Datasets/VECtor/board_slow/board_slow1.synced.left_event.bag">
+  </node> -->
+
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/VECtor/robot_fast_events/merged_bags/robot_fast1.synced.merged.bag
+          /home/cpy/Datasets/VECtor/robot_fast/robot_fast1.synced.left_event.bag">
+  </node> -->
+
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/VECtor/sofa_fast_events/merged_bags/sofa_fast1.synced.merged.bag
+          /home/cpy/Datasets/VECtor/sofa_fast/sofa_fast1.synced.left_event.bag">
+  </node> -->
+
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/VECtor/hdr_fast_events/merged_bags/hdr_fast1.synced.merged.bag
+          /home/cpy/Datasets/VECtor/hdr_fast/hdr_fast1.synced.left_event.bag">
+  </node> -->
+
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/VECtor/mountain_fast_events/merged_bags/mountain_fast1.synced.merged.bag
+          /home/cpy/Datasets/VECtor/mountain_fast/mountain_fast1.synced.left_event.bag">
+  </node> -->
+
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/VECtor/mountain_normal_events/merged_bags/mountain_normal1.synced.merged.bag
+          /home/cpy/Datasets/VECtor/mountain_normal/mountain_normal1.synced.left_event.bag">
+  </node> -->
+
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/VECtor/sofa_normal_events/merged_bags/sofa_normal1.synced.merged.bag
+          /home/cpy/Datasets/VECtor/sofa_normal/sofa_normal1.synced.left_event.bag">
+  </node> -->
+
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/VECtor/desk_normal_events/merged_bags/desk_normal1.synced.merged.bag
+          /home/cpy/Datasets/VECtor/desk_normal/desk_normal1.synced.left_event.bag">
+  </node> -->
+
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/VECtor/hdr_normal_events/merged_bags/hdr_normal1.synced.merged.bag
+          /home/cpy/Datasets/VECtor/hdr_normal/hdr_normal1.synced.left_event.bag">
+  </node> -->
+
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/VECtor/board_slow_events/merged_bags/board_slow1.synced.merged.bag
+          /home/cpy/Datasets/VECtor/board_slow/board_slow1.synced.left_event.bag">
+  </node> -->
+
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/VECtor/corner_slow_events/merged_bags/corner_slow1.synced.merged.bag
+          /home/cpy/Datasets/VECtor/corner_slow/corner_slow1.synced.left_event.bag">
+  </node> -->
+
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/VECtor/robot_normal_events/merged_bags/robot_normal1.synced.merged.bag
+          /home/cpy/Datasets/VECtor/robot_normal/robot_normal1.synced.left_event.bag">
+  </node> -->
+
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/VECtor/corridors_dolly_events/merged_bags/corridors_dolly1.synced.merged.bag
+          /home/cpy/Datasets/VECtor/corridors_dolly/corridors_dolly1.synced.left_event.bag">
+  </node> -->
+
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/VECtor/corridors_walk_events/merged_bags/corridors_walk1.synced.merged.bag
+          /home/cpy/Datasets/VECtor/corridors_walk/corridors_walk1.synced.left_event.bag">
+  </node> -->
+
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/VECtor/school_dolly_events/merged_bags/school_dolly1.synced.merged.bag
+          /home/cpy/Datasets/VECtor/school_dolly/school_dolly1.synced.left_event.bag">
+  </node> -->
+
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/VECtor/school_scooter_events/merged_bags/school_scooter1.synced.merged.bag
+          /home/cpy/Datasets/VECtor/school_scooter/school_scooter1.synced.left_event.bag">
+  </node> -->
+
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/VECtor/units_dolly_events/merged_bags/units_dolly1.synced.merged.bag
+          /home/cpy/Datasets/VECtor/units_dolly/units_dolly1.synced.left_event.bag">
+  </node> -->
+
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/VECtor/units_scooter_events/merged_bags/units_scooter1.synced.merged.bag
+          /home/cpy/Datasets/VECtor/units_scooter/units_scooter1.synced.left_event.bag">
+  </node> -->
+
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/ESVIO/HKU_aggressive_translation.bag
+          /home/cpy/Datasets/ESVIO/HKU_aggressive_translation_new.bag">
+  </node> -->
+
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/DSEC/zurich_04_a_events_process/merged_bags/dsec.merged.bag
+          /home/cpy/Datasets/DSEC/zurich_04_a_events_process/merged_bags/dsec.merged.events.new.bag">
+  </node> -->
+
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/DSEC/zurich_04_b_events_process/merged_bags/dsec.merged.bag
+          /home/cpy/Datasets/DSEC/zurich_04_b_events_process/merged_bags/dsec.merged.events.new.bag">
+  </node> -->
+
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/DSEC/zurich_04_c_events_process/merged_bags/dsec.merged.bag
+          /home/cpy/Datasets/DSEC/zurich_04_c_events_process/merged_bags/dsec.merged.events.new.bag">
+  </node> -->
+  
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/DSEC/zurich_04_d_events_process/merged_bags/dsec.merged.bag
+          /home/cpy/Datasets/DSEC/zurich_04_d_events_process/merged_bags/dsec.merged.events.new.bag">
+  </node> -->
+
+  <!-- <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/DSEC/zurich_04_e_events_process/merged_bags/dsec.merged.bag
+          /home/cpy/Datasets/DSEC/zurich_04_e_events_process/merged_bags/dsec.merged.events.new.bag">
+  </node> -->
+
+  <node name="EventMessageEditor" pkg="events_repacking_helper" type="EventMessageEditor" output="screen" required="true"
+    args="/home/cpy/Datasets/DSEC/zurich_04_f_events_process/merged_bags/dsec.merged.bag
+          /home/cpy/Datasets/DSEC/zurich_04_f_events_process/merged_bags/dsec.merged.events.new.bag">
+  </node>
+
+
+</launch>
