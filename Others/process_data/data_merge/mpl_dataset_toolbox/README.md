@@ -1,4 +1,5 @@
 # MPL Dataset Toolbox
+This code is used for merging event, images and IMU together which is adopted from [mgaoling/mpl_dataset_toolbox](https://github.com/mgaoling/mpl_dataset_toolbox) 
 
 [VECtor Benchmark](https://star-datasets.github.io/vector/) is the first complete set of benchmark datasets captured with a multi-sensor setup containing an event-based stereo camera, a regular stereo camera, multiple depth sensors, and an inertial measurement unit. The setup is fully hardware-synchronized and underwent accurate extrinsic calibration. All sequences come with ground truth data captured by highly accurate external reference devices such as a motion capture system. Individual sequences include both small and large-scale environments, and cover the specific challenges targeted by dynamic vision sensors.
 

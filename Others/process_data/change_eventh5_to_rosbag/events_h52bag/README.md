@@ -1,4 +1,6 @@
 # events_h52bag
+This code is used for changing events_h52 to rosbag format which is adopted from [tub-rip/events_h52bag](https://github.com/tub-rip/events_h52bag)
+
 C++ code to convert event data from HDF5 to ROSbags. By default, data format of h5 input file is expected as in the [DSEC dataset](https://dsec.ifi.uzh.ch/) or [TUM-VIE dataset](https://vision.in.tum.de/data/datasets/visual-inertial-event-dataset). The exact data structure used can be found [here](https://github.com/uzh-rpg/DSEC#events).
 
 **Author**: [Suman Ghosh](https://www.linkedin.com/in/suman-ghosh-a8762576/)
