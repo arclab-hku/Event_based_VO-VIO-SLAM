@@ -274,7 +274,7 @@ zurich city 04 (f)|15.1g|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/p
 
 # Our Works in Event-based Vision
 ## 1. IROS2022
-This work proposed pruely event-based visual inertial odometry (VIO).
+This work proposed event inertial odometry (EIO).
 We do not rely on the use of image-based corner detection but design a asynchronously detected and uniformly distributed event-cornerdetector from events-only data.
 The event-corner features tracker are then integrated into a sliding windows graph-based optimization framework that tightly fuses the event-corner features with IMU measurement to estimate the 6-DoF ego-motion.
 * PDF can be downloaded [here](https://ieeexplore.ieee.org/document/9981970)
@@ -298,7 +298,7 @@ The event-corner features tracker are then integrated into a sliding windows gra
 ~~~
 
 ## 2. PL-EVIO 
-This work proposed the event-based VIO framework with point and line features, including: pruely event (PL-EIO) and event+image (PL-EVIO).
+This work proposed the event-based visual-inertial odometry (EVIO) framework with point and line features, including: pruely event (PL-EIO) and event+image (PL-EVIO).
 It is reliable and accurate enough to provide onboard pose feedback control for the quadrotor to achieve aggressive motion, e.g. flipping.
 * PDF can be downloaded [here](https://arxiv.org/abs/2209.12160)
 * [Results (raw trajectories)](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results_for_comparison.md)
