@@ -287,7 +287,7 @@ The event-corner features tracker are then integrated into a sliding windows gra
 </div>
 
 ~~~
-@inproceedings{GWPHKU:EVIO,
+@inproceedings{GWPHKU:EIO,
   title={Monocular Event Visual Inertial Odometry based on Event-corner using Sliding Windows Graph-based Optimization},
   author={Guan, Weipeng and Lu, Peng},
   booktitle={2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
@@ -316,7 +316,7 @@ It is reliable and accurate enough to provide onboard pose feedback control for 
 </div>
 
 ~~~
-@article{PL-EVIO,
+@article{GWPHKU:PL-EVIO,
   title={PL-EVIO: Robust Monocular Event-based Visual Inertial Odometry with Point and Line Features},
   author={Guan, Weipeng and Chen, Peiyu and Xie, Yuhan and Lu, Peng},
   journal={arXiv preprint arXiv:2209.12160},
@@ -339,7 +339,7 @@ The stereo event tracker are then tightly coupled into a sliding windows graph-b
 </div>
 
 ~~~
-@article{ESVIO,
+@article{GWPHKU:ESVIO,
   title={ESVIO: Event-based Stereo Visual Inertial Odometry},
   author={Chen, Peiyu and Guan, Weipeng and Lu, Peng},
   journal={IEEE Robotics and Automation Letters},
