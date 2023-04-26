@@ -1,0 +1,18 @@
+<launch>
+    <!-- Camera capture node -->
+    <node pkg="dv_ros_capture" type="capture_node" name="capture_node" clear_params="true" output="screen"
+          required="true"/>
+
+    <!-- Tracker -->
+    <node pkg="dv_ros_tracker" type="tracker_node" name="tracker_node" clear_params="true" output="screen"
+          required="true">
+        <rosparam command="load" file="$(find dv_ros_tracker)/config/frame_only_settings.yaml"/>
+
+        <remap from="/tracker_node/image" to="/capture_node/camera/image"/>
+        <remap from="/tracker_node/events" to="/capture_node/events"/>
+        <remap from="/tracker_node/camera_info" to="/capture_node/camera_info"/>
+    </node>
+
+    <node pkg="rqt_gui" type="rqt_gui" name="gui"
+          args="--perspective-file $(find dv_ros_tracker)/config/rqt/tracker_visualizer.perspective"/>
+</launch>

@@ -1,0 +1,12 @@
+<launch>
+
+    <node pkg="dv_ros_capture" type="capture_node" name="capture_node" clear_params="true" output="screen" required="true" />
+
+    <node pkg="dv_ros_accumulation" type="edge_map" name="edge_map" clear_params="true" output="screen">
+        <remap from="/edge_map/events" to="/capture_node/events" />
+    </node>
+
+    <node pkg="rqt_gui" type="rqt_gui" name="reconfigure" respawn="false"
+        args = "--perspective-file $(find dv_ros_accumulation)/launch/rqt/edge_map.perspective" />
+
+</launch>

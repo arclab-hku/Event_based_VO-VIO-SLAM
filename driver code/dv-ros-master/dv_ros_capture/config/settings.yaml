@@ -1,0 +1,33 @@
+# The time between two timestamps
+timeIncrement: 1000
+# If true, sensor_msgs Image of the camera frames is published
+frames: true
+# If true, dv_ros EventArray containing the events batch is published
+events: true
+# If true, sensor_msgs Imu containing Imu data is published
+imu: true
+# If true, Trigger msg containing Trigger data is published
+triggers: true
+# Camera reference frame name for publishing IMU extrinsic calibration
+cameraFrameName: "camera"
+# IMU reference frame name for publishing IMU extrinsic calibration
+imuFrameName: "imu"
+# if true, the IMU accelerations and velocities are expressed in the camera frame
+transformImuToCameraFrame: true
+# If true, publish unbiased IMU data, that is IMU bias values that are read from
+# calibration file will be subtracted out of the raw IMU stream
+unbiasedImuData: true
+# Path to the camera calibration file
+cameraCalibrationFilePath: ""
+# Path to the aedat4 file, if not specified the first available camera will be read
+aedat4FilePath: ""
+# Camera to be read
+cameraName: ""
+# Enable noise filtering on the event stream
+noiseFiltering: false
+# Noise filter background activity time threshold in microseconds
+noiseBackgroundActivityTime: 2000
+# A list of devices for master camera to synchronize with
+syncDevice: []
+# Wait for synchronization signal before publishing data
+waitForSync: false

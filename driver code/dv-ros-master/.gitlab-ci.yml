@@ -1,0 +1,50 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: normal
+  PACKAGE_REGISTRY_URL: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/${CI_PROJECT_NAME}"
+  PROJECT_NAME: "dv-ros"
+  PROJECT_NAME_INTERNAL: "dv-ros-internal"
+
+default:
+  interruptible: true
+
+release_archive_submodules:
+  stage: deploy
+  image: registry.gitlab.com/inivation/infra/docker-files/ubuntu:rolling
+  interruptible: false
+  variables:
+    GIT_STRATEGY: clone
+  script:
+    # Archive all the code, including git submodules and upload as generic package.
+    - git-archive-all "${CI_PROJECT_NAME}-${CI_COMMIT_TAG}.zip"
+    - 'curl --header "JOB-TOKEN: ${CI_JOB_TOKEN}" --upload-file "${CI_PROJECT_NAME}-${CI_COMMIT_TAG}.zip" "${PACKAGE_REGISTRY_URL}/${CI_COMMIT_TAG}/${CI_PROJECT_NAME}-${CI_COMMIT_TAG}.zip"'
+    - git-archive-all "${CI_PROJECT_NAME}-${CI_COMMIT_TAG}.tar.gz"
+    - 'curl --header "JOB-TOKEN: ${CI_JOB_TOKEN}" --upload-file "${CI_PROJECT_NAME}-${CI_COMMIT_TAG}.tar.gz" "${PACKAGE_REGISTRY_URL}/${CI_COMMIT_TAG}/${CI_PROJECT_NAME}-${CI_COMMIT_TAG}.tar.gz"'
+  rules:
+    - if: $CI_COMMIT_TAG
+
+pages:
+  stage: deploy
+  image: registry.gitlab.com/inivation/infra/docker-files/ubuntu:rolling
+  interruptible: false
+  tags:
+    - docker
+    - ubuntu
+    - build
+  variables:
+    GIT_STRATEGY: clone
+  script:
+    - cd docs
+    - python3 docs-build.py "${CI_COMMIT_REF_NAME}" "${CI_DEFAULT_BRANCH}"
+    - cp -R build ../public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_TAG
+    - if: $CI_COMMIT_BRANCH
+  resource_group: "${CI_JOB_NAME}"
+  cache:
+    key: "${CI_JOB_NAME}"
+    paths:
+      - docs/build
+    policy: pull-push

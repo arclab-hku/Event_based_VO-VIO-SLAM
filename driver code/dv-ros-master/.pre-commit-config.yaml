@@ -1,0 +1,16 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+    -   id: check-merge-conflict
+    -   id: check-xml
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+
+-   repo: git@gitlab.com:inivation/infra/pre-commit-hooks
+    rev: b1f14dfb271b682e424c8e05f54e1faba22f6fe0
+    hooks:
+    -   id: clang-format
+    -   id: yapf
+    -   id: cmake-format

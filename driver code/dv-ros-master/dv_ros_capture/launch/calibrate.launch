@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="dv_ros_capture" type="capture_node" name="capture_node" clear_params="true" output="screen" required="true"></node>
+
+    <node pkg="camera_calibration" type="cameracalibrator.py" name="intrinsic_calibrator"
+          args="--size 8x5 --square 0.030 --no-service-check image:=/capture_node/camera/image camera:=/capture_node"/>
+</launch>

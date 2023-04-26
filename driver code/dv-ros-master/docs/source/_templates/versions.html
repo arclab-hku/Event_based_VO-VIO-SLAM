@@ -1,0 +1,53 @@
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="{{ _('Versions') }}">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> See other versions</span>
+        <strong>v: {{ current_version }}</strong>
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt id="tags">{{ _('Tags') }}</dt>
+      </dl>
+      <dl>
+        <dt id="branches">{{ _('Branches') }}</dt>
+      </dl>
+      <dl>
+        <dt>{{ _('Downloads') }}</dt>
+        {% for type, url in downloads %}
+          <dd><a href="{{ url }}">{{ type }}</a></dd>
+        {% endfor %}
+      </dl>
+    </div>
+  </div>
+  <script>
+    // Parse versions.json to generate version selection.
+    function addVersions(ver_list, id_elem) {
+      for (const ver of ver_list) {
+        var a = document.createElement("a");
+        a.href = '../' + ver + '/index.html';
+        a.innerText = ver;
+
+        var dd = document.createElement("dd");
+
+        if (ver === "{{ current_version }}") {
+          var strong = document.createElement("strong");
+          strong.appendChild(a);
+
+          dd.appendChild(strong);
+        }
+        else {
+          dd.appendChild(a);
+        }
+
+        document.getElementById(id_elem).appendChild(dd);
+      }
+    }
+
+    Promise.all([
+      fetch("../versions.json")
+      .then(response => response.json())
+    ]).then(values => {
+      addVersions(values[0]["tags"], "tags");
+      addVersions(values[0]["branches"], "branches");
+    });
+  </script>

@@ -1,0 +1,41 @@
+## General settings
+# Enable the use of event data, at least one event or frame input has to be enabled
+useEvents: true
+# Enable the use of frame data, at least one event or frame input has to be enabled
+useFrames: true
+
+## Lucas-Kanade tracking settings
+# Maximum number of features to track
+maxTracks: 200
+# Number of pyramid layers to use for Lucas-Kanade tracking
+numPyrLayers: 4
+# Track termination epsilon for Lucas-Kanade tracking
+terminationEpsilon: 0.001
+# Perform backward tracking and reject any tracks that don't "track-back" to original location
+lookbackRejection: true
+# Search window size, this value is used for both x and y sizes
+searchWindowSize: 24
+
+## Feature detection settings
+# Mask out regions of image where tracked features are present
+maskedFeatureDetect: true
+# When tracked amount of features reached this threshold (proportion of maxTracks), new features will be detected
+redetectionThreshold: 0.75
+# FAST corner detector threshold
+fastThreshold: 10
+
+## Event accumulation
+# Number of events accumulated in a single frame
+numEvents: 30000
+
+## Event-only mode settings
+# Frame accumulation framerate
+# accumulationFramerate: 100
+
+## Combined mode settings
+# Combined mode uses accumulated frame to perform intermediate tracking between image frames, this value
+# controls how many frames are accumulated between two image frames
+numIntermediateFrames: 5
+
+## MotionAware Tracker
+# useMotionCompensation: false

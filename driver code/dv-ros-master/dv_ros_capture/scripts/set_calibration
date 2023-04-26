@@ -1,0 +1,96 @@
+#! /usr/bin/python3
+
+import dv_processing as dv
+
+import rospy
+from sensor_msgs.srv import *
+from dv_ros_capture.srv import *
+
+import numpy as np
+
+
+def save_calibration(path, camera_namespace):
+    dv_calibration = dv.camera.CalibrationSet.LoadFromFile(path)
+    camera_info_service_name = camera_namespace + "set_camera_info"
+    rospy.wait_for_service(camera_info_service_name)
+    try:
+        print("Sending camera info")
+        set_camera_info = rospy.ServiceProxy(camera_info_service_name,
+                                             SetCameraInfo)
+
+        cam_calibration: dv.camera.calibrations.CameraCalibration = dv_calibration.getCameraCalibration(
+            "C0")
+        request = SetCameraInfoRequest()
+        request.camera_info.header.stamp = rospy.Time.now()
+        request.camera_info.K = [
+            cam_calibration.focalLength[0], 0,
+            cam_calibration.principalPoint[0], 0,
+            cam_calibration.focalLength[1], cam_calibration.focalLength[1], 0,
+            0, 1
+        ]
+        request.camera_info.D = cam_calibration.distortion
+        request.camera_info.R = [1.0, 0, 0, 0, 1.0, 0, 0, 0, 1.0]
+        request.camera_info.P = [
+            cam_calibration.focalLength[0], 0,
+            cam_calibration.principalPoint[0], 0, 0,
+            cam_calibration.focalLength[1], cam_calibration.focalLength[1], 0,
+            0, 0, 1.0, 0
+        ]
+        request.camera_info.width = cam_calibration.resolution[0]
+        request.camera_info.height = cam_calibration.resolution[1]
+        if cam_calibration.distortionModel == dv.camera.DistortionModel.RadTan:
+            request.camera_info.distortion_model = "plumb_bob"
+            if len(request.camera_info.D) < 5:
+                request.camera_info.D.append(0.0)
+        set_camera_info(request)
+
+    except rospy.ServiceException as e:
+        print(f"SetCameraInfo service call failed: {e}")
+
+    try:
+        imu_calibration: dv.camera.calibrations.IMUCalibration = dv_calibration.getImuCalibration(
+            "S0")
+
+        imu_info_service_name = camera_namespace + "set_imu_info"
+        rospy.wait_for_service(imu_info_service_name)
+        print("Sending IMU info")
+
+        set_imu_info = rospy.ServiceProxy(imu_info_service_name, SetImuInfo)
+
+        request = SetImuInfoRequest()
+        request.imu_info.header.stamp = rospy.Time.now()
+
+        transform = dv.kinematics.Transformationf(
+            0,
+            np.array(imu_calibration.transformationToC0).reshape((4, 4)))
+
+        request.imu_info.T_SC.translation.x = imu_calibration.transformationToC0[
+            3]
+        request.imu_info.T_SC.translation.y = imu_calibration.transformationToC0[
+            7]
+        request.imu_info.T_SC.translation.z = imu_calibration.transformationToC0[
+            11]
+
+        rotation = transform.getQuaternion()
+        request.imu_info.T_SC.rotation.x = rotation[1]
+        request.imu_info.T_SC.rotation.y = rotation[2]
+        request.imu_info.T_SC.rotation.z = rotation[3]
+        request.imu_info.T_SC.rotation.w = rotation[0]
+
+        set_imu_info(request)
+
+    except rospy.ServiceException as e:
+        print("SetImuInfo service call failed: {}" % e)
+
+
+if __name__ == "__main__":
+    rospy.init_node("set_calibration", anonymous=True)
+
+    camera_namespace = rospy.get_param("/set_calibration/camera_namespace",
+                                       "/capture_node/")
+    calibration = rospy.get_param("/set_calibration/calibration")
+    if camera_namespace[0] != "/":
+        camera_namespace = "/" + camera_namespace
+    if camera_namespace[-1] != "/":
+        camera_namespace = camera_namespace + "/"
+    save_calibration(calibration, camera_namespace)

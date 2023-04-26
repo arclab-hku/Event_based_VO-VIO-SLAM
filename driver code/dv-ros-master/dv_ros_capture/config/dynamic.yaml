@@ -1,0 +1,6 @@
+auto_exposure: true
+color_mode: 0
+exposure: 5000
+readout_mode: 0
+noise_filtering: false
+noise_background_activity_time: 2000

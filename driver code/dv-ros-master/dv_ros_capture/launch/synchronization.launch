@@ -1,0 +1,30 @@
+<launch>
+
+    <!-- Capture node running master synchronization mode -->
+    <!-- Master camera node will wait for other cameras to be online and will send hardware synchronization signal -->
+    <node pkg="dv_ros_capture" type="capture_node" name="master_cam" clear_params="true" output="screen">
+        <!-- Capture node running master synchronization mode -->
+        <param name="cameraName" value="DVXplorer_DXA00252"/>
+        <!-- A list of other cameras connected with synchronization cable to this camera -->
+        <!-- If this list is empty, the camera node will not properly synchronize them -->
+        <rosparam param="syncDevices">["DAVIS346_00000499", "DVXplorer_DXA00087"]</rosparam>
+    </node>
+
+    <!-- Other cameras -->
+    <!--
+    These cameras will report their status to the master node and will not publish any data until
+    synchronization signal is received
+    -->
+    <node pkg="dv_ros_capture" type="capture_node" name="cam1" clear_params="true" output="screen">
+        <param name="cameraName" value="DVXplorer_DXA00087"/>
+        <!-- Do not publish data until synchronization is complete -->
+        <param name="waitForSync" value="true"/>
+    </node>
+
+    <node pkg="dv_ros_capture" type="capture_node" name="cam2" clear_params="true" output="screen">
+        <param name="cameraName" value="DAVIS346_00000499"/>
+        <!-- Do not publish data until synchronization is complete -->
+        <param name="waitForSync" value="true"/>
+    </node>
+
+</launch>

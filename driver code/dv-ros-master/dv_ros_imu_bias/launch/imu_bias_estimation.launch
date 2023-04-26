@@ -1,0 +1,20 @@
+<launch>
+    <arg name="calibration_path" default=""/>
+
+    <node pkg="dv_ros_capture" type="capture_node" name="capture_node" clear_params="true" output="screen"
+          required="true">
+        <rosparam param="cameraName">DVXplorer_DXA00087</rosparam>
+        <rosparam param="unbiasedImuData">false</rosparam>
+        <rosparam param="transformImuToCameraFrame">false</rosparam>
+        <!-- A calibration file is needed to store the biases values. -->
+        <rosparam param="cameraCalibrationFilePath" subst_value="true">$(arg calibration_path)</rosparam>
+    </node>
+
+    <node pkg="dv_ros_imu_bias" type="bias_estimation_node" name="bias_estimation_node" clear_params="true"
+          output="screen" required="false">
+        <remap from="/bias_estimation_node/imu" to="/capture_node/imu"/>
+    </node>
+
+    <node pkg="rqt_gui" type="rqt_gui" name="gui"
+          args="--perspective-file $(find dv_ros_imu_bias)/launch/rqt/interface.perspective"/>
+</launch>

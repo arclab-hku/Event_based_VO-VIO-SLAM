@@ -1,0 +1,14 @@
+/* Sidebar header (and topbar for mobile) */
+.wy-side-nav-search, .wy-nav-top {
+  background: #005DB7;
+}
+
+/* Sidebar */
+.wy-nav-side {
+  background: #2B2B2B;
+}
+
+/* Version chooser */
+.rst-versions {
+  background: #2B2B2B;
+}
