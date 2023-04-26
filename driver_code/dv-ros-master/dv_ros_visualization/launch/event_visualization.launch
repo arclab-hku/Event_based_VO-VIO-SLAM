@@ -1,5 +1,8 @@
 <launch>
-    <node pkg="dv_ros_capture" type="capture_node" name="capture_node" clear_params="true" output="screen" required="true"/>
+    <node pkg="dv_ros_capture" type="capture_node" name="capture_node" clear_params="true" output="screen" required="true">
+        <param name="cameraName" value="DVXplorer_DXA00188"/>
+
+    </node>
 
     <node pkg="dv_ros_visualization" type="visualization_node" name="visualization_node" clear_params="true" output="screen">
         <remap from="/visualization_node/events" to="/capture_node/events" />
@@ -13,7 +16,7 @@
         <remap from="/edge_map_node/events" to="/capture_node/events" />
     </node>
 
-    <node pkg="rqt_gui" type="rqt_gui" name="gui"
-          args="--perspective-file $(find dv_ros_visualization)/launch/rqt/previews.perspective" />
+    <node pkg="rqt_gui" type="rqt_gui" name="rqt_gui"
+          args="--perspective-file $(find dv_ros_visualization)/launch/rqt/previews.perspective"/>
 
 </launch>
