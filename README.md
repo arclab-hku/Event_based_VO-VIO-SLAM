@@ -328,7 +328,7 @@ It is reliable and accurate enough to provide onboard pose feedback control for 
 This work proposed the first stereo event-based visual inertial odometry framework, including ESIO (purely event-based) and ESVIO (event with image-aided).
 The stereo event-corner features are temporally and spatially associated through an event-based representation with spatio-temporal and exponential decay kernel.
 The stereo event tracker are then tightly coupled into a sliding windows graph-based optimization framework for the estimation of ego-motion.
-* This work is accepted by RAL and simultaneously transferred to IROS2023. PDF can be downloaded [here](https://arxiv.org/abs/2212.13184)
+* This work is accepted by RAL and simultaneously transferred to IROS2023. PDF can be downloaded [here](https://ieeexplore.ieee.org/document/10107754)
 * The supplementary material is available in [link](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/tree/main/ESVIO/supply)
 * [Results (raw trajectories)](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results_for_comparison.md)
 <!-- * Code is available in [internal-accessed link](https://github.com/arclab-hku/ESVIO) -->
