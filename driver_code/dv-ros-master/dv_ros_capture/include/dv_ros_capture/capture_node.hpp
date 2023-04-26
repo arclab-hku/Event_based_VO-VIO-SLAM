@@ -123,7 +123,7 @@ private:
 	int64_t mImuTimeOffset      = 0;
 	Eigen::Vector3f mAccBiases  = Eigen::Vector3f::Zero();
 	Eigen::Vector3f mGyroBiases = Eigen::Vector3f::Zero();
-	ros::Time startupTime;
+	ros::Time startupTime;//开启时间
 	std::atomic<int64_t> mCurrentSeek;
 	std::optional<TransformsMessage> mImuToCamTransforms = std::nullopt;
 	dv::kinematics::Transformationf mImuToCamTransform

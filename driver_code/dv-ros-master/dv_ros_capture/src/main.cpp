@@ -20,7 +20,7 @@ int main(int argc, char **argv) {
 	auto node = CaptureNode(nh, loadParams.getParams());//初始化节点,同时读入参数
 
 	// Spin the node
-	node.startCapture();
+	node.startCapture();//开始读取数据
 	// Sping ros
 	while (ros::ok() && node.isRunning()) {
 		ros::spinOnce();

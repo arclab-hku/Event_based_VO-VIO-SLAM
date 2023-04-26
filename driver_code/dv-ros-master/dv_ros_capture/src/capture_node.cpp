@@ -24,7 +24,7 @@ CaptureNode::CaptureNode(std::shared_ptr<ros::NodeHandle> nodeHandle, const dv_r
 	else {
 		mReader = dv_ros_node::Reader(mParams.aedat4FilePath, mParams.cameraName);
 	}
-	startupTime = ros::Time::now();
+	startupTime = ros::Time::now();//开启的时间就是当前的ros系统时间
 	if (mParams.frames && !mReader.isFrameStreamAvailable()) {
 		mParams.frames = false;
 		ROS_WARN("Frame stream is not available!");
