@@ -20,12 +20,12 @@ ParametersLoader::ParametersLoader(const ros::NodeHandle &nodeHandle) {
 
 	nodeHandle.param<std::string>("cameraFrameName", params_.cameraFrameName, "camera");
 	nodeHandle.param<std::string>("imuFrameName", params_.imuFrameName, "imu");
-	nodeHandle.param<bool>("transformImuToCameraFrame", params_.transformImuToCameraFrame, true);
-	nodeHandle.param<bool>("unbiasedImuData", params_.unbiasedImuData, true);
+	nodeHandle.param<bool>("transformImuToCameraFrame", params_.transformImuToCameraFrame, false);//是否将IMU数据转换到相机坐标系下 (原本为true)
+	nodeHandle.param<bool>("unbiasedImuData", params_.unbiasedImuData, true);//是否进行校准IMU，默认不校准
 
-	nodeHandle.param<bool>("noiseFiltering", params_.noiseFiltering, false);
+	nodeHandle.param<bool>("noiseFiltering", params_.noiseFiltering, true);//是否进行噪声滤波（原本为false）
 	int value;
-	nodeHandle.param<int>("noiseBackgroundActivityTime", value, 2000);
+	nodeHandle.param<int>("noiseBackgroundActivityTime", value, 2000);//默认的去除噪声的参数
 	params_.noiseBATime = static_cast<int64_t>(value);
 
 	std::string tmp;

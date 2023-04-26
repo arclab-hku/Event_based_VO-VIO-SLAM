@@ -2,10 +2,17 @@
     <node pkg="dv_ros_capture" type="capture_node" name="left" clear_params="true" output="screen" required="true">
         <param name="cameraName" value="DVXplorer_DXA00207"/>
 
+        <!-- A list of other cameras connected with synchronization cable to this camera -->
+        <!-- If this list is empty, the camera node will not properly synchronize them -->
+        <!-- <rosparam param="syncDevices">["DVXplorer_DXA00188"]</rosparam> -->
+
     </node>
 
      <node pkg="dv_ros_capture" type="capture_node" name="right" clear_params="true" output="screen" required="true">
         <param name="cameraName" value="DVXplorer_DXA00188"/>
+
+        <!-- Do not publish data until synchronization is complete -->
+        <!-- <param name="waitForSync" value="true"/> -->
     </node>
 
     <node pkg="dv_ros_visualization" type="visualization_node" name="left_visualization_node" clear_params="true" output="screen">
