@@ -1,0 +1,31 @@
+  <!-- launch-prefix="gdb -ex run -\-args" -->
+  <!-- launch-prefix="gnome-terminal -x" -->
+  <!-- respawn="true" -->
+  <!-- required="true"  -->
+
+<launch>
+    <node pkg="dv_ros_capture" type="capture_node" name="left" clear_params="true" output="screen" required="true">
+        <param name="cameraName" value="DVXplorer_DXA00207"/>
+
+        <!-- A list of other cameras connected with synchronization cable to this camera -->
+        <!-- If this list is empty, the camera node will not properly synchronize them -->
+        <rosparam param="syncDevices">["DVXplorer_DXA00188"]</rosparam>
+
+    </node>
+
+    <node pkg="dv_ros_visualization" type="visualization_node" name="left_visualization_node" clear_params="true" output="log">
+        <remap from="/left_visualization_node/events" to="/left/events" />
+    </node>
+
+    <node pkg="dv_ros_accumulation" type="accumulator" name="left_accumulator_node" clear_params="true" output="log">
+        <remap from="/left_accumulator_node/events" to="/left/events" />
+    </node>
+
+    <node pkg="dv_ros_accumulation" type="edge_map" name="left_edge_map_node" clear_params="true" output="log">
+        <remap from="/left_edge_map_node/events" to="/left/events" />
+    </node>
+
+    <node pkg="rqt_gui" type="rqt_gui" name="rqt_gui"
+          args="--perspective-file $(find dv_ros_visualization)/launch/rqt/stereo_dvxplorer_previews.perspective"/>
+
+</launch>
