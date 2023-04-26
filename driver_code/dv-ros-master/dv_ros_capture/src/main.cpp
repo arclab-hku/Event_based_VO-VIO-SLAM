@@ -14,10 +14,10 @@ int main(int argc, char **argv) {
 	// Start node
 	auto nh = std::make_shared<ros::NodeHandle>("~");
 
-	auto loadParams = dv_ros_node::ParametersLoader(*nh);
+	auto loadParams = dv_ros_node::ParametersLoader(*nh);//读入参数
 	loadParams.printConfiguration();
 
-	auto node = CaptureNode(nh, loadParams.getParams());
+	auto node = CaptureNode(nh, loadParams.getParams());//初始化节点,同时读入参数
 
 	// Spin the node
 	node.startCapture();

@@ -1,22 +1,35 @@
 <launch>
-    <node pkg="dv_ros_capture" type="capture_node" name="capture_node" clear_params="true" output="screen" required="true">
+    <node pkg="dv_ros_capture" type="capture_node" name="left" clear_params="true" output="screen" required="true">
+        <param name="cameraName" value="DVXplorer_DXA00207"/>
+
+    </node>
+
+     <node pkg="dv_ros_capture" type="capture_node" name="right" clear_params="true" output="screen" required="true">
         <param name="cameraName" value="DVXplorer_DXA00188"/>
-
     </node>
 
-    <node pkg="dv_ros_visualization" type="visualization_node" name="visualization_node" clear_params="true" output="screen">
-        <remap from="/visualization_node/events" to="/capture_node/events" />
+    <node pkg="dv_ros_visualization" type="visualization_node" name="left_visualization_node" clear_params="true" output="screen">
+        <remap from="/left_visualization_node/events" to="/left/events" />
+    </node>
+    <node pkg="dv_ros_visualization" type="visualization_node" name="right_visualization_node" clear_params="true" output="screen">
+        <remap from="/right_visualization_node/events" to="/right/events" />
     </node>
 
-    <node pkg="dv_ros_accumulation" type="accumulator" name="accumulator_node" clear_params="true" output="screen">
-        <remap from="/accumulator_node/events" to="/capture_node/events" />
+    <node pkg="dv_ros_accumulation" type="accumulator" name="left_accumulator_node" clear_params="true" output="screen">
+        <remap from="/left_accumulator_node/events" to="/left/events" />
+    </node>
+    <node pkg="dv_ros_accumulation" type="accumulator" name="right_accumulator_node" clear_params="true" output="screen">
+        <remap from="/right_accumulator_node/events" to="/right/events" />
     </node>
 
-    <node pkg="dv_ros_accumulation" type="edge_map" name="edge_map_node" clear_params="true" output="screen">
-        <remap from="/edge_map_node/events" to="/capture_node/events" />
+    <node pkg="dv_ros_accumulation" type="edge_map" name="left_edge_map_node" clear_params="true" output="screen">
+        <remap from="/left_edge_map_node/events" to="/left/events" />
+    </node>
+    <node pkg="dv_ros_accumulation" type="edge_map" name="right_edge_map_node" clear_params="true" output="screen">
+        <remap from="/right_edge_map_node/events" to="/right/events" />
     </node>
 
     <node pkg="rqt_gui" type="rqt_gui" name="rqt_gui"
-          args="--perspective-file $(find dv_ros_visualization)/launch/rqt/previews.perspective"/>
+          args="--perspective-file $(find dv_ros_visualization)/launch/rqt/stereo_dvxplorer_previews.perspective"/>
 
 </launch>
