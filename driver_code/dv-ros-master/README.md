@@ -1,7 +1,5 @@
 # DV ROS
 
-参考连接：(Link)[https://gitlab.com/inivation/dv/dv-ros]
-
 ROS drivers and sample nodes for iniVation cameras and DV software infrastructure.
 
 ## Installation on Ubuntu OS
