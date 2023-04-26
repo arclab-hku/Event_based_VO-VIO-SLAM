@@ -18,7 +18,7 @@ using namespace std::chrono_literals;
 CaptureNode::CaptureNode(std::shared_ptr<ros::NodeHandle> nodeHandle, const dv_ros_node::Params &params) :
 	mParams(params), mNodeHandle(std::move(nodeHandle)) {
 	mSpinThread = true;
-	if (mParams.aedat4FilePath.empty()) {
+	if (mParams.aedat4FilePath.empty()) {//如果没有指定aedat4文件路径,则使用相机
 		mReader = dv_ros_node::Reader(mParams.cameraName);
 	}
 	else {
