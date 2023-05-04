@@ -339,7 +339,7 @@ The stereo event tracker are then tightly coupled into a sliding windows graph-b
 </div>
 
 ~~~
-@article{ESVIO,
+@article{GWPHKU:ESVIO,
   title={ESVIO: Event-based Stereo Visual Inertial Odometry},
   author={Chen, Peiyu and Guan, Weipeng and Lu, Peng},
   journal={IEEE Robotics and Automation Letters},
