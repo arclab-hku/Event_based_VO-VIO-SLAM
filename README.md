@@ -306,6 +306,11 @@ It is reliable and accurate enough to provide onboard pose feedback control for 
 <!-- * Code is available in [internal-accessed link](https://github.com/arclab-hku/EVIO/tree/PL-EIO)  -->
 
 <div align="center">
+<a href="https://www.bilibili.com/video/BV1i24y1R7KV/?spm_id_from=333.999.list.card_archive.click&vd_source=a88e426798937812a8ffc1a9be5a3cb7" target="_blank"><img src="PL-EVIO/PLEVIO_flip.gif" alt="video" width="100%" /></a>
+<p> Onboard Quadrotor Flip using Our PL-EVIO (click the gif to open)</p>
+</div>
+
+<div align="center">
 <a href="https://b23.tv/OE3QM6j" target="_blank"><img src="PL-EVIO/cover.jpg" alt="video" width="100%" /></a>
 <p> Demo Video (click the image to open) </p>
 </div>
