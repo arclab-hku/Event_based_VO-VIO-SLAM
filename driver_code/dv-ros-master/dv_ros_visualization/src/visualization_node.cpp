@@ -24,7 +24,12 @@ int main(int argc, char **argv) {
 		= nh.subscribe<dv_ros_msgs::EventArrayMessage>("events", 200, [&slicer, &visualizer](const auto &events) {
 			  if (visualizer == nullptr) {
 				  visualizer
-					  = std::make_unique<dv::visualization::EventVisualizer>(cv::Size(events->width, events->height));
+					//   = std::make_unique<dv::visualization::EventVisualizer>(cv::Size(events->width, events->height));
+					= std::make_unique<dv::visualization::EventVisualizer>(cv::Size(events->width, events->height), 
+					cv::Scalar(0,0,0),//背景为黑
+					cv::Scalar(255,0,0),//正极为蓝
+					cv::Scalar (0,0,255)//负极为红
+					);//按原来的背景为黑，正极为蓝，负极为灰
 			  }
 
 			  try {
