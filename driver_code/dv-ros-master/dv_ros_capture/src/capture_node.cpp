@@ -47,7 +47,7 @@ CaptureNode::CaptureNode(std::shared_ptr<ros::NodeHandle> nodeHandle, const dv_r
 	}
 
 	if (mParams.frames) {
-		mFramePublisher = mNodeHandle->advertise<ImageMessage>("image", 10);//发布相机的frame
+		mFramePublisher = mNodeHandle->advertise<ImageMessage>("image", 100);//发布相机的frame
 	}
 
 	if (mParams.imu) {
@@ -493,7 +493,7 @@ void CaptureNode::startCapture() {
 	// If the pointer is valid - the reader is handling a live camera
 	if (liveCapture) {
 		mSynchronized = false;
-		mSyncThread   = std::thread(&CaptureNode::synchronizationThread, this);
+		mSyncThread   = std::thread(&CaptureNode::synchronizationThread, this);//开启同步线程
 	}
 	else {
 		mSynchronized = true;
@@ -632,14 +632,14 @@ void CaptureNode::framePublisher() {
 
 	cv::Size resolution = mReader.getEventResolution().value();//获取image的size
 
-	while (mSpinThread) {
+	while (mSpinThread) {//开始捕获数据，mSpinThread就为true
 		mFrameQueue.consume_all([&](const int64_t timestamp) {
 			if (!frame.has_value()) {
 				std::lock_guard<boost::recursive_mutex> lockGuard(mReaderMutex);
 				frame = mReader.getNextFrame();
 			}
-			while (frame.has_value() && timestamp >= frame->timestamp) {
-				if (mFramePublisher.getNumSubscribers() > 0) {
+			while (frame.has_value() && timestamp >= frame->timestamp) {//如果timestamp大于frame的timestamp，则获取下一帧
+				// if (mFramePublisher.getNumSubscribers() > 0) {
 					//对image的size进行resize
 					if(frame->image.rows!=resolution.height||frame->image.cols!=resolution.width)//如果image的size不是260*346，则resize
 					{
@@ -650,7 +650,7 @@ void CaptureNode::framePublisher() {
 					// ROS_WARN("/* log */ resolution.height=%d,resolution.width=%d",resolution.height,resolution.width);
 					ImageMessage msg = dv_ros_msgs::frameToRosImageMessage(*frame);
 					mFramePublisher.publish(msg);
-				}
+				// }
 
 				mCurrentSeek = frame->timestamp;
 
