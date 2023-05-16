@@ -9,19 +9,19 @@
 using namespace dv_ros_node;
 
 ParametersLoader::ParametersLoader(const ros::NodeHandle &nodeHandle) {
-	nodeHandle.getParam("frames", params_.frames);
-	nodeHandle.getParam("events", params_.events);
-	nodeHandle.getParam("imu", params_.imu);
-	nodeHandle.getParam("triggers", params_.triggers);
+	nodeHandle.getParam("frames", params_.frames);//是否有图像
+	nodeHandle.getParam("events", params_.events);//是否有事件
+	nodeHandle.getParam("imu", params_.imu);//是否有IMU
+	nodeHandle.getParam("triggers", params_.triggers);//If true, Trigger msg containing Trigger data is published
 	nodeHandle.getParam("cameraName", params_.cameraName);
-	int timeIncrement = static_cast<int>(params_.timeIncrement);
+	int timeIncrement = static_cast<int>(params_.timeIncrement);//确定时间间隔，也就是频率
 	nodeHandle.getParam("timeIncrement", timeIncrement);
 	params_.timeIncrement = static_cast<int64_t>(timeIncrement);
 
-	nodeHandle.param<std::string>("cameraFrameName", params_.cameraFrameName, "camera");
-	nodeHandle.param<std::string>("imuFrameName", params_.imuFrameName, "imu");
+	nodeHandle.param<std::string>("cameraFrameName", params_.cameraFrameName, "camera");//参数文件中改为“dvs”
+	nodeHandle.param<std::string>("imuFrameName", params_.imuFrameName, "imu");//imu frame的名字
 	nodeHandle.param<bool>("transformImuToCameraFrame", params_.transformImuToCameraFrame, false);//是否将IMU数据转换到相机坐标系下 (原本为true)
-	nodeHandle.param<bool>("unbiasedImuData", params_.unbiasedImuData, true);//是否进行校准IMU，默认不校准
+	nodeHandle.param<bool>("unbiasedImuData", params_.unbiasedImuData, false);//是否进行校准IMU，默认不校准（原本为true）
 
 	nodeHandle.param<bool>("noiseFiltering", params_.noiseFiltering, true);//是否进行噪声滤波（原本为false）
 	int value;

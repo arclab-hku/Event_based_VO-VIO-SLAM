@@ -16,25 +16,29 @@ using namespace dv_ros_msgs;
 using namespace std::chrono_literals;
 
 CaptureNode::CaptureNode(std::shared_ptr<ros::NodeHandle> nodeHandle, const dv_ros_node::Params &params) :
-	mParams(params), mNodeHandle(std::move(nodeHandle)) {
+	mParams(params), mNodeHandle(std::move(nodeHandle)) 
+{
 	mSpinThread = true;
 	if (mParams.aedat4FilePath.empty()) {//如果没有指定aedat4文件路径,则使用相机
 		mReader = dv_ros_node::Reader(mParams.cameraName);
 	}
 	else {
-		mReader = dv_ros_node::Reader(mParams.aedat4FilePath, mParams.cameraName);
+		ROS_ERROR("we don't support aedat4 file now!!!!!!!!!!!!!!!");
+		// mReader = dv_ros_node::Reader(mParams.aedat4FilePath, mParams.cameraName);//如果指定了aedat4文件路径,则使用aedat4文件
 	}
+
 	startupTime = ros::Time::now();//开启的时间就是当前的ros系统时间
 	if (mParams.frames && !mReader.isFrameStreamAvailable()) {
-		mParams.frames = false;
+		mParams.frames = false;//如果相机没有frame流,则将此标志位设置为false
 		ROS_WARN("Frame stream is not available!");
 	}
 	if (mParams.events && !mReader.isEventStreamAvailable()) {
-		mParams.events = false;
+		mParams.events = false;//如果相机没有event流,则将此标志位设置为false
 		ROS_WARN("Event stream is not available!");
+		ROS_ERROR("Event camera doesn't have event????????????");
 	}
 	if (mParams.imu && !mReader.isImuStreamAvailable()) {
-		mParams.imu = false;
+		mParams.imu = false;//如果相机没有imu流,则将此标志位设置为false
 		ROS_WARN("Imu data stream is not available!");
 	}
 	if (mParams.triggers && !mReader.isTriggerStreamAvailable()) {
@@ -43,19 +47,19 @@ CaptureNode::CaptureNode(std::shared_ptr<ros::NodeHandle> nodeHandle, const dv_r
 	}
 
 	if (mParams.frames) {
-		mFramePublisher = mNodeHandle->advertise<ImageMessage>("camera/image", 10);
+		mFramePublisher = mNodeHandle->advertise<ImageMessage>("image", 10);//发布相机的frame
 	}
 
 	if (mParams.imu) {
-		mImuPublisher = mNodeHandle->advertise<ImuMessage>("imu", 1000);
+		mImuPublisher = mNodeHandle->advertise<ImuMessage>("imu", 1000);//发布imu数据
 	}
 
 	if (mParams.events) {
-		mEventArrayPublisher = mNodeHandle->advertise<EventArrayMessage>("events", 1000);
+		mEventArrayPublisher = mNodeHandle->advertise<EventArrayMessage>("events", 1000);//发布event数据
 	}
 
 	if (mParams.triggers) {
-		mTriggerPublisher = mNodeHandle->advertise<TriggerMessage>("triggers", 10);
+		mTriggerPublisher = mNodeHandle->advertise<TriggerMessage>("triggers", 10);//发布trigger数据
 	}
 
 	if (!mParams.frames && !mParams.events) {
@@ -69,7 +73,7 @@ CaptureNode::CaptureNode(std::shared_ptr<ros::NodeHandle> nodeHandle, const dv_r
 	mImuBiasesService    = mNodeHandle->advertiseService("set_imu_biases", &CaptureNode::setImuBiases, this);
 
 	fs::path calibrationPath = getActiveCalibrationPath();
-	if (!mParams.cameraCalibrationFilePath.empty()) {
+	if (!mParams.cameraCalibrationFilePath.empty()) {//如果用户指定了相机标定文件路径,则使用用户指定的标定文件
 		ROS_INFO_STREAM("Loading user supplied calibration at path [" << mParams.cameraCalibrationFilePath << "]");
 		if (!fs::exists(mParams.cameraCalibrationFilePath)) {
 			throw dv::exceptions::InvalidArgument<std::string>(
@@ -79,7 +83,7 @@ CaptureNode::CaptureNode(std::shared_ptr<ros::NodeHandle> nodeHandle, const dv_r
 		fs::copy_file(mParams.cameraCalibrationFilePath, calibrationPath, fs::copy_options::overwrite_existing);
 	}
 
-	if (fs::exists(calibrationPath)) {
+	if (fs::exists(calibrationPath)) {//如果标定文件存在,则加载标定文件
 		ROS_INFO_STREAM("Loading calibration file [" << calibrationPath << "]");
 		mCalibration                 = dv::camera::CalibrationSet::LoadFromFile(calibrationPath);
 		const std::string cameraName = mReader.getCameraName();
@@ -155,7 +159,7 @@ CaptureNode::CaptureNode(std::shared_ptr<ros::NodeHandle> nodeHandle, const dv_r
 
 	auto &cameraPtr = mReader.getCameraCapturePtr();
 	if (cameraPtr != nullptr) {
-		if (cameraPtr->isFrameStreamAvailable()) {
+		if (cameraPtr->isFrameStreamAvailable()) {//如果有image流,那么就是DAVIS
 			// DAVIS camera
 			davisColorServer = std::make_unique<dynamic_reconfigure::Server<dv_ros_capture::DAVISConfig>>(
 				mReaderMutex, *mNodeHandle);
@@ -164,16 +168,16 @@ CaptureNode::CaptureNode(std::shared_ptr<ros::NodeHandle> nodeHandle, const dv_r
 			initialSettings.noise_background_activity_time = static_cast<int>(mParams.noiseBATime);
 			davisColorServer->updateConfig(initialSettings);
 			davisColorServer->setCallback([this, &cameraPtr](const dv_ros_capture::DAVISConfig &config, uint32_t) {
-				cameraPtr->setDavisColorMode(static_cast<dv::io::CameraCapture::DavisColorMode>(config.color_mode));
+				cameraPtr->setDavisColorMode(static_cast<dv::io::CameraCapture::DavisColorMode>(config.color_mode));//默认为0，就是Color frame mode
 				cameraPtr->setDavisReadoutMode(
-					static_cast<dv::io::CameraCapture::DavisReadoutMode>(config.readout_mode));
-				if (config.auto_exposure) {
+					static_cast<dv::io::CameraCapture::DavisReadoutMode>(config.readout_mode));//设置为0，就是Output both, events and frames
+				if (config.auto_exposure) {//是否自动曝光，默认是关闭的
 					cameraPtr->enableDavisAutoExposure();
 				}
 				else {
-					cameraPtr->setDavisExposureDuration(dv::Duration(config.exposure));
+					cameraPtr->setDavisExposureDuration(dv::Duration(config.exposure));//设置曝光时间
 				}
-				updateNoiseFilter(config.noise_filtering, static_cast<int64_t>(config.noise_background_activity_time));
+				updateNoiseFilter(config.noise_filtering, static_cast<int64_t>(config.noise_background_activity_time));//添加噪声滤波器
 			});
 
 			if (cameraPtr->isTriggerStreamAvailable()) {
@@ -184,7 +188,7 @@ CaptureNode::CaptureNode(std::shared_ptr<ros::NodeHandle> nodeHandle, const dv_r
 				cameraPtr->deviceConfigSet(DAVIS_CONFIG_EXTINPUT, DAVIS_CONFIG_EXTINPUT_RUN_DETECTOR, mParams.triggers);
 			}
 		}
-		else {
+		else {//如果没有image流,那么就是DVXplorer
 			// DVXplorer type camera
 			dvxplorerServer = std::make_unique<dynamic_reconfigure::Server<dv_ros_capture::DVXplorerConfig>>(
 				mReaderMutex, *mNodeHandle);
@@ -193,9 +197,9 @@ CaptureNode::CaptureNode(std::shared_ptr<ros::NodeHandle> nodeHandle, const dv_r
 			initialSettings.noise_background_activity_time  = static_cast<int>(mParams.noiseBATime);
 			dvxplorerServer->updateConfig(initialSettings);
 			dvxplorerServer->setCallback([this, &cameraPtr](const dv_ros_capture::DVXplorerConfig &config, uint32_t) {
-				cameraPtr->setDVSGlobalHold(config.global_hold);
+				cameraPtr->setDVSGlobalHold(config.global_hold);//是否允许自动曝光
 				cameraPtr->setDVSBiasSensitivity(
-					static_cast<dv::io::CameraCapture::BiasSensitivity>(config.bias_sensitivity));
+					static_cast<dv::io::CameraCapture::BiasSensitivity>(config.bias_sensitivity));//设置感光的阈值
 				updateNoiseFilter(config.noise_filtering, static_cast<int64_t>(config.noise_background_activity_time));
 			});
 
@@ -482,7 +486,7 @@ void CaptureNode::updateCalibrationSet() {
 }
 
 void CaptureNode::startCapture() {
-	ROS_INFO("Spinning capture node.");
+	ROS_INFO("Spinning Event Camera capture node.");
 	auto times = mReader.getTimeRange();
 
 	const auto &liveCapture = mReader.getCameraCapturePtr();
@@ -495,12 +499,15 @@ void CaptureNode::startCapture() {
 		mSynchronized = true;
 	}
 
+	//按照时间戳顺序发布（timeIncrement ms）
 	if (times.has_value()) {
 		mClock = std::thread(&CaptureNode::clock, this, times->first, times->second, mParams.timeIncrement);
 	}
 	else {
 		mClock = std::thread(&CaptureNode::clock, this, -1, -1, mParams.timeIncrement);
 	}
+
+	//有对应的数据就开启对应的线程
 	if (mParams.frames) {
 		mFrameThread = std::thread(&CaptureNode::framePublisher, this);
 	}
@@ -514,12 +521,13 @@ void CaptureNode::startCapture() {
 		mTriggerThread = std::thread(&CaptureNode::triggerPublisher, this);
 	}
 
+	//发布image的内参以及image与imu的外参
 	if (mParams.events || mParams.frames) {
 		mCameraInfoThread = std::make_unique<std::thread>([this] {
 			ros::Rate infoRate(25.0);
 			while (mSpinThread.load(std::memory_order_relaxed)) {
 				const ros::Time currentTime = dv_ros_msgs::toRosTime(mCurrentSeek);
-				if (mCameraInfoPublisher.getNumSubscribers() > 0) {
+				if (mCameraInfoPublisher.getNumSubscribers() > 0) {//只有当有订阅者时才发布
 					mCameraInfoMsg.header.stamp = currentTime;
 					mCameraInfoPublisher.publish(mCameraInfoMsg);
 				}
@@ -622,6 +630,8 @@ void CaptureNode::framePublisher() {
 
 	std::optional<dv::Frame> frame = std::nullopt;
 
+	cv::Size resolution = mReader.getEventResolution().value();//获取image的size
+
 	while (mSpinThread) {
 		mFrameQueue.consume_all([&](const int64_t timestamp) {
 			if (!frame.has_value()) {
@@ -630,6 +640,12 @@ void CaptureNode::framePublisher() {
 			}
 			while (frame.has_value() && timestamp >= frame->timestamp) {
 				if (mFramePublisher.getNumSubscribers() > 0) {
+					//对image的size进行resize
+					if(frame->image.rows!=resolution.height||frame->image.cols!=resolution.width)//如果image的size不是260*346，则resize
+					{
+						ROS_WARN("/* log */ resize image!!!!!!!!!!!!!!!!!!!!!!!!");
+						cv::resize(frame->image,frame->image,resolution);
+					}
 					ImageMessage msg = dv_ros_msgs::frameToRosImageMessage(*frame);
 					mFramePublisher.publish(msg);
 				}

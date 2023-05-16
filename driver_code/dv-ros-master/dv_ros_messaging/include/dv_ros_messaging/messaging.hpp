@@ -145,7 +145,7 @@ using TriggerMessage = DV_ROS_MSGS(dv_ros_msgs::Trigger);
  * @throws RuntimeError If image data layout is not supported
  */
 [[nodiscard]] inline ImageMessage frameToRosImageMessage(const dv::Frame &frame) {
-	ImageMessage imageMessage = toRosImageMessage(frame.image);
+	ImageMessage imageMessage = toRosImageMessage(frame.image);//将opencv的图像转换成ros的图像，为此推断frame.image必然为opencv的图像
 	imageMessage.header.stamp = toRosTime(frame.timestamp);
 	return imageMessage;
 }

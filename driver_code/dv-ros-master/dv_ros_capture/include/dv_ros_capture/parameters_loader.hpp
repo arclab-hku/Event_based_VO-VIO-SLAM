@@ -16,7 +16,7 @@ struct Params {
 	bool triggers         = true;//If true, Trigger msg containing Trigger data is published
 	std::string cameraName;//相机名称（带序列号的）
 	std::filesystem::path aedat4FilePath;//Path to the aedat4 file, if not specified the first available camera will be read
-	std::filesystem::path cameraCalibrationFilePath;
+	std::filesystem::path cameraCalibrationFilePath;//camera矫正文件的路径
 	std::string cameraFrameName    = "dvs";//(原本为camera)Camera reference frame name for publishing IMU extrinsic calibration
 	std::string imuFrameName       = "imu";// IMU reference frame name for publishing IMU extrinsic calibration
 	bool transformImuToCameraFrame = false;//是否将IMU数据转换到相机坐标系下 (原本为true)

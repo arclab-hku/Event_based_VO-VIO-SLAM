@@ -7,9 +7,9 @@ Reader::Reader(const std::filesystem::path &aedat4FilePath, const std::string &c
 	mCameraCapture         = false;
 }
 
-Reader::Reader(const std::string &cameraName) {
+Reader::Reader(const std::string &cameraName) {//如果是直接从摄像头读取数据，就会调用这个构造函数
 	cameraCapturePtr = std::make_unique<dv::io::CameraCapture>(cameraName);
-	mCameraCapture   = true;
+	mCameraCapture   = true;//标记为从摄像头读取数据
 }
 
 std::optional<cv::Size> Reader::getFrameResolution() const {

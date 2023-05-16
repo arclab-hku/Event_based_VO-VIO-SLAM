@@ -15,9 +15,9 @@ int main(int argc, char **argv) {
 	auto nh = std::make_shared<ros::NodeHandle>("~");
 
 	auto loadParams = dv_ros_node::ParametersLoader(*nh);//读入参数
-	loadParams.printConfiguration();
+	loadParams.printConfiguration();//打印参数
 
-	auto node = CaptureNode(nh, loadParams.getParams());//初始化节点,同时读入参数
+	auto node = CaptureNode(nh, loadParams.getParams());//初始化节点,同时传入参数
 
 	// Spin the node
 	node.startCapture();//开始读取数据
