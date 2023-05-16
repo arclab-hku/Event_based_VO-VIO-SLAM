@@ -1,0 +1,10 @@
+  <!-- launch-prefix="gdb -ex run -\-args" -->
+  <!-- launch-prefix="gnome-terminal -x" -->
+  <!-- respawn="true" -->
+  <!-- required="true"  -->
+
+<launch>
+    <node pkg="rqt_gui" type="rqt_gui" name="rqt_gui"
+          args="--perspective-file $(find dv_ros_visualization)/launch/rqt/four_dvs.perspective"/>
+
+</launch>

@@ -179,7 +179,7 @@ CaptureNode::CaptureNode(std::shared_ptr<ros::NodeHandle> nodeHandle, const dv_r
 				}
 				updateNoiseFilter(config.noise_filtering, static_cast<int64_t>(config.noise_background_activity_time));//添加噪声滤波器
 			});
-
+			
 			if (cameraPtr->isTriggerStreamAvailable()) {
 				// External trigger detection support for DAVIS346 - MODIFY HERE FOR DIFFERENT DETECTION SETTINGS!
 				cameraPtr->deviceConfigSet(DAVIS_CONFIG_EXTINPUT, DAVIS_CONFIG_EXTINPUT_DETECT_RISING_EDGES, true);
@@ -646,6 +646,8 @@ void CaptureNode::framePublisher() {
 						ROS_WARN("/* log */ resize image!!!!!!!!!!!!!!!!!!!!!!!!");
 						cv::resize(frame->image,frame->image,resolution);
 					}
+					//ROS_WARN输出resolution
+					// ROS_WARN("/* log */ resolution.height=%d,resolution.width=%d",resolution.height,resolution.width);
 					ImageMessage msg = dv_ros_msgs::frameToRosImageMessage(*frame);
 					mFramePublisher.publish(msg);
 				}
@@ -656,7 +658,7 @@ void CaptureNode::framePublisher() {
 				frame = mReader.getNextFrame();
 			}
 		});
-		std::this_thread::sleep_for(100us);
+		std::this_thread::sleep_for(100us);//0.1ms
 	}
 }
 
@@ -690,7 +692,7 @@ void CaptureNode::imuPublisher() {
 				imuData = std::nullopt;
 			}
 		});
-		std::this_thread::sleep_for(100us);
+		std::this_thread::sleep_for(100us);//0.1ms
 	}
 }
 

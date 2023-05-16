@@ -19,6 +19,7 @@ int main(int argc, char **argv) {
 	dv::EventStreamSlicer slicer;
 	std::unique_ptr<dv::visualization::EventVisualizer> visualizer = nullptr;
 
+	//订阅事件
 	auto eventSubscriber
 		= nh.subscribe<dv_ros_msgs::EventArrayMessage>("events", 200, [&slicer, &visualizer](const auto &events) {
 			  if (visualizer == nullptr) {
@@ -34,6 +35,7 @@ int main(int argc, char **argv) {
 			  }
 		  });
 
+	//发布图像
 	auto framePublisher = nh.advertise<dv_ros_msgs::ImageMessage>("image", 10);
 
 	slicer.doEveryTimeInterval(33ms, [&framePublisher, &visualizer](const dv::EventStore &events) {

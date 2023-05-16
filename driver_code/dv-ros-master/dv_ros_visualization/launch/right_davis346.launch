@@ -1,0 +1,27 @@
+  <!-- launch-prefix="gdb -ex run -\-args" -->
+  <!-- launch-prefix="gnome-terminal -x" -->
+  <!-- respawn="true" -->
+  <!-- required="true"  -->
+
+<launch>
+
+    <node pkg="dv_ros_capture" type="capture_node" name="DAVIS346_right" clear_params="true" output="screen" required="true">
+        <param name="cameraName" value="DAVIS346_00000670"/>
+
+        <!-- Do not publish data until synchronization is complete -->
+        <!-- <param name="waitForSync" value="true"/> -->
+    </node>
+
+    <node pkg="dv_ros_visualization" type="visualization_node" name="DAVIS346_right_visualization" clear_params="true" output="log">
+        <remap from="/DAVIS346_right_visualization/events" to="/DAVIS346_right/events" />
+    </node>
+
+    <!-- <node pkg="dv_ros_accumulation" type="accumulator" name="right_accumulator_node" clear_params="true" output="log">
+        <remap from="/right_accumulator_node/events" to="/DAVIS346_right/events" />
+    </node> -->
+
+    <!-- <node pkg="dv_ros_accumulation" type="edge_map" name="right_edge_map_node" clear_params="true" output="log">
+        <remap from="/right_edge_map_node/events" to="/DAVIS346_right/events" />
+    </node> -->
+
+</launch>
