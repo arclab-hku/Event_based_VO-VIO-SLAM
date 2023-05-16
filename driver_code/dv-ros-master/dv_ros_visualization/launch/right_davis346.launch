@@ -9,7 +9,7 @@
         <param name="cameraName" value="DAVIS346_00000670"/>
 
         <!-- Do not publish data until synchronization is complete -->
-        <!-- <param name="waitForSync" value="true"/> -->
+        <param name="waitForSync" value="true"/>
     </node>
 
     <node pkg="dv_ros_visualization" type="visualization_node" name="DAVIS346_right_visualization" clear_params="true" output="log">
