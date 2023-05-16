@@ -562,7 +562,7 @@ void CaptureNode::updateNoiseFilter(const bool enable, const int64_t backgroundA
 void CaptureNode::clock(int64_t start, int64_t end, int64_t timeIncrement) {
 	ROS_INFO("Spinning clock.");
 
-	double frequency = 1.0 / (static_cast<double>(timeIncrement) * 1e-6);
+	double frequency = 1.0 / (static_cast<double>(timeIncrement) * 1e-6);//频率为1khz
 
 	ros::Rate sleepRate(frequency);
 	if (start == -1) {
@@ -630,7 +630,8 @@ void CaptureNode::framePublisher() {
 
 	std::optional<dv::Frame> frame = std::nullopt;
 
-	cv::Size resolution = mReader.getEventResolution().value();//获取image的size
+	// cv::Size resolution = mReader.getEventResolution().value();//获取image的size
+	cv::Size resolution(346,260);//获取image的size
 
 	while (mSpinThread) {//开始捕获数据，mSpinThread就为true
 		mFrameQueue.consume_all([&](const int64_t timestamp) {
