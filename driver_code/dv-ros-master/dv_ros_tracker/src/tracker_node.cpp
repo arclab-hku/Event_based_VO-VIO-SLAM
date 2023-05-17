@@ -12,34 +12,52 @@ using namespace dv_tracker_node;
 using namespace std::chrono_literals;
 
 TrackerNode::TrackerNode(ros::NodeHandle &nodeHandle) : mNodeHandle(nodeHandle) {
-	// Publishers
-	mTimedKeypointArrayPublisher = mNodeHandle.advertise<TimedKeypointArrayMessage>("keypoints", 100);
-	mTimedKeypointUndistortedArrayPublisher
-		= mNodeHandle.advertise<TimedKeypointArrayMessage>("keypointsUndistorted", 100);
+	
+	// Publishers（定义一系列发布者）
+	mTimedKeypointArrayPublisher = mNodeHandle.advertise<TimedKeypointArrayMessage>("keypoints", 100);//发布关键点
+	mTimedKeypointUndistortedArrayPublisher	= mNodeHandle.advertise<TimedKeypointArrayMessage>("keypointsUndistorted", 100);//发布去畸变后的关键点
 
-	// Read the parameters
-	mLucasKanadeConfig.maskedFeatureDetect
-		= mNodeHandle.param("maskedFeatureDetect", mLucasKanadeConfig.maskedFeatureDetect);
+	// Read the parameters （读入yaml文件的参数）
+
+	//Mask out regions of image where tracked features are present
+	mLucasKanadeConfig.maskedFeatureDetect= mNodeHandle.param("maskedFeatureDetect", mLucasKanadeConfig.maskedFeatureDetect);
+	
+	//Number of pyramid layers to use for Lucas-Kanade tracking（金字塔的层数）
 	mLucasKanadeConfig.numPyrLayers = mNodeHandle.param("numPyrLayers", mLucasKanadeConfig.numPyrLayers);
+
+	//Search window size, this value is used for both x and y sizes（搜索窗口的大小）
 	int windowSize                  = mNodeHandle.param("searchWindowSize", mLucasKanadeConfig.searchWindowSize.width);
 	mLucasKanadeConfig.searchWindowSize = cv::Size(windowSize, windowSize);
-	mLucasKanadeConfig.terminationEpsilon
-		= mNodeHandle.param("terminationEpsilon", mLucasKanadeConfig.terminationEpsilon);
-	mTrackingConfig.numIntermediateFrames
-		= mNodeHandle.param("numIntermediateFrames", mTrackingConfig.numIntermediateFrames);
-	mTrackingConfig.accumulationFramerate
-		= mNodeHandle.param("accumulationFramerate", mTrackingConfig.accumulationFramerate);
+
+	// Track termination epsilon for Lucas-Kanade tracking（追踪终止的阈值）
+	mLucasKanadeConfig.terminationEpsilon= mNodeHandle.param("terminationEpsilon", mLucasKanadeConfig.terminationEpsilon);
+
+	//同时使用image与event的时候采用的参数
+	//Combined mode uses accumulated frame to perform intermediate tracking between image frames, this value controls how many frames are accumulated between two image frames
+	mTrackingConfig.numIntermediateFrames= mNodeHandle.param("numIntermediateFrames", mTrackingConfig.numIntermediateFrames);
+
+	// （纯事件用的参数）Event-only mode settings。 Frame accumulation framerate
+	mTrackingConfig.accumulationFramerate= mNodeHandle.param("accumulationFramerate", mTrackingConfig.accumulationFramerate);
+
+	//FAST corner detector threshold
 	mTrackingConfig.fastThreshold     = mNodeHandle.param("fastThreshold", mTrackingConfig.fastThreshold);
+
+	//# Perform backward tracking and reject any tracks that don't "track-back" to original location（应该是起到类似二次光流的作用）
 	mTrackingConfig.lookbackRejection = mNodeHandle.param("lookbackRejection", mTrackingConfig.lookbackRejection);
-	mTrackingConfig.redetectionThreshold
-		= mNodeHandle.param("redetectionThreshold", mTrackingConfig.redetectionThreshold);
+
+	// When tracked amount of features reached this threshold (proportion of maxTracks), new features will be detected
+	mTrackingConfig.redetectionThreshold= mNodeHandle.param("redetectionThreshold", mTrackingConfig.redetectionThreshold);
+
+	//Maximum number of features to track
 	mTrackingConfig.maxTracks = mNodeHandle.param("maxTracks", mTrackingConfig.maxTracks);
+
+	//Number of events accumulated in a single frame
 	mTrackingConfig.numEvents = mNodeHandle.param("numEvents", mTrackingConfig.numEvents);
 
-	bool useEvents = mNodeHandle.param("useEvents", true);
-	bool useFrames = mNodeHandle.param("useFrames", true);
+	bool useEvents = mNodeHandle.param("useEvents", true);//Enable the use of event data
+	bool useFrames = mNodeHandle.param("useFrames", true);//Enable the use of frame data
 
-	// Define the operation mode
+	// Define the operation mode （哪种方式就用哪种）
 	if (useEvents && useFrames) {
 		mode                         = OperationMode::Combined;
 		mTracksPreviewPublisher      = mNodeHandle.advertise<dv_ros_msgs::ImageMessage>("preview/image", 10);
@@ -58,13 +76,14 @@ TrackerNode::TrackerNode(ros::NodeHandle &nodeHandle) : mNodeHandle(nodeHandle) 
 			"Neither events nor frames are enabled as input, at least one has to be enabled for the tracker!");
 	}
 
-	bool motionCompensation = mNodeHandle.param("useMotionCompensation", false);
+	//是否采用运动补偿
+	bool motionCompensation = mNodeHandle.param("useMotionCompensation", true);//原本默认为false
 	if (motionCompensation) {
 		mode = static_cast<OperationMode>(static_cast<int>(mode) + 1);
 	}
 
 	// Subscriber
-	mFrameInfoSubscriber = mNodeHandle.subscribe("camera_info", 10, &TrackerNode::cameraInfoCallback, this);
+	mFrameInfoSubscriber = mNodeHandle.subscribe("camera_info", 10, &TrackerNode::cameraInfoCallback, this);//要有camerainfo才实现tracking
 
 	frameTracks.setTrackTimeout(10ms);
 }
@@ -136,7 +155,7 @@ void TrackerNode::depthEstimationCallback(const dv_ros_tracker::Depth::ConstPtr 
 }
 
 void TrackerNode::cameraInfoCallback(const dv_ros_msgs::CameraInfoMessage::ConstPtr &msgPtr) {
-	if (mCameraInitialized) {
+	if (mCameraInitialized) {//如果已经初始化了，就不再初始化
 		return;
 	}
 	// read the camera info
@@ -158,10 +177,10 @@ void TrackerNode::cameraInfoCallback(const dv_ros_msgs::CameraInfoMessage::Const
 	}
 	mCameraCalibration.focalLength    = cv::Point2f(static_cast<float>(msgPtr->K[0]), static_cast<float>(msgPtr->K[4]));
 	mCameraCalibration.principalPoint = cv::Point2f(static_cast<float>(msgPtr->K[2]), static_cast<float>(msgPtr->K[5]));
-	mCameraInitialized                = true;
+	mCameraInitialized                = true;//初始化完成
 
 	// crate the tracker according to the config file and the camera info.
-	createTracker();
+	createTracker();//初始化角点跟踪器
 
 	// Subscribers
 	if (mode == OperationMode::FramesOnly || mode == OperationMode::Combined
@@ -184,7 +203,7 @@ void TrackerNode::cameraInfoCallback(const dv_ros_msgs::CameraInfoMessage::Const
 	}
 
 	// start the tracking thread
-	startTracking();
+	startTracking();//开启多线程，就一直在跑
 }
 
 bool TrackerNode::isRunning() const {
@@ -201,7 +220,7 @@ void TrackerNode::createTracker() {
 	auto detector = std::make_unique<dvf::ImagePyrFeatureDetector>(
 		mCameraCalibration.resolution, cv::FastFeatureDetector::create(mTrackingConfig.fastThreshold));
 
-	switch (mode) {
+	switch (mode) {//根据不同的模式创建tracker，同时读入配置文件
 		case OperationMode::EventsOnly: {
 			ROS_INFO("Constructing Events Only Tracker..");
 			auto eventTracker = dvf::EventFeatureLKTracker<dv::PixelAccumulator>::RegularTracker(
