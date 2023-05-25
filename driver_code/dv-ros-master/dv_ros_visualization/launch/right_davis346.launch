@@ -6,7 +6,7 @@
 <launch>
 
     <node pkg="dv_ros_capture" type="capture_node" name="DAVIS346_right" clear_params="true" output="screen" required="true">
-        <param name="cameraName" value="DAVIS346_00000670"/>
+        <param name="cameraName" value="DAVIS346_00000589"/>
 
         <!-- Do not publish data until synchronization is complete -->
         <param name="waitForSync" value="true"/>

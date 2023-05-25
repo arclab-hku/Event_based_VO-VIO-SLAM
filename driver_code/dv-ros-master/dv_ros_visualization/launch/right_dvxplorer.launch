@@ -6,10 +6,12 @@
 <launch>
 
     <node pkg="dv_ros_capture" type="capture_node" name="DVXplorer_right" clear_params="true" output="screen" required="true">
-        <param name="cameraName" value="DVXplorer_DXA00188"/>
+        <param name="cameraName" value="DVXplorer_DXA00207"/>
 
         <!-- Do not publish data until synchronization is complete -->
+        <!-- <param name="waitForSync" value="true"/> -->
         <param name="waitForSync" value="true"/>
+
     </node>
 
     <node pkg="dv_ros_visualization" type="visualization_node" name="DVXplorer_right_visualization" clear_params="true" output="log">

@@ -8,10 +8,13 @@ gnome-terminal --window -e 'bash -c "roslaunch dv_ros_visualization left_davis34
 gnome-terminal --window -e 'bash -c "roslaunch dv_ros_visualization right_davis346.launch;exec bash"'
 
 # # # dvxplorer
-# gnome-terminal --window -e 'bash -c "roslaunch dv_ros_visualization left_dvxplorer.launch;exec bash"'
+gnome-terminal --window -e 'bash -c "roslaunch dv_ros_visualization left_dvxplorer.launch;exec bash"'
 # # # sleep 10s
-# gnome-terminal --window -e 'bash -c "roslaunch dv_ros_visualization right_dvxplorer.launch;exec bash"'
+gnome-terminal --window -e 'bash -c "roslaunch dv_ros_visualization right_dvxplorer.launch;exec bash"'
 
 
 # 可视化
 gnome-terminal --window -e 'bash -c "roslaunch dv_ros_visualization rqt_visualization.launch;exec bash"'
+
+#bag record
+gnome-terminal --window -e 'bash -c "roslaunch dv_ros_visualization event_record.launch ;exec bash"'
