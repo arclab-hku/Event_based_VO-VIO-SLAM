@@ -91,7 +91,7 @@ private:
 
 	ros::NodeHandle &mNodeHandle;
 
-	dvf::TrackerBase::UniquePtr tracker = nullptr;
+	dvf::TrackerBase::UniquePtr tracker = nullptr;//跟踪器
 
 	void stop();
 
