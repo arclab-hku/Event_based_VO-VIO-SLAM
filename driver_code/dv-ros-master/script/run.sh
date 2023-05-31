@@ -17,4 +17,5 @@ gnome-terminal --window -e 'bash -c "roslaunch dv_ros_visualization right_dvxplo
 gnome-terminal --window -e 'bash -c "roslaunch dv_ros_visualization rqt_visualization.launch;exec bash"'
 
 #bag record
-gnome-terminal --window -e 'bash -c "roslaunch dv_ros_visualization event_record.launch ;exec bash"'
+sleep 6s
+# gnome-terminal --window -e 'bash -c "roslaunch dv_ros_visualization event_record.launch ;exec bash"'

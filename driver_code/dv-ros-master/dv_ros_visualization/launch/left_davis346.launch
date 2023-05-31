@@ -5,7 +5,7 @@
 
 <launch>
     <node pkg="dv_ros_capture" type="capture_node" name="DAVIS346_left" clear_params="true" output="screen" required="true">
-        <param name="cameraName" value="DAVIS346_00000670"/>
+        <param name="cameraName" value="DAVIS346_00000612"/>
 
         <!-- A list of other cameras connected with synchronization cable to this camera -->
         <!-- If this list is empty, the camera node will not properly synchronize them -->
