@@ -4,12 +4,12 @@
   <!-- required="true"  -->
 
 <launch>
-    <node pkg="dv_ros_capture" type="capture_node" name="DVXplorer_left" clear_params="true" output="screen" required="true">
-        <param name="cameraName" value="DVXplorer_DXA00188"/>
 
-        <!-- A list of other cameras connected with synchronization cable to this camera -->
-        <!-- If this list is empty, the camera node will not properly synchronize them -->
-        <!-- <rosparam param="syncDevices">["DVXplorer_DXA00188"]</rosparam> -->
+    <node pkg="dv_ros_capture" type="capture_node" name="DVXplorer_left" clear_params="true" output="screen" required="true">
+        <param name="cameraName" value="DVXplorer_DXA00207"/>
+
+        <!-- Do not publish data until synchronization is complete -->
+        <!-- <param name="waitForSync" value="true"/> -->
         <param name="waitForSync" value="true"/>
 
     </node>
@@ -18,15 +18,12 @@
         <remap from="/DVXplorer_left_visualization/events" to="/DVXplorer_left/events" />
     </node>
 
-    <!-- <node pkg="dv_ros_accumulation" type="accumulator" name="left_accumulator_node" clear_params="true" output="log">
-        <remap from="/left_accumulator_node/events" to="/DVXplorer_left/events" />
+    <!-- <node pkg="dv_ros_accumulation" type="accumulator" name="right_accumulator_node" clear_params="true" output="log">
+        <remap from="/right_accumulator_node/events" to="/DVXplorer_left/events" />
     </node> -->
 
-    <!-- <node pkg="dv_ros_accumulation" type="edge_map" name="left_edge_map_node" clear_params="true" output="log">
-        <remap from="/left_edge_map_node/events" to="/DVXplorer_left/events" />
+    <!-- <node pkg="dv_ros_accumulation" type="edge_map" name="right_edge_map_node" clear_params="true" output="log">
+        <remap from="/right_edge_map_node/events" to="/DVXplorer_left/events" />
     </node> -->
-
-    <!-- <node pkg="rqt_gui" type="rqt_gui" name="rqt_gui"
-          args="-perspective-file $(find dv_ros_visualization)/launch/rqt/stereo_dvxplorer_previews.perspective"/> -->
 
 </launch>

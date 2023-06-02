@@ -1,0 +1,20 @@
+<launch>
+
+
+    <node pkg="dv_ros_visualization" type="visualization_node" name="DAVIS346_left_visualization" clear_params="true" output="log">
+        <remap from="/DAVIS346_left_visualization/events" to="/DAVIS346_left/events" />
+    </node>
+
+    <node pkg="dv_ros_visualization" type="visualization_node" name="DAVIS346_right_visualization" clear_params="true" output="log">
+        <remap from="/DAVIS346_right_visualization/events" to="/DAVIS346_right/events" />
+    </node>
+
+    <node pkg="dv_ros_visualization" type="visualization_node" name="DVXplorer_left_visualization" clear_params="true" output="log">
+        <remap from="/DVXplorer_left_visualization/events" to="/DVXplorer_left/events" />
+    </node>
+
+    <node pkg="dv_ros_visualization" type="visualization_node" name="DVXplorer_right_visualization" clear_params="true" output="log">
+        <remap from="/DVXplorer_right_visualization/events" to="/DVXplorer_right/events" />
+    </node>
+   
+</launch>
