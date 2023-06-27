@@ -1,5 +1,6 @@
 <launch>
 
-	<node pkg="rosbag" type="record" name="bag_record" args="/DVXplorer_left/events /DVXplorer_left/imu /DVXplorer_right/imu /DVXplorer_right/events /DAVIS346_left/events /DAVIS346_left/image /DAVIS346_left/imu /DAVIS346_right/events /DAVIS346_right/image /DAVIS346_right/imu -o /home/oem/road_data_bag"/>
+	<node pkg="rosbag" type="record" name="bag_record" args="/DVXplorer_left/events /DVXplorer_left/imu /DVXplorer_right/imu /DVXplorer_right/events /DAVIS346_left/events /DAVIS346_left/image /DAVIS346_left/imu /DAVIS346_right/events /DAVIS346_right/image /DAVIS346_right/imu /hikrobot_infrared_camera/rgb 
+	-o /home/oem/road_data_bag"/>
 
 </launch>

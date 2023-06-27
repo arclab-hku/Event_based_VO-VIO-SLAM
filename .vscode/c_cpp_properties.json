@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/noetic/include/**",
+        "/home/oem/catkin_dvs_ws/devel/include/**",
+        "/home/oem/catkin_dvs_ws/src/Event_based_VO-VIO-SLAM/driver_code/dv-ros-master/dv_ros_capture/include/**",
+        "/home/oem/catkin_dvs_ws/src/Event_based_VO-VIO-SLAM/driver_code/dv-ros-master/dv_ros_imu_bias/include/**",
+        "/home/oem/catkin_dvs_ws/src/Event_based_VO-VIO-SLAM/driver_code/dv-ros-master/dv_ros_messaging/include/**",
+        "/home/oem/catkin_dvs_ws/src/Event_based_VO-VIO-SLAM/driver_code/dv-ros-master/dv_ros_tracker/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

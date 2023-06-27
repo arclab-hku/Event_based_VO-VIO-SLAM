@@ -178,6 +178,7 @@ CaptureNode::CaptureNode(std::shared_ptr<ros::NodeHandle> nodeHandle, const dv_r
 					cameraPtr->setDavisExposureDuration(dv::Duration(config.exposure));//设置曝光时间
 				}
 				updateNoiseFilter(config.noise_filtering, static_cast<int64_t>(config.noise_background_activity_time));//添加噪声滤波器
+				// updateNoiseFilter(config.noise_filtering, static_cast<int64_t>(100));//添加噪声滤波器(固定为200，不知为何此处通过参数文件无法更改)
 			});
 			
 			if (cameraPtr->isTriggerStreamAvailable()) {

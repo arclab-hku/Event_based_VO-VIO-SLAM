@@ -3,14 +3,15 @@ gnome-terminal --tab -e 'bash -c "roscore;exec bash"'
 sleep 1s
 
 # # # davis346
-gnome-terminal --tab -e 'bash -c "roslaunch dv_ros_visualization left_davis346.launch;exec bash"'
-# sleep 10s
 gnome-terminal --tab -e 'bash -c "roslaunch dv_ros_visualization right_davis346.launch;exec bash"'
+gnome-terminal --tab -e 'bash -c "roslaunch dv_ros_visualization left_davis346.launch;exec bash"'
 
-# # # dvxplorer
-gnome-terminal --tab -e 'bash -c "roslaunch dv_ros_visualization left_dvxplorer.launch;exec bash"'
-# # # sleep 10s
+# # # # dvxplorer
 gnome-terminal --tab -e 'bash -c "roslaunch dv_ros_visualization right_dvxplorer.launch;exec bash"'
+gnome-terminal --tab -e 'bash -c "roslaunch dv_ros_visualization left_dvxplorer.launch;exec bash"'
+
+# 红外相机
+gnome-terminal --tab -e 'bash -c "roslaunch hikrobot_infrared_camera infrared_camera.launch;exec bash"'
 
 
 # 可视化
@@ -23,8 +24,8 @@ gnome-terminal --tab -e 'bash -c "roslaunch dv_ros_visualization rqt_visualizati
 
 
 # gnome-terminal --tab -e 'bash -c "roslaunch dv_ros_visualization event_visualization.launch;exec bash"'
-# gnome-terminal --window -e 'bash -c "rosbag play -r 1.0 --pause ~/road_data_bag_event_last.bag;exec bash"'
-# gnome-terminal --window -e 'bash -c "rostopic echo /DAVIS346_left/image/header;exec bash"'
+# gnome-terminal --tab -e 'bash -c "rostopic echo /DAVIS346_left/image/header;exec bash"'
+# gnome-terminal --window -e 'bash -c "rosbag play -r 1.0 --pause ~/road_data_bag_2023-06-02-11-50-28.bag;exec bash"'
 # gnome-terminal --window -e 'bash -c "rostopic echo /DAVIS346_right/image/header;exec bash"'
 
 #bag record
