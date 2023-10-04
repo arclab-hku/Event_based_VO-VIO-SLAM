@@ -325,8 +325,8 @@ It is reliable and accurate enough to provide onboard pose feedback control for 
 @article{GWPHKU:PL-EVIO,
   title={PL-EVIO: Robust Monocular Event-based Visual Inertial Odometry with Point and Line Features},
   author={Guan, Weipeng and Chen, Peiyu and Xie, Yuhan and Lu, Peng},
-  journal={arXiv preprint arXiv:2209.12160},
-  year={2022}
+  journal={IEEE Transactions on Automation Science and Engineering},
+  year={2023}
 }
 ~~~
 
