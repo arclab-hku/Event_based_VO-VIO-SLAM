@@ -300,7 +300,7 @@ The event-corner features tracker are then integrated into a sliding windows gra
 ## 2. PL-EVIO 
 This work proposed the event-based visual-inertial odometry (EVIO) framework with point and line features, including: pruely event (PL-EIO) and event+image (PL-EVIO).
 It is reliable and accurate enough to provide onboard pose feedback control for the quadrotor to achieve aggressive motion, e.g. flipping.
-* PDF can be downloaded [here](https://arxiv.org/abs/2209.12160)
+* This work is accepted by T-ASE and simultaneously transferred to ICRA2024. PDF can be downloaded [here](https://arxiv.org/abs/2209.12160)
 * [Results (raw trajectories)](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results_for_comparison.md)
 * An extended version of our PL-EVIO: realizing high-accurate 6-DoF pose tracking and 3D semi-dense mapping (monocular event only) can be seen in [Link](https://www.bilibili.com/video/BV1924y1y7pn/?spm_id_from=333.999.0.0&vd_source=a88e426798937812a8ffc1a9be5a3cb7)
 <!-- * Code is available in [internal-accessed link](https://github.com/arclab-hku/EVIO/tree/PL-EIO)  -->
@@ -334,7 +334,7 @@ It is reliable and accurate enough to provide onboard pose feedback control for 
 This work proposed the first stereo event-based visual inertial odometry framework, including ESIO (purely event-based) and ESVIO (event with image-aided).
 The stereo event-corner features are temporally and spatially associated through an event-based representation with spatio-temporal and exponential decay kernel.
 The stereo event tracker are then tightly coupled into a sliding windows graph-based optimization framework for the estimation of ego-motion.
-* This work is accepted by RAL and simultaneously transferred to IROS2023. PDF can be downloaded [here](https://ieeexplore.ieee.org/document/10107754)
+* This work is accepted by RAL and simultaneously transferred to [IROS2023](https://www.bilibili.com/video/BV1Ju411P7sq/?spm_id_from=333.999.0.0&vd_source=a88e426798937812a8ffc1a9be5a3cb7). PDF can be downloaded [here](https://ieeexplore.ieee.org/document/10107754)
 * The supplementary material is available in [link](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/tree/main/ESVIO/supply)
 * [Results (raw trajectories)](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results_for_comparison.md)
 <!-- * Code is available in [internal-accessed link](https://github.com/arclab-hku/ESVIO) -->
