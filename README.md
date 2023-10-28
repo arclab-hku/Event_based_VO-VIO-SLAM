@@ -13,7 +13,7 @@ We hope that we can make some contributions for the development of event-based v
 
 ### If you have any suggestions or questions, do not hesitate to propose an issue. 
 
-### if you find this repositorie is helpful in your research, a simple star or citation of our works should be the best affirmation for us. :blush: 
+### If you find this repositorie is helpful in your research, a simple star or citation of our works should be the best affirmation for us. :blush: 
 
 
 - [Data Sequence for Event-based Stereo Visual-inertial Odometry](#Data-sequence-for-event-based-stereo-visual-inertial-odometry)
