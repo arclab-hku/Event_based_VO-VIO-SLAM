@@ -16,11 +16,11 @@ We hope that we can make some contributions for the development of event-based v
 ### If you find this repositorie is helpful in your research, a simple star or citation of our works should be the best affirmation for us. :blush: 
 
 
-- [Data Sequence for Event-based Stereo Visual-inertial Odometry](#Data-sequence-for-event-based-stereo-visual-inertial-odometry)
+- [Dateset for Stereo EVIO](#Dateset-for-stereo-evio)
   - [Acquisition Platform](#acquisition-platform)
   - [Driver Installation](#driver-installation)
   - [Data Sequence](#data-sequence)
-- [Data Sequence for Event-based Monocular Visual-inertial Odometry](#Data-sequence-for-event-based-monocular-visual-inertial-odometry)
+- [Dateset for Monocular EVIO](#Dataset-for-monocular-evio)
   - [Acquisition Platform](#acquisition-platform-1)
   - [Data Sequence](#data-sequence-1)
 - [Modified Public Dataset](#Modified-public-dataset)
@@ -34,7 +34,7 @@ We hope that we can make some contributions for the development of event-based v
 - [Recommendation](#recommendation)
 
 
-# Data Sequence for Event-based Stereo Visual-inertial Odometry
+# Dateset for Stereo EVIO
 This dataset contains stereo event data at 60HZ and stereo image frames at 30Hz with resolution in 346 × 260, as well as IMU data at 1000Hz. 
 Timestamps between all sensors are synchronized in hardware. 
 We also provide ground truth poses from a motion capture system VICON at 50Hz during the beginning and end of each sequence, which can be used for trajectory evaluation.
@@ -108,7 +108,7 @@ hku_outdoor_large-scale|2022-11|67.4g|34.9minutes|Indoor+outdoor; large-scale|[R
 
 
 
-# Data Sequence for Event-based Monocular Visual-inertial Odometry
+# Dateset for Monocular EVIO
 You can use these data sequence to test your monocular EVIO in different resolution event cameras.
 The`DAVIS346 (346x260)` and `DVXplorer (640x480)`are attached together (shown in Figure) for facilitating comparison. 
 All the sequences are recorded in HDR scenarios with very low illumination or strong illumination changes through switching the strobe flash on and off.
