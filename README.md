@@ -362,8 +362,7 @@ The stereo event tracker are then tightly coupled into a sliding windows graph-b
 ECMD provides data from two sets of stereo event cameras with different resolutions (640x480, 346x260), stereo industrial cameras, an infrared camera, a top-installed mechanical LiDAR with two slanted LiDARs, two consumer-level GNSS receivers, and an onboard IMU.
 Meanwhile, the ground-truth of the vehicle was obtained using a centimeter-level high-accuracy GNSS-RTK/INS navigation system.
 All sensors are well-calibrated and temporally synchronized at the hardware level, with recording data simultaneously.
-We additionally evaluate several state-of-the-art SLAM algorithms for benchmarking visual and LiDAR SLAM and identifying their limitations.
-The dataset is available at [here](https://arclab-hku.github.io/ecmd/).
+* The dataset is available at [here](https://arclab-hku.github.io/ecmd/).
 
 <div align="center">
 <a href="https://www.bilibili.com/video/BV1pN411s79g/?spm_id_from=333.337.search-card.all.click&vd_source=c4be0359ec60c90d434f634ab4075470" target="_blank"><img src="ECMD/sensor_video.gif" alt="video" width="100%" /></a>
