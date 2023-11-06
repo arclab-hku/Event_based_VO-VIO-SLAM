@@ -284,7 +284,7 @@ The event-corner features tracker are then integrated into a sliding windows gra
 
 <div align="center">
 <a href="https://b23.tv/Xe8MZyt" target="_blank"><img src="IROS2022/cover.jpg" alt="video" width="100%" /></a>
-<p> Demo Video (click the image to open) </p>
+<p> Demo Video (click the image to open video demo) </p>
 </div>
 
 ~~~
@@ -309,12 +309,12 @@ It is reliable and accurate enough to provide onboard pose feedback control for 
 
 <div align="center">
 <a href="https://b23.tv/OE3QM6j" target="_blank"><img src="PL-EVIO/cover.jpg" alt="video" width="100%" /></a>
-<p> Demo Video (click the image to open) </p>
+<p> Demo Video (click the image to open video demo) </p>
 </div>
 
 <div align="center">
 <a href="https://www.bilibili.com/video/BV1i24y1R7KV/?spm_id_from=333.999.list.card_archive.click&vd_source=a88e426798937812a8ffc1a9be5a3cb7" target="_blank"><img src="PL-EVIO/PLEVIO_flip_3.gif" alt="video" width="100%" /></a>
-<p> Onboard Quadrotor Flip using Our PL-EVIO (click the gif to open)</p>
+<p> Onboard Quadrotor Flip using Our PL-EVIO (click the gif to open video demo)</p>
 </div>
 
 <!-- <div align="center">
@@ -342,7 +342,7 @@ The stereo event tracker are then tightly coupled into a sliding windows graph-b
 
 <div align="center">
 <a href="https://www.bilibili.com/video/BV1ve4y1M7v4/?share_source=copy_web&vd_source=a722388e07ea53f32d00aed0a0117f3c" target="_blank"><img src="ESVIO/ESVIO_hdr_flight _gif.gif" alt="video" width="100%" /></a>
-<p> Onboard Quadrotor Flight using Our ESVIO as State Estimator (click the gif to open)</p>
+<p> Onboard Quadrotor Flight using Our ESVIO as State Estimator (click the gif to open video demo)</p>
 </div>
 
 ~~~
@@ -366,7 +366,7 @@ Meanwhile, the ground-truth of the vehicle was obtained using a centimeter-level
 
 <div align="center">
 <a href="https://www.bilibili.com/video/BV1pN411s79g/?spm_id_from=333.337.search-card.all.click&vd_source=c4be0359ec60c90d434f634ab4075470" target="_blank"><img src="ECMD/homepage_vis.gif" alt="video" width="100%" /></a>
-<p> Overview of ECMD (click the gif to open)</p>
+<p> Overview of ECMD (click the gif to open video demo)</p>
 </div>
 
 <!-- ~~~
