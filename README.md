@@ -365,8 +365,8 @@ All sensors are well-calibrated and temporally synchronized at the hardware leve
 * The dataset is available at [here](https://arclab-hku.github.io/ecmd/).
 
 <div align="center" style="display: flex; justify-content: space-between;">
-    <a href="https://www.bilibili.com/video/BV1pN411s79g/?spm_id_from=333.337.search-card.all.click&vd_source=c4be0359ec60c90d434f634ab4075470" target="_blank"><img src="ECMD/sensor_video.gif" alt="video" width="50%" /></a>
-    <a href="https://www.bilibili.com/video/BV1pN411s79g/?spm_id_from=333.337.search-card.all.click&vd_source=c4be0359ec60c90d434f634ab4075470" target="_blank"><img src="ECMD/homepage_vis.gif" alt="video" width="50%" /></a>
+    <a href="https://www.bilibili.com/video/BV1pN411s79g/?spm_id_from=333.337.search-card.all.click&vd_source=c4be0359ec60c90d434f634ab4075470" target="_blank"><img src="ECMD/sensor_video.gif" alt="video" width="48%" /></a>
+    <a href="https://www.bilibili.com/video/BV1pN411s79g/?spm_id_from=333.337.search-card.all.click&vd_source=c4be0359ec60c90d434f634ab4075470" target="_blank"><img src="ECMD/homepage_vis.gif" alt="video" width="48%" /></a>
 </div>
 <p align="center"> Overview of ECMD (click the gif to open)</p>
 
