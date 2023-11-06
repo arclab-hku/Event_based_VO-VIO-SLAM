@@ -365,14 +365,10 @@ All sensors are well-calibrated and temporally synchronized at the hardware leve
 * The dataset is available at [here](https://arclab-hku.github.io/ecmd/).
 
 <div align="center">
-    <div style="display: inline-block; width: 48%;">
-        <a href="https://www.bilibili.com/video/BV1pN411s79g/?spm_id_from=333.337.search-card.all.click&vd_source=c4be0359ec60c90d434f634ab4075470" target="_blank"><img src="ECMD/sensor_video.gif" alt="video" style="width: 100%; height: auto;" /></a>
-    </div>
-    <div style="display: inline-block; width: 48%;">
-        <a href="https://www.bilibili.com/video/BV1pN411s79g/?spm_id_from=333.337.search-card.all.click&vd_source=c4be0359ec60c90d434f634ab4075470" target="_blank"><img src="ECMD/homepage_vis.gif" alt="video" style="width: 100%; height: auto;" /></a>
-    </div>
+<a href="https://www.bilibili.com/video/BV1pN411s79g/?spm_id_from=333.337.search-card.all.click&vd_source=c4be0359ec60c90d434f634ab4075470" target="_blank"><img src="ECMD/sensor_video.gif" alt="video" width="100%" /></a>
+<a href="https://www.bilibili.com/video/BV1pN411s79g/?spm_id_from=333.337.search-card.all.click&vd_source=c4be0359ec60c90d434f634ab4075470" target="_blank"><img src="ECMD/homepage_vis.gif" alt="video" width="100%" /></a>
+<p> Overview of ECMD (click the gif to open)</p>
 </div>
-<p align="center"> Overview of ECMD (click the gif to open)</p>
 
 <!-- ~~~
 @article{GWPHKU:ESVIO,
