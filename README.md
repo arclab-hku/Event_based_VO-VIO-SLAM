@@ -359,9 +359,9 @@ The stereo event tracker are then tightly coupled into a sliding windows graph-b
 ~~~
 
 ## 4. ECMD
-ECMD provides data from two sets of stereo event cameras with different resolutions (640x480, 346x260), stereo industrial cameras, an infrared camera, a top-installed mechanical LiDAR with two slanted LiDARs, two consumer-level GNSS receivers, and an onboard IMU.
+ECMD is an event-based dataset for autonomous driving.
+It provides data from two sets of stereo event cameras with different resolutions (640x480, 346x260), stereo industrial cameras, an infrared camera, a top-installed mechanical LiDAR with two slanted LiDARs, two consumer-level GNSS receivers, and an onboard IMU.
 Meanwhile, the ground-truth of the vehicle was obtained using a centimeter-level high-accuracy GNSS-RTK/INS navigation system.
-All sensors are well-calibrated and temporally synchronized at the hardware level, with recording data simultaneously.
 * The dataset is available at [here](https://arclab-hku.github.io/ecmd/).
 
 <div align="center">
