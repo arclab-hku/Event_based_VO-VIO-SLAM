@@ -393,6 +393,7 @@ The raw results/trajectories of our methods can be obtained in :point_right: [he
 
 # Recommendation
 * [Survey on Event-based 3D Reconstruction](https://www.bilibili.com/video/BV1mm4y1c7Rp/?spm_id_from=333.999.0.0)
+* [Survey on Event Camera in AR/VR](https://www.bilibili.com/video/BV1ic411X7jC/?spm_id_from=333.999.0.0)
 * [Event Camera Calibration using dv-gui](https://blog.csdn.net/gwplovekimi/article/details/121637241?spm=1001.2014.3001.5501)
 * [Event Camera Calibration using Kalibr and imu_utils](https://blog.csdn.net/gwplovekimi/article/details/120948986)
 * [Event Camera Simulation in Gazebo](https://blog.csdn.net/gwplovekimi/article/details/120347034?spm=1001.2014.3001.5502)
