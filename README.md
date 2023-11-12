@@ -369,18 +369,14 @@ Meanwhile, the ground-truth of the vehicle was obtained using a centimeter-level
 <p> Overview of ECMD (click the gif to open video demo)</p>
 </div>
 
-<!-- ~~~
-@article{GWPHKU:ESVIO,
-  title={ESVIO: Event-based Stereo Visual Inertial Odometry},
-  author={Chen, Peiyu and Guan, Weipeng and Lu, Peng},
-  journal={IEEE Robotics and Automation Letters},
-  year={2023},
-  volume={8},
-  number={6},
-  pages={3661-3668},
-  publisher={IEEE}
+~~~
+@article{GWPHKU:ECMD,
+  title={ECMD: An Event-Centric Multisensory Driving Dataset for SLAM},
+  author={Chen, Peiyu and Guan, Weipeng and Huang, Feng and Zhong, Yihan and Wen, Weisong and Hsu, Li-Ta and Lu, Peng},
+  journal={arXiv preprint arXiv:2311.02327},
+  year={2023}
 }
-~~~ -->
+~~~
 
 
 
