@@ -373,7 +373,7 @@ Meanwhile, the ground-truth of the vehicle was obtained using a centimeter-level
 @article{GWPHKU:ECMD,
   title={ECMD: An Event-Centric Multisensory Driving Dataset for SLAM},
   author={Chen, Peiyu and Guan, Weipeng and Huang, Feng and Zhong, Yihan and Wen, Weisong and Hsu, Li-Ta and Lu, Peng},
-  journal={arXiv preprint arXiv:2311.02327},
+  journal={IEEE Transactions on Intelligent Vehicles},
   year={2023}
 }
 ~~~
