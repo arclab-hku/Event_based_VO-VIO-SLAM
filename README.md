@@ -380,9 +380,10 @@ Meanwhile, the ground-truth of the vehicle was obtained using a centimeter-level
 ~~~
 
 ## 5. EVI-SAM
+* The data sequence of EVI-SAM is available at [here](***).
 
 <div align="center">
-<a href="[https://b23.tv/OE3QM6j](https://www.bilibili.com/video/BV19w411b7te/?spm_id_from=333.999.top_right_bar_window_history.content.click&vd_source=a88e426798937812a8ffc1a9be5a3cb7)" target="_blank"><img src="EVI-SAM/first_image.png" alt="video" width="100%" /></a>
+<a href="https://www.bilibili.com/video/BV19w411b7te/?spm_id_from=333.999.top_right_bar_window_history.content.click&vd_source=a88e426798937812a8ffc1a9be5a3cb7" target="_blank"><img src="EVI-SAM/first_image.png" alt="video" width="100%" /></a>
 <p> Demo Video (click the image to open video demo) </p>
 </div>
 
