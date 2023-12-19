@@ -150,20 +150,19 @@ However, it seems that the released results is worse than the ones in the paper.
 ## DSEC
 ESIO/ESVIO evaluation results on [DSEC](https://dsec.ifi.uzh.ch/). The raw trajectories can be found in [here](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EqMe0ZL49opLlC0KlmkjHxkB81g5kryO9z3PS-sHveP32A?e=ci7G8h)
 
-<!-- <div align="center">
-<a target="_blank"><img src="ESVIO/quadrotor_flight.jpg" alt="image" width="80%" /></a>
-<p> The Platform for Data Collection </p>
-</div>  -->
+<div align="center">
+<a target="_blank"><img src="ESVIO/ESIO_ESVIO_DSEC.png" alt="image" width="80%" /></a>
+<p> Since the DSEC dataset does not provide the ground truth 6-DoF poses, we only show the qualitative results, the tracking performance of event-based and image-based features, of (a) ESIO and (b) ESVIO for the DSEC dataset sequences zurich_city_04_a to zurich_city_04_f. </p>
+</div> 
 
-<div style="display: flex; justify-content: center;">
+<!-- <div style="display: flex; justify-content: center;">
   <div style="margin: 10px;">
     <a target="_blank"><img src="ESVIO/DSEC_ESIO.png" alt="image" width="80%" /></a>
-    <!-- <p>第一张图像的描述</p> -->
   </div>
   <div style="margin: 10px;">
     <a target="_blank"><img src="ESVIO/DSEC_ESVIO.png" alt="image" width="80%" /></a>
     <p>Since the DSEC dataset does not provide the ground truth 6-DoF poses, we only show the qualitative results, the tracking performance of event-based and image-based features, of (a) ESIO and (b) ESVIO for the DSEC dataset sequences zurich\_city\_04\_a to zurich\_city\_04\_f.</p>
   </div>
-</div>
+</div> -->
 
 
