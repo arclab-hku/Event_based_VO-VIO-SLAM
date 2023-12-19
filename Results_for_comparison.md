@@ -27,6 +27,7 @@ evo_ape bag bag_name.bag /ground_truth_pose /estimated_pose -va -p
   - [VECtor](#VECtor)
   - [MVSEC](#MVSEC)
   - [DAVIS 240C Datasets](#DAVIS-240C-Datasets)
+  - [DSEC](#DSEC)
 
 
 
@@ -145,3 +146,24 @@ The result is obtained through computing the mean position error (Euclidean dist
 `Unit: %/m` (e.g. 0.24 means the average error would be 0.24m for 100m motion). 
 BTW: both [BMVC17](https://rpg.ifi.uzh.ch/docs/BMVC17_Rebecq.pdf) and [Ultimate SLAM](https://rpg.ifi.uzh.ch/docs/RAL18_VidalRebecq.pdf) release their raw results of this dataset in [here](https://rpg.ifi.uzh.ch/ultimateslam.html).
 However, it seems that the released results is worse than the ones in the paper.
+
+## DSEC
+ESIO/ESVIO evaluation results on [DSEC](https://dsec.ifi.uzh.ch/). The raw trajectories can be found in [here](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EqMe0ZL49opLlC0KlmkjHxkB81g5kryO9z3PS-sHveP32A?e=ci7G8h)
+
+<!-- <div align="center">
+<a target="_blank"><img src="ESVIO/quadrotor_flight.jpg" alt="image" width="80%" /></a>
+<p> The Platform for Data Collection </p>
+</div>  -->
+
+<div style="display: flex; justify-content: center;">
+  <div style="margin: 10px;">
+    <a target="_blank"><img src="ESVIO/DSEC_ESIO.png" alt="image" width="80%" /></a>
+    <!-- <p>第一张图像的描述</p> -->
+  </div>
+  <div style="margin: 10px;">
+    <a target="_blank"><img src="ESVIO/DSEC_ESVIO.png" alt="image" width="80%" /></a>
+    <p>Since the DSEC dataset does not provide the ground truth 6-DoF poses, we only show the qualitative results, the tracking performance of event-based and image-based features, of (a) ESIO and (b) ESVIO for the DSEC dataset sequences zurich\_city\_04\_a to zurich\_city\_04\_f.</p>
+  </div>
+</div>
+
+
