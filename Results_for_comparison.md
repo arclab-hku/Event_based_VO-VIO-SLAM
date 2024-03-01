@@ -144,7 +144,7 @@ BTW: both [BMVC17](https://rpg.ifi.uzh.ch/docs/BMVC17_Rebecq.pdf) and [Ultimate 
 However, it seems that the released results is worse than the ones in the paper.
 
 ## DSEC
-ESIO/ESVIO evaluation results on [DSEC](https://dsec.ifi.uzh.ch/). The raw trajectories can be found in [here](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EqMe0ZL49opLlC0KlmkjHxkB81g5kryO9z3PS-sHveP32A?e=ci7G8h)
+ESIO/ESVIO evaluation results on [DSEC](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM?tab=readme-ov-file#Modified-dsec-dataset). The raw trajectories can be found in [here](https://connecthkuhk-my.sharepoint.com/:f:/g/personal/chenpyhk_connect_hku_hk/EqMe0ZL49opLlC0KlmkjHxkB81g5kryO9z3PS-sHveP32A?e=ci7G8h)
 
 <div align="center">
 <a target="_blank"><img src="ESVIO/ESIO_ESVIO_DSEC.png" alt="image" width="95%" /></a>
