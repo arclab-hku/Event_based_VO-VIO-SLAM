@@ -9,15 +9,7 @@ Since our source code is only internal-accessed and not publicly available, we f
 We strongly recommend the peers to evaluate their proposed works using our dataset and do the comparison with the raw results from our methods using their own accuracy criterion.
 
 All the data sequences are evaluated in real-time. 
-For the readers who are interested in the qualitative performance, please refer to our bilibili:
-
-:+1:
-
-:star:
-
-:moneybag:
-
-[Guan Weipeng](https://space.bilibili.com/499377825?spm_id_from=333.1007.0.0) or [Chen Peiyu](https://space.bilibili.com/279299582/?spm_id_from=333.999.0.0).
+For the readers who are interested in the qualitative performance, please refer to our bilibili: :+1: :star: :moneybag: [Guan Weipeng](https://space.bilibili.com/499377825?spm_id_from=333.1007.0.0) or [Chen Peiyu](https://space.bilibili.com/279299582/?spm_id_from=333.999.0.0).
 The evaluations of our works in different data sequences are recorded in video.
 
 Tips: we recommend this [Python package](https://github.com/MichaelGrupp/evo) for the evaluation of odometry and SLAM.
