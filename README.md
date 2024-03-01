@@ -1,4 +1,4 @@
-[![HitCount](https://hits.dwyl.com/arclab-hku/Event_based_VO-VIO-SLAM.svg?style=flat-square)](http://hits.dwyl.com/arclab-hku/Event_based_VO-VIO-SLAM)
+  <!-- [![HitCount](https://hits.dwyl.com/arclab-hku/Event_based_VO-VIO-SLAM.svg?style=flat-square)](http://hits.dwyl.com/arclab-hku/Event_based_VO-VIO-SLAM) -->
 
 <div align="center">
 
