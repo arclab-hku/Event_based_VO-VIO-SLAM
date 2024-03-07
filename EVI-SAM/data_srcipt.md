@@ -10,7 +10,7 @@ To benefit the community, we release the dataset that we utilized for real-time 
 ## Event-based Handheld Device
 Our handheld device includes a power supply unit, an onboard computer NUC (equipped with Intel i7-1260P, 32GB RAM, and Ubuntu 20.04 operation system), a DAVIS346 event camera, and a Intel® RealSense™ D455 RGB-D camera.
 </br>
-We release the all of our [schematic files](EVI-SAM/CAD_files_Sensor_kits.zip) with STL files format, which can be imported and printed directly. Moreover, we also release the CAD source files (with suffix “*.SLDPRT and *.SLDASM”), which can be opened and edited with Solidworks.
+We release the all of our [schematic files](CAD_files_Sensor_kits.zip) with STL files format, which can be imported and printed directly. Moreover, we also release the CAD source files (with suffix “*.SLDPRT and *.SLDASM”), which can be opened and edited with Solidworks.
 
 <div align="center">
 <a target="_blank"><img src="slam_kit.jpg" alt="image" width="60%" /></a>
