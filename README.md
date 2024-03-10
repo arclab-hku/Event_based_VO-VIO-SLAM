@@ -338,6 +338,7 @@ The stereo event-corner features are temporally and spatially associated through
 The stereo event tracker are then tightly coupled into a sliding windows graph-based optimization framework for the estimation of ego-motion.
 * This work is accepted by RAL and simultaneously transferred to [IROS2023](https://www.bilibili.com/video/BV1Ju411P7sq/?spm_id_from=333.999.0.0&vd_source=a88e426798937812a8ffc1a9be5a3cb7). PDF can be downloaded [here](https://ieeexplore.ieee.org/document/10107754)
 * The supplementary material is available in [link](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/tree/main/ESVIO/supply)
+* Source Code is available in [Github Repository](https://github.com/arclab-hku/ESVIO)
 * [Results (raw trajectories)](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results_for_comparison.md)
 <!-- * Code is available in [internal-accessed link](https://github.com/arclab-hku/ESVIO) -->
 
