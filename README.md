@@ -309,7 +309,7 @@ It is reliable and accurate enough to provide onboard pose feedback control for 
 
 
 <div align="center">
-<a href="https://b23.tv/OE3QM6j" target="_blank"><img src="PL-EVIO/cover.jpg" alt="video" width="100%" /></a>
+<a href="https://www.bilibili.com/video/BV1c14y1j75L/?spm_id_from=333.999.0.0&vd_source=a88e426798937812a8ffc1a9be5a3cb7" target="_blank"><img src="PL-EVIO/cover.jpg" alt="video" width="100%" /></a>
 <p> Demo Video (click the image to open video demo) </p>
 </div>
 
