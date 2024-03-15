@@ -284,7 +284,7 @@ The event-corner features tracker are then integrated into a sliding windows gra
 <!-- * Code is available in [internal-accessed link](https://github.com/arclab-hku/EVIO/tree/evio_mono_noetic) -->
 
 <div align="center">
-<a href="https://b23.tv/Xe8MZyt" target="_blank"><img src="IROS2022/cover.jpg" alt="video" width="100%" /></a>
+<a href="https://www.bilibili.com/video/BV1Dg411y7ds/?spm_id_from=333.999.0.0" target="_blank"><img src="IROS2022/cover.jpg" alt="video" width="100%" /></a>
 <p> Demo Video (click the image to open video demo) </p>
 </div>
 
