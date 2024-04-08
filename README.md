@@ -302,7 +302,7 @@ The event-corner features tracker are then integrated into a sliding windows gra
 ## 2. PL-EVIO 
 This work proposed the event-based visual-inertial odometry (EVIO) framework with point and line features, including: pruely event (PL-EIO) and event+image (PL-EVIO).
 It is reliable and accurate enough to provide onboard pose feedback control for the quadrotor to achieve aggressive motion, e.g. flipping.
-* This work is accepted by T-ASE and simultaneously transferred to ICRA2024. PDF can be downloaded [here](https://ieeexplore.ieee.org/document/10287884)
+* This work is accepted by T-ASE and simultaneously transferred to [ICRA2024](https://www.bilibili.com/video/BV1LC411G7sh/?spm_id_from=333.788&vd_source=a88e426798937812a8ffc1a9be5a3cb7). PDF can be downloaded [here](https://ieeexplore.ieee.org/document/10287884)
 * [Results (raw trajectories)](https://github.com/arclab-hku/Event_based_VO-VIO-SLAM/blob/main/Results_for_comparison.md)
 * An extended version of our PL-EVIO: realizing high-accurate 6-DoF pose tracking and 3D semi-dense mapping (monocular event only) can be seen in [Link](https://www.bilibili.com/video/BV1924y1y7pn/?spm_id_from=333.999.0.0&vd_source=a88e426798937812a8ffc1a9be5a3cb7)
 <!-- * Code is available in [internal-accessed link](https://github.com/arclab-hku/EVIO/tree/PL-EIO)  -->
