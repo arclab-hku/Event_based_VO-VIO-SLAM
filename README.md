@@ -384,7 +384,9 @@ Meanwhile, the ground-truth of the vehicle was obtained using a centimeter-level
 EVI-SAM is a full event-based SLAM system that tackle the problem of 6-DoF pose tracking and 3D dense mapping using the monocular event camera.
 To the best of our knowledge, this is the first framework that employs a non-learning approach to achieve event-based dense and textured 3D reconstruction without GPU acceleration.
 Additionally, it is also the first hybrid approach that integrates both direct-based and feature-based methods within an event-based framework.
-* The data sequence and the hardware platform of our EVI-SAM is available at [here](/EVI-SAM/data_srcipt.md). PDF can be downloaded [here](https://arxiv.org/pdf/2312.11911.pdf).
+* The data sequence and the hardware platform of our EVI-SAM is available at [here](/EVI-SAM/data_srcipt.md).
+* PDF can be downloaded [here](https://arxiv.org/pdf/2312.11911.pdf).
+* The supplementary material, which compares the dense mapping performance of our EVI-SAM with monocular RGB, stereo RGB, and RGB-D cameras, is available in [link]().
 
 <div align="center">
 <a href="https://www.bilibili.com/video/BV19w411b7te/?spm_id_from=333.999.top_right_bar_window_history.content.click&vd_source=a88e426798937812a8ffc1a9be5a3cb7" target="_blank"><img src="EVI-SAM/first_image.png" alt="video" width="100%" /></a>
