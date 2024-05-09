@@ -23,17 +23,17 @@ Please note that the depth maps provided by the depth camera only serve as refer
 
 Sequence Name|Collection Date|Total Size|Rosbag (Baidu Disk)
 :--|:--:|:--:|:--:
-HKU_LG_office_1|2023-11|***g|[Rosbag](https://pan.baidu.com/s/13d-ktCJuzQ_Rz1JAtpFjAw?pwd=9hfs)
-HKU_LG_office_2|2023-11|***g|[Rosbag](https://pan.baidu.com/s/13d-ktCJuzQ_Rz1JAtpFjAw?pwd=9hfs)
-HKU_LG_office_3|2023-11|***g|[Rosbag](https://pan.baidu.com/s/13d-ktCJuzQ_Rz1JAtpFjAw?pwd=9hfs)
-HKU_LG_office_4|2023-11|***g|[Rosbag](https://pan.baidu.com/s/13d-ktCJuzQ_Rz1JAtpFjAw?pwd=9hfs)
-HKU_LG_office_5|2023-11|***g|[Rosbag](https://pan.baidu.com/s/13d-ktCJuzQ_Rz1JAtpFjAw?pwd=9hfs)
-HKU_LG_factory_1|2023-11|***g|[Rosbag](https://pan.baidu.com/s/1cAzPKIURuq7mURr1XT1qlA?pwd=kx5s)
-HKU_LG_factory_2|2023-11|***g|[Rosbag](https://pan.baidu.com/s/1cAzPKIURuq7mURr1XT1qlA?pwd=kx5s)
-HKU_LG_factory_3|2023-11|***g|[Rosbag](https://pan.baidu.com/s/1cAzPKIURuq7mURr1XT1qlA?pwd=kx5s)
-HKU_Logo_wall_1|2023-11|***g|[Rosbag](https://pan.baidu.com/s/1f2gSpIz3mwKS6a1IYRZBhw?pwd=cilv)
-HKU_Logo_wall_2|2023-11|***g|[Rosbag](https://pan.baidu.com/s/1f2gSpIz3mwKS6a1IYRZBhw?pwd=cilv)
-HKU_Logo_wall_3|2023-11|***g|[Rosbag](https://pan.baidu.com/s/1f2gSpIz3mwKS6a1IYRZBhw?pwd=cilv)
+HKU_LG_office_1|2023-11|8.91 GB|[Rosbag](https://pan.baidu.com/s/13d-ktCJuzQ_Rz1JAtpFjAw?pwd=9hfs)
+HKU_LG_office_2|2023-11|7.71 GB|[Rosbag](https://pan.baidu.com/s/13d-ktCJuzQ_Rz1JAtpFjAw?pwd=9hfs)
+HKU_LG_office_3|2023-11|9.49 GB|[Rosbag](https://pan.baidu.com/s/13d-ktCJuzQ_Rz1JAtpFjAw?pwd=9hfs)
+HKU_LG_office_4|2023-11|8.55 GB|[Rosbag](https://pan.baidu.com/s/13d-ktCJuzQ_Rz1JAtpFjAw?pwd=9hfs)
+HKU_LG_office_5|2023-11|8.01 GB|[Rosbag](https://pan.baidu.com/s/13d-ktCJuzQ_Rz1JAtpFjAw?pwd=9hfs)
+HKU_LG_factory_1|2023-11|6.13 GB|[Rosbag](https://pan.baidu.com/s/1cAzPKIURuq7mURr1XT1qlA?pwd=kx5s)
+HKU_LG_factory_2|2023-11|5.98 GB|[Rosbag](https://pan.baidu.com/s/1cAzPKIURuq7mURr1XT1qlA?pwd=kx5s)
+HKU_LG_factory_3|2023-11|6.33 GB|[Rosbag](https://pan.baidu.com/s/1cAzPKIURuq7mURr1XT1qlA?pwd=kx5s)
+HKU_Logo_wall_1|2023-11|*** GB|[Rosbag](https://pan.baidu.com/s/1f2gSpIz3mwKS6a1IYRZBhw?pwd=cilv)
+HKU_Logo_wall_2|2023-11|*** GB|[Rosbag](https://pan.baidu.com/s/1f2gSpIz3mwKS6a1IYRZBhw?pwd=cilv)
+HKU_Logo_wall_3|2023-11|*** GB|[Rosbag](https://pan.baidu.com/s/1f2gSpIz3mwKS6a1IYRZBhw?pwd=cilv)
 
 </div>
 
