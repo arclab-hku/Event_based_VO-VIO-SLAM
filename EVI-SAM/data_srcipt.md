@@ -37,7 +37,7 @@ HKU_Logo_wall_3|2023-11|***g|[Rosbag](https://pan.baidu.com/s/1f2gSpIz3mwKS6a1IY
 
 </div>
 
-## Demonstration using EVI-SAM
+## Evaluation using EVI-SAM
 The video demos of evaluating EVI-SAM using this dataset are available on **Bilibili**<sup>
 [1](https://www.bilibili.com/video/BV1PH4y1k7kq/?spm_id_from=333.788&vd_source=a88e426798937812a8ffc1a9be5a3cb7)
 [2](https://www.bilibili.com/video/BV1C94y1P7RX/?spm_id_from=333.788&vd_source=a88e426798937812a8ffc1a9be5a3cb7)
@@ -59,11 +59,11 @@ Therefore, we utilize a personal computer (Intel i7-11800H, 32GB RAM) without GP
     Sequentially display from right to left includes the event-based dense point clouds with texture information and intensity images, at selected viewpoints. (click the image to open video demo)</p>
 </div>
 
-## Evaluating using Traditional Image-based Dense Mapping
+## Evaluation using Traditional Image-based Dense Mapping
 * We also use this dataset to evaluate some traditional image-based dense mapping methods using monocular, stereo, and RGB-D setup.
 * A project of monocular dense mapping using RGB camera with VINS-MONO as pose estimation can be seen in [Github Repository](https://github.com/KwanWaiPang/Mono-VINS-DenseMapping).
 
-## Evaluating using NeRF-based SLAM
+## Evaluation using NeRF-based SLAM
 * We also use this dataset to evaluate some NeRF-based SLAM works, such as [Nice-SLAM](https://openaccess.thecvf.com/content/CVPR2022/papers/Zhu_NICE-SLAM_Neural_Implicit_Scalable_Encoding_for_SLAM_CVPR_2022_paper.pdf), [Co-SLAM](https://openaccess.thecvf.com/content/CVPR2023/papers/Wang_Co-SLAM_Joint_Coordinate_and_Sparse_Parametric_Encodings_for_Neural_Real-Time_CVPR_2023_paper.pdf), [NeRF-SLAM](https://arxiv.org/pdf/2210.13641), and, etc.
 * We provide a [toolbox]() that converts the rosbag into TUM-data format.
 
