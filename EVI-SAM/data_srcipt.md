@@ -65,6 +65,6 @@ Therefore, we utilize a personal computer (Intel i7-11800H, 32GB RAM) without GP
 
 ## Evaluation using NeRF-based SLAM
 * We also use this dataset to evaluate some NeRF-based SLAM works, such as [Nice-SLAM](https://openaccess.thecvf.com/content/CVPR2022/papers/Zhu_NICE-SLAM_Neural_Implicit_Scalable_Encoding_for_SLAM_CVPR_2022_paper.pdf), [Co-SLAM](https://openaccess.thecvf.com/content/CVPR2023/papers/Wang_Co-SLAM_Joint_Coordinate_and_Sparse_Parametric_Encodings_for_Neural_Real-Time_CVPR_2023_paper.pdf), [NeRF-SLAM](https://arxiv.org/pdf/2210.13641), and, etc.
-* We provide a [toolbox]() that converts the rosbag into TUM-data format.
+* We provide a [toolbox](https://github.com/arclab-hku/Rosbag_to_TUMDataset) that converts the rosbag into TUM-data format.
 
 
