@@ -398,7 +398,7 @@ Additionally, it is also the first hybrid approach that integrates both direct-b
   title={EVI-SAM: Robust, Real-time, Tightly-coupled Event-Visual-Inertial State Estimation and 3D Dense Mapping},
   author={Guan, Weipeng and Chen, Peiyu and Zhao, Huibin and Wang, Yu and Lu, Peng},
   journal={Advanced Intelligent Systems},
-  year={2023}
+  year={2024}
 }
 ~~~
 
