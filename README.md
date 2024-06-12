@@ -289,7 +289,7 @@ The event-corner features tracker are then integrated into a sliding windows gra
 </div>
 
 ~~~
-@inproceedings{GWPHKU:EIO,
+@inproceedings{GWPHKU:Mono-EIO,
   title={Monocular Event Visual Inertial Odometry based on Event-corner using Sliding Windows Graph-based Optimization},
   author={Guan, Weipeng and Lu, Peng},
   booktitle={2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
