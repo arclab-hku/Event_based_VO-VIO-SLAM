@@ -16,7 +16,8 @@ Tips: we recommend this [Python package](https://github.com/MichaelGrupp/evo) fo
 e.g. If you want to align all estimated trajectory with ground truth in SE3 to calculate the Absolute Trajectory Error (ATE), you can run the following command:
 ~~~
 evo_ape bag bag_name.bag /ground_truth_pose /estimated_pose -va -p
-~~~ 
+~~~
+More details of the trajectory evaluation can be seen in [Link](https://github.com/KwanWaiPang/Poster_files/blob/main/trajectory_evaluation/evo_process.ipynb).
 
 - [Our Own Dataset](#our-own-dataset)
 - [Public Dataset](#public-dataset)
