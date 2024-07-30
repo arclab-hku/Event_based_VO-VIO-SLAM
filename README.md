@@ -411,6 +411,7 @@ The raw results/trajectories of our methods can be obtained in :point_right: [he
 
 
 # Recommendation
+* [Our Presentation of Event-based SLAM](https://connecthkuhk-my.sharepoint.com/:p:/g/personal/wpguan_connect_hku_hk/EYYi0l2ttuNEusyeZOelfXQBMflAO38QRAeZeE600TFBFQ?e=vtf0M0)
 * [Survey on Event-based 3D Reconstruction](https://www.bilibili.com/video/BV1mm4y1c7Rp/?spm_id_from=333.999.0.0)
 * [Survey on Event Camera in AR/VR](https://www.bilibili.com/video/BV1ic411X7jC/?spm_id_from=333.999.0.0)
 * [Event Camera Calibration using dv-gui](https://blog.csdn.net/gwplovekimi/article/details/121637241?spm=1001.2014.3001.5501)
