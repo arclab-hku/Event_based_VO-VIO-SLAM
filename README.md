@@ -32,7 +32,7 @@ We hope that we can make some contributions for the development of event-based v
   - [3. ESVIO](#3-esvio)
   - [4. ECMD](#4-ecmd)
   - [5. EVI-SAM](#5-evi-sam)
-  - [5. DEIO](#6-DEIO)
+  - [6. DEIO](#6-DEIO)
 - [Using Our Methods as Comparison](#using-Our-Methods-as-Comparison)
 - [Recommendation](#recommendation)
 
@@ -404,7 +404,10 @@ Additionally, it is also the first hybrid approach that integrates both direct-b
 ~~~
 
 ## 6. DEIO
-
+Learning-based SLAM has long been highly regarded, yet its generalization capabilities remain in question, this work takes learning-based VIO to a new level.
+We design the learning-optimization-combined framework that tightly-coupled integrate trainable event-based differentiable bundle adjustment (e-DBA) with IMU pre-integration in a patch-based co-visibility factor graph that employs keyframe-based sliding window optimization.
+The framework is designed to be easily plug-and-play, with DEIO for event and IMU modalities and DVIO† for image and IMU modalities.
+* Source Code is available in [Github Repository](https://github.com/arclab-hku/DEIO)
 
 # Using Our Methods as Comparison
 We strongly recommend the peers to evaluate their proposed method using our dataset, and do the comparison with the raw results from our methods using their own accuracy criterion.
