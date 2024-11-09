@@ -407,7 +407,13 @@ Additionally, it is also the first hybrid approach that integrates both direct-b
 Learning-based SLAM has long been highly regarded, yet its generalization capabilities remain in question, this work takes learning-based VIO to a new level.
 We design the learning-optimization-combined framework that tightly-coupled integrate trainable event-based differentiable bundle adjustment (e-DBA) with IMU pre-integration in a patch-based co-visibility factor graph that employs keyframe-based sliding window optimization.
 The framework is designed to be easily plug-and-play, with DEIO for event and IMU modalities and DVIO† for image and IMU modalities.
+* PDF can be downloaded [here](https://arxiv.org/abs/2411.03928).
 * Source Code is available in [Github Repository](https://github.com/arclab-hku/DEIO)
+<div align="center">
+<a href="https://kwanwaipang.github.io/DEIO/" target="_blank"><img src="https://github.com/arclab-hku/DEIO/blob/main/Figs/cover_figure.png" alt="video" width="100%" /></a>
+<p> Framework Overview (click the image to open the project website) </p>
+</div>
+
 
 # Using Our Methods as Comparison
 We strongly recommend the peers to evaluate their proposed method using our dataset, and do the comparison with the raw results from our methods using their own accuracy criterion.
