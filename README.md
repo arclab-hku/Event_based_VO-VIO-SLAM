@@ -27,11 +27,12 @@ We hope that we can make some contributions for the development of event-based v
   - [Modified VECtor Dataset](#Modified-vector-dataset)
   - [Modified DSEC Dataset](#Modified-dsec-dataset)
 - [Our Works in Event-based Vision](#our-works-in-event-based-vision)
-  - [1. IROS2022](#1-iros2022)
+  - [1. Mono-EIO](#1-Mono-EIO)
   - [2. PL-EVIO](#2-pl-evio)
   - [3. ESVIO](#3-esvio)
   - [4. ECMD](#4-ecmd)
   - [5. EVI-SAM](#5-evi-sam)
+  - [5. DEIO](#6-DEIO)
 - [Using Our Methods as Comparison](#using-Our-Methods-as-Comparison)
 - [Recommendation](#recommendation)
 
@@ -275,7 +276,7 @@ zurich city 04 (f)|15.1g|[Rosbag](https://connecthkuhk-my.sharepoint.com/:u:/g/p
 
 
 # Our Works in Event-based Vision
-## 1. IROS2022
+## 1. Mono-EIO
 This work proposed event inertial odometry (EIO).
 We do not rely on the use of image-based corner detection but design a asynchronously detected and uniformly distributed event-cornerdetector from events-only data.
 The event-corner features tracker are then integrated into a sliding windows graph-based optimization framework that tightly fuses the event-corner features with IMU measurement to estimate the 6-DoF ego-motion.
@@ -401,6 +402,8 @@ Additionally, it is also the first hybrid approach that integrates both direct-b
   year={2024}
 }
 ~~~
+
+## 6. DEIO
 
 
 # Using Our Methods as Comparison
