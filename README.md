@@ -414,6 +414,15 @@ The framework is also designed to be easily plug-and-play, with DEIO for event-I
 <p> Framework Overview (click the image to open the project website) </p>
 </div>
 
+~~~
+@article{GWPHKU:DEIO,
+  title={DEIO: Deep Event Inertial Odometry},
+  author={Guan, Weipeng and Lin, Fuling and Chen, Peiyu and Lu, Peng},
+  journal={arXiv preprint arXiv:2411.03928},
+  year={2024}
+}
+~~~
+
 
 # Using Our Methods as Comparison
 We strongly recommend the peers to evaluate their proposed method using our dataset, and do the comparison with the raw results from our methods using their own accuracy criterion.
