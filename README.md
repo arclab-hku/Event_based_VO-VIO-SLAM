@@ -396,10 +396,12 @@ Additionally, it is also the first hybrid approach that integrates both direct-b
 
 ~~~
 @article{GWPHKU:EVI-SAM,
-  title={EVI-SAM: Robust, Real-time, Tightly-coupled Event-Visual-Inertial State Estimation and 3D Dense Mapping},
+  title={EVI-SAM: Robust, Real-Time, Tightly-Coupled Event--Visual--Inertial State Estimation and 3D Dense Mapping},
   author={Guan, Weipeng and Chen, Peiyu and Zhao, Huibin and Wang, Yu and Lu, Peng},
   journal={Advanced Intelligent Systems},
-  year={2024}
+  pages={2400243},
+  year={2024},
+  publisher={Wiley Online Library}
 }
 ~~~
 
