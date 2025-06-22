@@ -329,7 +329,11 @@ It is reliable and accurate enough to provide onboard pose feedback control for 
   title={PL-EVIO: Robust Monocular Event-based Visual Inertial Odometry with Point and Line Features},
   author={Guan, Weipeng and Chen, Peiyu and Xie, Yuhan and Lu, Peng},
   journal={IEEE Transactions on Automation Science and Engineering},
-  year={2023}
+  volume={21},
+  number={4},
+  pages={6277--6293},
+  year={2023},
+  publisher={IEEE}
 }
 ~~~
 
@@ -377,7 +381,11 @@ Meanwhile, the ground-truth of the vehicle was obtained using a centimeter-level
   title={ECMD: An Event-Centric Multisensory Driving Dataset for SLAM},
   author={Chen, Peiyu and Guan, Weipeng and Huang, Feng and Zhong, Yihan and Wen, Weisong and Hsu, Li-Ta and Lu, Peng},
   journal={IEEE Transactions on Intelligent Vehicles},
-  year={2023}
+  volume={9},
+  number={1},
+  pages={407--416},
+  year={2023},
+  publisher={IEEE}
 }
 ~~~
 
