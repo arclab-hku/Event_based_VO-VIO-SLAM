@@ -426,9 +426,10 @@ The framework is also designed to be easily plug-and-play, with DEIO for event-I
 
 ~~~
 @inproceedings{GWPHKU:DEIO,
-  title={DEIO: Deep Event Inertial Odometry},
+  title={Deio: Deep event inertial odometry},
   author={Guan, Weipeng and Lin, Fuling and Chen, Peiyu and Lu, Peng},
-  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision Workshops},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={4606--4615},
   year={2025}
 }
 ~~~
